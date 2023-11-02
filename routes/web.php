@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\News;
+use App\Models\Page;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +23,10 @@ Route::get('/', function () {
 Route::post('/logut', function(){
     dd('logged out');
 })->name('logout');
+
+Route::get('/news', function(){
+    return [
+        'page' => Page::where('page_template_id', 1)->get(),
+        'news' => News::limit(3)->get()
+    ];
+});
