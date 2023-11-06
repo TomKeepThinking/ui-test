@@ -1,11 +1,10 @@
 <x-app-layout>
-    hello!
 
-    <div x-cloak x-data="{ open: false }">
-        <button @click="open = ! open">Expands</button>
+    <x-nav-bar />
 
-        <div x-show="open" x-transition>
-            Content...
-        </div>
-    </div>
+   <x-shared.large-header>
+       <h1>
+           Collection Management Software & Digital Design for Arts, Culture & Heritage
+       </h1>
+   </x-shared.large-header>
 </x-app-layout>
