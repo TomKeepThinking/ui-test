@@ -11,6 +11,12 @@ module.exports = {
             sans: ['Inter', 'sans-serif']
         },
         extend: {
+            height: {
+                'newsletter': '550px'
+            },
+            width: {
+              'newsletter': '525px'
+            },
             colors: {
                 orange: '#E44D28',
                 black: '#272727',

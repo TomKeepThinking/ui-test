@@ -48,7 +48,7 @@ $socialNavItems = [
 ];
 ?>
 
-<div class="bg-black text-white">
+<div class="bg-black text-white" x-cloak x-data="{ open: false }">
     <div class="container px-8 py-4 mx-auto">
         <x-content.offset reverse class="space-y-12 lg:space-y-0 space-y-reverse ">
             <x-slot:left>
@@ -70,14 +70,14 @@ $socialNavItems = [
 
     <div class="border-t border-white pb-36">
         <div class="container px-8 py-4 mx-auto">
-            <div class="flex flex-col-reverse space-y-12 space-y-reverse lg:flex-row">
-                <div class="w-full lg:w-3/12">
-                    <x-button-secondary class="!text-black hover:!text-white">
+            <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
+                <div class="w-full md:w-1/2 xl:w-3/12">
+                    <x-button-secondary @click="open = true" class="!text-black hover:!text-white">
                         Subscribe to Newsletter
                     </x-button-secondary>
                 </div>
 
-                <div class="w-full lg:w-9/12 grid grid-rows-2 grid-cols-12 gap-4 mb-12 ">
+                <div class="w-full md:w-1/2 xl:w-9/12 grid grid-rows-2 grid-cols-12 gap-4 mb-12 ">
                     <div class="col-span-6 lg:col-span-4">
                         <address class="not-italic mb-4">
                             38-40 <br>
@@ -125,5 +125,12 @@ $socialNavItems = [
                 <div class="col-span-3">VAT Registration 831132962</div>
             </div>
         </div>
+    </div>
+
+    <div  x-show="open"
+          x-transition:enter.opacity.0
+          x-transition:leave.opacity.0>
+
+        <x-modal.newsletter/>
     </div>
 </div>
