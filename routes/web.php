@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\QiPageController;
 use App\Models\News;
 use App\Models\Page;
 use Illuminate\Support\Facades\Route;
@@ -15,18 +17,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', HomePageController::class)->name('pages.home');
+Route::get('/qi', QiPageController::class)->name('pages.qi');
+Route::get('/work', QiPageController::class)->name('pages.work');
+Route::get('/about', QiPageController::class)->name('pages.about');
+Route::get('/contact', QiPageController::class)->name('pages.contact');
+Route::get('/ideas', QiPageController::class)->name('pages.ideas');
 
 
-Route::post('/logut', function(){
-    dd('logged out');
-})->name('logout');
-
-Route::get('/news', function(){
+Route::get('/news', function () {
     return [
-        'page' => Page::where('page_template_id', 1)->get(),
-        'news' => News::limit(3)->get()
+        'pages' => Page::where('page_template_id', 1)->get(),
+        'news' => News::limit(3)->get(),
     ];
 });

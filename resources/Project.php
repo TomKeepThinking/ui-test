@@ -41,12 +41,12 @@ class Project extends BaseModel
     public function project()
     {
         return $this->belongsToMany(Project::class, 'link_xrefs', 'source_id', 'target_id')
-        ->where('link_xrefs.relationship', 'project_project')
-        ->where('link_xrefs.source_table', 'project')
-        ->where('link_xrefs.target_table', 'project')
-        ->where('link_xrefs.online', 1)->where(function ($query) {
-            $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
-        });
+            ->where('link_xrefs.relationship', 'project_project')
+            ->where('link_xrefs.source_table', 'project')
+            ->where('link_xrefs.target_table', 'project')
+            ->where('link_xrefs.online', 1)->where(function ($query) {
+                $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
+            });
     }
 
     /**
@@ -56,21 +56,19 @@ class Project extends BaseModel
     public function news()
     {
         return $this->belongsToMany(News::class, 'link_xrefs', 'source_id', 'target_id')
-        ->where('link_xrefs.relationship', 'project_blog')
-        ->where('link_xrefs.source_table', 'project')
-        ->where('link_xrefs.target_table', 'blog')
-        ->where('link_xrefs.online', 1)->where(function ($query) {
-            $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
-        });
+            ->where('link_xrefs.relationship', 'project_blog')
+            ->where('link_xrefs.source_table', 'project')
+            ->where('link_xrefs.target_table', 'blog')
+            ->where('link_xrefs.online', 1)->where(function ($query) {
+                $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
+            });
     }
 
     /**
      * Accessor: Get all short intro text based on bodytext
-     *
-     * @return string
      */
-    public function getIntroAttribute() :String
+    public function getIntroAttribute(): string
     {
-        return !empty($this->bodytext) ? Str::limit(strip_tags($this->bodytext), 250, '...') : '';
+        return ! empty($this->bodytext) ? Str::limit(strip_tags($this->bodytext), 250, '...') : '';
     }
 }

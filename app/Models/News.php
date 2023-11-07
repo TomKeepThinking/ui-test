@@ -57,10 +57,8 @@ class News extends BaseModel
 
     /**
      * Accessor: Get all the News category names as a comma-separated string
-     *
-     * @return string
      */
-    public function getNewsCategoryNamesImplodedAttribute() :String
+    public function getNewsCategoryNamesImplodedAttribute(): string
     {
         return $this->news_category->count() ?
             $this->news_category->sortBy('name')->implode('name', ', ')

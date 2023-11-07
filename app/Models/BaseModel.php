@@ -19,6 +19,6 @@ abstract class BaseModel extends Model
     {
         return $query->where('online', 1)->where(function ($query) {
             $query->where('deleted', 0)->orWhereNull('deleted');
-        });//->whereRaw('not deleted <=> 2');
+        }); //->whereRaw('not deleted <=> 2');
     }
 }
