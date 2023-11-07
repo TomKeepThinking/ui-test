@@ -5,8 +5,39 @@ module.exports = {
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
+
     theme: {
-        extend: {},
+        fontFamily: {
+            sans: ['Inter', 'sans-serif']
+        },
+        extend: {
+            colors: {
+                red: '#EA283F',
+                orange: '#E44D28',
+                black: '#272727',
+                charcoal: '#404040',
+                steel: '#7A7A7A',
+                grey: '#8A8A8A',
+                concrete: '#9B9B9B',
+                sand: '#D6D4C9'
+            },
+            fontSize: {
+                '2.5xl' : '32px',
+                '7.5xl': '82px'
+            },
+            lineHeight: {
+                '4.5': '18px',
+                '20': '80px'
+            },
+            letterSpacing: {
+                'header-d': '-6px',
+                'header-m': '-2px',
+                'body-d': '-0.5px',
+                'body-m': '-0.25px',
+                'details-d' : '-0.2px',
+                'details-m' : '-0.25px'
+            }
+        },
     },
     plugins: [],
 }

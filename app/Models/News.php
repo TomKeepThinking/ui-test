@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use resources\Project;
+
 class News extends BaseModel
 {
     protected $table = 'blog';

@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use resources\Project;
+
 class Page extends BaseModel
 {
     protected $table = 'page';

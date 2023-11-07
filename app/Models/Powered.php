@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use resources\Project;
+
 class Powered extends BaseModel
 {
     protected $table = 'powered';

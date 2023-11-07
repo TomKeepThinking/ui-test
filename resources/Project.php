@@ -1,7 +1,12 @@
 <?php
 
-namespace App\Models;
+namespace resources;
 
+use App\Models\BaseModel;
+use App\Models\Client;
+use App\Models\News;
+use App\Models\Powered;
+use App\Models\Project_type;
 use Illuminate\Support\Str;
 
 class Project extends BaseModel
