@@ -1,8 +1,16 @@
-<div class="grid grid-cols-12">
-    <div class="col-span-3 flex items-end">
+@props(['class' => '', 'reverse' => ''])
+
+<div
+    {{
+        $attributes
+        ->class(['flex lg:flex-row', 'flex-col' =>  !$reverse, 'flex-col-reverse' => $reverse])
+        ->merge(['class' => $class])
+    }}>
+
+    <div class="w-full lg:w-3/12">
         {{ $left }}
     </div>
-    <div class="col-span-9">
+    <div class="w-full lg:w-9/12">
         {{ $right}}
     </div>
 </div>

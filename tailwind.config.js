@@ -12,9 +12,9 @@ module.exports = {
         },
         extend: {
             colors: {
-                red: '#EA283F',
                 orange: '#E44D28',
                 black: '#272727',
+                red: '#EA283F',
                 charcoal: '#404040',
                 steel: '#7A7A7A',
                 grey: '#8A8A8A',

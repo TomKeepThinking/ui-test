@@ -50,13 +50,18 @@ $socialNavItems = [
 
 <div class="bg-black text-white">
     <div class="container px-8 py-4 mx-auto">
-        <x-content.offset>
+        <x-content.offset reverse class="space-y-12 lg:space-y-0 space-y-reverse ">
             <x-slot:left>
-                <span class="mr-2">Get in touch</span> <x-link>Contact Us </x-link>
+               <div class="flex h-full">
+                   <div class="mt-auto flex">
+                       <span class="mr-2">Get in touch</span>
+                       <x-link>Contact Us </x-link>
+                   </div>
+               </div>
             </x-slot:left>
 
             <x-slot:right>
-                <x-page-header>
+                <x-page-header class="text-white">
                     Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span>
                 </x-page-header>
             </x-slot:right>
@@ -65,43 +70,48 @@ $socialNavItems = [
 
     <div class="border-t border-white pb-36">
         <div class="container px-8 py-4 mx-auto">
-            <div class="grid grid-cols-12">
-                <div class="col-span-3">
-                    <x-button-secondary class="text-black hover:text-white">
+            <div class="flex flex-col-reverse space-y-12 space-y-reverse lg:flex-row">
+                <div class="w-full lg:w-3/12">
+                    <x-button-secondary class="!text-black hover:!text-white">
                         Subscribe to Newsletter
                     </x-button-secondary>
                 </div>
-                <div class="col-span-3">
-                    <address class="not-italic mb-4">
-                        38-40 <br>
-                        Southwark Street<br>
-                        London SE1 1UN<br>
-                        UK
-                    </address>
 
-                    <x-link>
-                        +44 20 7490 5337
-                    </x-link>
+                <div class="w-full lg:w-9/12 grid grid-rows-2 grid-cols-12 gap-4 mb-12 ">
+                    <div class="col-span-6 lg:col-span-4">
+                        <address class="not-italic mb-4">
+                            38-40 <br>
+                            Southwark Street<br>
+                            London SE1 1UN<br>
+                            UK
+                        </address>
+                    </div>
+                    <div class="flex flex-col lg:row-start-2 lg:row-end-2 col-span-6 lg:col-span-4">
+                        <x-link>
+                            +44 20 7490 5337
+                        </x-link>
 
-                    <x-link>
-                        info@keepthinking.it
-                    </x-link>
-                </div>
-                <div class="col-span-3">
-                    <ul>
-                        @foreach ($navItems as $item)
-                        <li><x-link>{{ $item['name']}}</x-link></li>
-                        @endforeach
+                        <x-link>
+                            info@keepthinking.it
+                        </x-link>
+                    </div>
+
+                    <div class="lg:row-start-1 lg:row-end-3 col-span-6 lg:col-span-4">
+                        <ul>
+                            @foreach ($navItems as $item)
+                                <li><x-link>{{ $item['name']}}</x-link></li>
+                            @endforeach
                             <li><x-link>Get A Demo</x-link></li>
-                    </ul>
-                </div>
-                <div class="col-span-3">
-                    <ul>
-                        @foreach ($socialNavItems as $item)
-                            <li><x-link>{{ $item['name']}}</x-link></li>
-                        @endforeach
-                        <li><x-link>Get A Demo</x-link></li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="lg:row-start-1 lg:row-end-3 col-span-6 lg:col-span-4">
+                        <ul>
+                            @foreach ($socialNavItems as $item)
+                                <li><x-link>{{ $item['name']}}</x-link></li>
+                            @endforeach
+                            <li><x-link>Get A Demo</x-link></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
