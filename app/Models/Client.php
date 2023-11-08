@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use resources\Project;
+
 class Client extends BaseModel
 {
     protected $table = 'client';

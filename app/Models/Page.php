@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use resources\Project;
+
 class Page extends BaseModel
 {
-    protected $table = 'page';
+    protected $table = 'pages';
 
     // Eager load
     protected $with = ['page_template', 'node'];
@@ -26,7 +28,7 @@ class Page extends BaseModel
                 $query->where('accordion.deleted', 0)->orWhereNull('accordion.deleted');
             })
             ->where('link_xrefs.relationship', 'page_accordion')
-            ->where('link_xrefs.source_table', 'page')
+            ->where('link_xrefs.source_table', 'pages')
             ->where('link_xrefs.target_table', 'accordion')
             ->where('link_xrefs.online', 1)->where(function ($query) {
                 $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
@@ -41,13 +43,13 @@ class Page extends BaseModel
     public function related_pages()
     {
         return $this->belongsToMany(Page::class, 'link_xrefs', 'source_id', 'target_id')
-            ->select('page.*', 'link_xrefs.name as xref_name', 'link_xrefs.caption as xref_caption')
-            ->where('page.online', 1)->where(function ($query) {
-                $query->where('page.deleted', 0)->orWhereNull('page.deleted');
+            ->select('pages.*', 'link_xrefs.name as xref_name', 'link_xrefs.caption as xref_caption')
+            ->where('pages.online', 1)->where(function ($query) {
+                $query->where('pages.deleted', 0)->orWhereNull('pages.deleted');
             })
             ->where('link_xrefs.relationship', 'page_page')
-            ->where('link_xrefs.source_table', 'page')
-            ->where('link_xrefs.target_table', 'page')
+            ->where('link_xrefs.source_table', 'pages')
+            ->where('link_xrefs.target_table', 'pages')
             ->where('link_xrefs.online', 1)->where(function ($query) {
                 $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
             });
@@ -64,7 +66,7 @@ class Page extends BaseModel
                 $query->where('project.deleted', 0)->orWhereNull('project.deleted');
             })
             ->where('link_xrefs.relationship', 'page_project')
-            ->where('link_xrefs.source_table', 'page')
+            ->where('link_xrefs.source_table', 'pages')
             ->where('link_xrefs.target_table', 'project')
             ->where('link_xrefs.online', 1)->where(function ($query) {
                 $query->where('link_xrefs.deleted', 0)->orWhereNull('link_xrefs.deleted');
