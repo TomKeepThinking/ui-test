@@ -4,7 +4,6 @@
     </x-page-header>
 
     <div class="border-t border-concrete pt-6">
-
         <x-content.offset>
             <x-slot:left>
                 <h2>Qi Collections Management</h2>
@@ -17,4 +16,6 @@
             </x-slot:right>
         </x-content.offset>
     </div>
+
+    <x-work-row></x-work-row>
 </x-app-layout>
