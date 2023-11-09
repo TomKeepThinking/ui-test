@@ -11,7 +11,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans text-lg font-medium antialiased">
-    <div class="min-h-screen bg-white">
+    <div class="min-h-screen bg-white dark:bg-black">
         <!-- Page Content -->
         <x-nav/>
 

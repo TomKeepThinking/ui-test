@@ -1,13 +1,15 @@
-<div class="w-full sm:w-newsletter h-newsletter bg-red fixed bottom-0 left-0 text-white p-8">
+<div class="w-full sm:w-newsletter h-newsletter bg-red fixed bottom-0 left-0 text-white p-8 ">
     <x-icon-button @click="open = false" class="absolute top-4 right-4">
         <x-icons.close-icon class="w-5 "/>
     </x-icon-button>
 
-    <p class="mb-8">Bring innovation to your inbox and stay up to date with the latest news on our software and design projects. We will not use your email for any other purpose and we won’t pass it to anyone else.</p>
+    <p class="mb-8 tracking-body-d leading-6">Bring innovation to your inbox and stay up to date with the latest news on our software and design projects. We will not use your email for any other purpose and we won’t pass it to anyone else.</p>
 
     <form action="POST" class="flex flex-col space-y-4">
-        <input type="text" required placeholder="Name">
-        <input type="text" required placeholder="Email">
+        <input id="name" class="bg-red p-0 focus:outline-none placeholder:text-white border-b border-white" type="text" required placeholder="*Name...">
+
+        <input id="email" class="bg-red p-0 focus:outline-none placeholder:text-white border-b border-white" type="text" required placeholder="*Email...">
+
         <x-button-secondary class="ml-auto">
             Subscribe
         </x-button-secondary>

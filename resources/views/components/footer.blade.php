@@ -49,7 +49,7 @@ $socialNavItems = [
 ?>
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
-    <div class="py-4 mx-auto">
+    <div class="py-8 mx-auto">
         <x-content.offset reverse class="space-y-12 lg:space-y-0 space-y-reverse ">
             <x-slot:left>
                <div class="flex h-full">
