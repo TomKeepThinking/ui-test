@@ -12,6 +12,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body class="font-sans text-lg font-medium antialiased">
     <div class="min-h-screen bg-white dark:bg-black">
@@ -23,5 +24,6 @@
 
         <x-footer/>
     </div>
+    @livewireScripts
 </body>
 </html>
