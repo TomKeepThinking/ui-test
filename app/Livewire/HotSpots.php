@@ -10,9 +10,6 @@ class HotSpots extends Component
     #[Reactive]
     public $activeSpot;
 
-    public $test;
-    public $show;
-    public $text = 'test';
 
     public function mount()
     {
