@@ -1,16 +1,16 @@
 @props(['class' => '', 'reverse' => ''])
 
-<div
-    {{
-        $attributes
-        ->class(['flex lg:flex-row', 'flex-col' =>  !$reverse, 'flex-col-reverse' => $reverse])
-        ->merge(['class' => $class])
-    }}>
-
-    <div class="w-full lg:w-3/12">
+<div {{
+    $attributes
+            ->class(['grid grid-cols-12 gap-4'])
+            ->merge(['class' => $class])
+        }}>
+    <div
+    {{$attributes
+            ->class(['col-span-12 lg:col-span-3', 'order-last lg:order-none' => $reverse])}}>
         {{ $left }}
     </div>
-    <div class="w-full lg:w-9/12">
+    <div class="col-span-12 lg:col-span-9">
         {{ $right}}
     </div>
 </div>

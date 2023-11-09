@@ -12,7 +12,7 @@
             </x-slot:left>
 
             <x-slot:right>
-                <img src="{{asset('/storage/images/laptop-falling.png')}}" alt="">
+                <img class="w-full" src="{{asset('/storage/images/laptop-falling.png')}}" alt="">
             </x-slot:right>
         </x-content.offset>
     </div>
