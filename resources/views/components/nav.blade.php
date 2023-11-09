@@ -25,7 +25,7 @@ $navItems = [
 
 ?>
 
-<div class="sticky top-0 w-full bg-white dark:bg-black">
+<div class="sticky z-20 top-0 w-full bg-white dark:bg-black">
     <div class="flex justify-between items-center container mx-auto  px-8 py-4" x-cloak x-data="{ open: false }">
         <x-link route="{{route('pages.home')}}">
             <x-icons.kt-logo class="w-48 text-red dark:text-white"/>

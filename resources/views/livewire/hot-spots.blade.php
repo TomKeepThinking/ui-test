@@ -16,6 +16,7 @@
                               @foreach($spot['spots'] as $key=>$item)
                                 <li wire:key="{{ $key }}"
                                     @mouseover="popup = {{$key}}"
+                                    @mouseleave="popup = ''"
                                     class="px-4 py-2 transition-all ease cursor-pointer hover:bg-red hover:text-white">
                                     {{$key+1 . ' ' .  $item['name']}}
                                 </li>
@@ -28,18 +29,31 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="w-full relative">
-{{--                <img class="w-full" src="{{$activeSpot['image']}}" alt="">--}}
+            <div class="p-20 bg-sand">
+                <div class="w-full relative ">
+                    {{--                <img class="w-full" src="{{$activeSpot['image']}}" alt="">--}}
 
-                <div class="w-full h-[900px] bg-gray-100"></div>
+                    <div class="w-full h-[900px] bg-gray-100 shadow-xl rounded-xl overflow-y-hidden"></div>
 
-                @foreach($activeSpot['spots'] as $key=>$spot)
-                   <div wire:key="{{ $spot['id']}}"  class="w-4 h-4 rounded-full bg-red absolute" style="top:{{$spot['x']}}px; left:  {{$spot['y']}}px">
-                       <div x-show="popup == {{$key}}" x-transition class="absolute top-12 w-[300px] text-black bg-white">
-                           {{ $spot['content']}}
-                       </div>
-                   </div>
-                @endforeach
+                    @foreach($activeSpot['spots'] as $key=>$spot)
+                        <div wire:key="{{ $spot['id']}}"
+                             class="w-6 h-6 rounded-full bg-red absolute cursor-pointer flex items-center justify-center"
+                             style="top:{{$spot['x']}}px; left:  {{$spot['y']}}px"
+                             @mouseover="popup = {{$key}}"
+                             @mouseleave="popup = ''">
+
+                            <span class=" text-xxs">{{$key+1}}</span>
+
+                            <div x-show="popup === {{$key}}"
+                                 x-transition
+                                 x-cloak
+                                 class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow">
+                                <p> {{ $spot['content']}}</p>
+                            </div>
+
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </x-slot:right>
     </x-content.offset>
