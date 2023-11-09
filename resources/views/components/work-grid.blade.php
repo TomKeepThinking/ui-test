@@ -1,6 +1,7 @@
 @props(['class' => ''])
 
-<div class="grid grid-cols-12 gap-4 {{$class}}" >
+<x-container>
+    <div class="grid grid-cols-12 gap-4 {{$class}}" >
     <div class="col-span-12 sm:col-span-6 lg:col-span-3">
         <div class="w-full pt-72 bg-gray-300"></div>
         <h4>Title</h4>
@@ -38,3 +39,4 @@
     </div>
 
 </div>
+</x-container>

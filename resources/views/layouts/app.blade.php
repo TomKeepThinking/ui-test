@@ -11,11 +11,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans text-lg font-medium antialiased">
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-white">
         <!-- Page Content -->
         <x-nav/>
 
-        <main class="container mx-auto px-8">
+        <main>
             {{ $slot }}
         </main>
 
