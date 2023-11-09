@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\AboutPageController;
+use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\IdeasPageController;
 use App\Http\Controllers\QiPageController;
+use App\Http\Controllers\WorkPageController;
 use App\Models\News;
 use App\Models\Page;
 use Illuminate\Support\Facades\Route;
@@ -19,10 +23,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePageController::class)->name('pages.home');
 Route::get('/qi', QiPageController::class)->name('pages.qi');
-Route::get('/work', QiPageController::class)->name('pages.work');
-Route::get('/about', QiPageController::class)->name('pages.about');
-Route::get('/contact', QiPageController::class)->name('pages.contact');
-Route::get('/ideas', QiPageController::class)->name('pages.ideas');
+Route::get('/work', WorkPageController::class)->name('pages.work');
+Route::get('/about', AboutPageController::class)->name('pages.about');
+Route::get('/contact', ContactPageController::class)->name('pages.contact');
+Route::get('/ideas', IdeasPageController::class)->name('pages.ideas');
 
 
 Route::get('/news', function () {

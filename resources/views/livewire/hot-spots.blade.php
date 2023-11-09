@@ -1,4 +1,5 @@
-<div class="dark:text-white min-h-[500px]" x-data="{popup: ''}">
+<div class="dark:text-white min-h-[900px]" x-data="dropdown">
+
     <x-content.offset>
         <x-slot:left>
             <h3>Key Features</h3>
@@ -45,8 +46,9 @@
                             <span class=" text-xxs">{{$key+1}}</span>
 
                             <div x-show="popup === {{$key}}"
+                                 id="popup-{{$spot['id']}}"
                                  x-transition
-                                 x-cloak
+                                 :class="calcPopupLocation(@js($spot['id']))"
                                  class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow">
                                 <p> {{ $spot['content']}}</p>
                             </div>
