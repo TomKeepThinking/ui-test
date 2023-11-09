@@ -34,8 +34,8 @@ $navItems = [
         <div class="hidden md:block over">
             <ul class="flex justify-between items-center space-x-4">
                 @foreach ($navItems as $item)
-                    <li class="dark:text-white">
-                        <a href="{{route($item['route'])}}">{{ $item['name'] }}</a>
+                    <li class="dark:text-white ">
+                        <a href="{{route($item['route'])}}" class="text-grey">{{ $item['name'] }}</a>
                     </li>
                 @endforeach
                 <li>
