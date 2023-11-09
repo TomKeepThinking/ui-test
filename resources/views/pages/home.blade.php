@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-container>
-        <x-page-header class="w-2/3 pb-6">
-            <h1>Innovative digital solutions to help preserve and shape  culture and heritage</h1>
+        <x-page-header class="w-2/3 pb-6 pt-32">
+            <h1>Collection Management Software & Digital Design for Arts, Culture & Heritage</h1>
         </x-page-header>
     </x-container>
 
@@ -35,7 +35,7 @@
         </x-content.offset>
     </div>
 
-    <x-work-grid class="mb-12"/>
+    <x-work.grid class="mb-12" />
 
     <div class="mb-6 border-b border-concrete pb-4">
         <x-content.offset>
