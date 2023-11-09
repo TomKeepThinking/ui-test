@@ -3,7 +3,7 @@
         <h1>Innovative digital solutions to help preserve and shape  culture and heritage</h1>
     </x-page-header>
 
-    <div class="border-t border-concrete pt-6">
+    <div class="border-t border-concrete pt-6 mb-12">
         <x-content.offset>
             <x-slot:left>
                 <h2>Qi Collections Management</h2>
@@ -17,5 +17,5 @@
         </x-content.offset>
     </div>
 
-    <x-work-row></x-work-row>
+    <x-work-row class="mb-12"/>
 </x-app-layout>

@@ -11,6 +11,9 @@ module.exports = {
             sans: ['Inter', 'sans-serif']
         },
         extend: {
+            spacing: {
+              'work-lg': '460px'
+            },
             height: {
                 'newsletter': '550px'
             },
