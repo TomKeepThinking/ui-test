@@ -10,6 +10,8 @@ class HotSpots extends Component
     #[Reactive]
     public $activeSpot;
 
+    public $show = false;
+
 
     public function mount()
     {
@@ -30,7 +32,7 @@ class HotSpots extends Component
         $this->test = true;
     }
 
-    #[Computed]
+
     public function openSubMenu($name)
     {
         $this->test = true;

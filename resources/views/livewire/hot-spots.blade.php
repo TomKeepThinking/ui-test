@@ -1,5 +1,4 @@
 <div class="dark:text-white min-h-[900px]" x-data="dropdown">
-
     <x-content.offset>
         <x-slot:left>
             <h3>Key Features</h3>
@@ -7,12 +6,18 @@
 
            <ul class="flex flex-col border divide-y ">
                @foreach($hotSpots as $key=>$spot)
-                   <li wire:key="{{ $key }}">
+                   <li wire:key="{{ $key }}" class="overflow-hidden">
                        <span  wire:click="setActiveSpot('{{$key}}')"
                               class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease">{{$spot['name']}}</span>
 
-                       @if ($this->openSubMenu($spot['name']))
-                          <ul wire:transition.in.opacity.duration.200ms
+
+                          <ul x-show="$wire.activeSpot.name === @js($spot['name'])"
+                              x-transition:enter="transition ease-in-out duration-200 transform"
+                              x-transition:enter-start="opacity-0"
+                              x-transition:enter-end="opacity-100"
+                              x-transition:leave="transition ease-in-out duration-200"
+                              x-transition:leave-start="opacity-100"
+                              x-transition:leave-end="opacity-0"
                               class="border-t text-grey">
                               @foreach($spot['spots'] as $key=>$item)
                                 <li wire:key="{{ $key }}"
@@ -23,7 +28,6 @@
                                 </li>
                               @endforeach
                           </ul>
-                       @endif
                    </li>
                @endforeach
            </ul>

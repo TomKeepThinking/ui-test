@@ -5,7 +5,6 @@
         </x-page-header>
     </x-container>
 
-
     <div class="border-t border-concrete pt-6 mb-12">
         <x-content.offset>
             <x-slot:left>
@@ -32,6 +31,172 @@
     </x-content.offset>
 
 
-    <livewire:hot-spots :$hotSpots></livewire:hot-spots>
+    <div class="mb-12">
+        <livewire:hot-spots :$hotSpots></livewire:hot-spots>
+    </div>
+
+    <div class="mb-8 border-b border-concrete pb-8">
+        <x-content.offset>
+            <x-slot:left>
+
+            </x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h3>Selected Clients</h3>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
+
+    <x-content.offset class="mb-12">
+        <x-slot:left>
+            <p>Over two hundred museums, collections, libraries, archives, councils, magazines and commercial organisations have chosen Qi to manage and present their content.</p>
+        </x-slot:left>
+        <x-slot:right>
+           <div class="grid grid-cols-2 md:grid-cols-3 border-t border-l">
+               <x-content.logo-grid-item>
+                <x-icons.uni class="w-24"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item>
+                <x-icons.coca-cola class="w-48"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item>
+                <x-icons.sfmoma class="w-48"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item>
+                <x-icons.obama class="text-white w-48"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item>
+                <x-icons.gsk class="text-white w-28"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item>
+                <x-icons.artuk class="text-white w-44"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item class="hidden sm:flex">
+                <x-icons.artuk class="text-white w-44"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item class="hidden sm:flex">
+                <x-icons.asia-art class="text-white w-24"/>
+               </x-content.logo-grid-item>
+
+               <x-content.logo-grid-item class="hidden sm:flex">
+                <x-icons.asia-art class="text-white w-24"/>
+               </x-content.logo-grid-item>
+           </div>
+        </x-slot:right>
+    </x-content.offset>
+
+
+    <div class="mb-8 border-b border-concrete pb-8">
+        <x-content.offset>
+            <x-slot:left>
+
+            </x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h3>Built with harmony in mind, configurable and integrable with any database</h3>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
+
+    <x-content.offset class="mb-8">
+        <x-slot:left>
+            <h4>Detailed specifications</h4>
+
+            <p class="text-grey">Read a detailed description of Qi and download the specifications for later.</p>
+
+            <x-download-btn>
+                Qi Detailed Specifications <br>
+                (1.7 MB)
+            </x-download-btn>
+        </x-slot:left>
+
+        <x-slot:right>
+            <div class="grid grid-cols-3 border-t border-l">
+                @foreach($features as $feature)
+                    <x-content.text-grid-item>
+                        <h4 class="mb-2">{{$feature['title']}}</h4>
+
+                        <ul class="text-grey list-disc pl-4 space-y-2 ">
+                            @foreach($feature['features'] as $item)
+                                <li class="leading-6 tracking-body-d">{{$item}}</li>
+                            @endforeach
+                        </ul>
+                    </x-content.text-grid-item>
+                @endforeach
+            </div>
+        </x-slot:right>
+    </x-content.offset>
+
+
+    <div class="mb-8 border-b border-concrete pb-8">
+        <x-content.offset>
+            <x-slot:left>
+
+            </x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h3>Technology</h3>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
+
+    <x-content.offset class="mb-12">
+        <x-slot:left>
+            <h4>Detailed specifications</h4>
+
+            <p class="text-grey">Read a detailed description of Qi and download the specifications for later.</p>
+
+            <x-download-btn>
+                Qi Detailed Specifications <br>
+                (1.7 MB)
+            </x-download-btn>
+        </x-slot:left>
+
+        <x-slot:right>
+            <div class="grid grid-cols-3 border-t border-l">
+                @foreach($technology as $tech)
+                    <x-content.text-grid-item>
+                        <h4 class="mb-2">{{$tech['title']}}</h4>
+
+                        <ul class="text-grey list-disc pl-4 space-y-2 ">
+                            @foreach($tech['features'] as $item)
+                                <li class="leading-6 tracking-body-d">{{$item}}</li>
+                            @endforeach
+                        </ul>
+                    </x-content.text-grid-item>
+                @endforeach
+            </div>
+        </x-slot:right>
+    </x-content.offset>
+
+    <div class="mb-8 border-b border-concrete pb-8">
+        <x-content.offset>
+            <x-slot:left>
+                <div class="flex h-full">
+                    <x-link class="mt-auto">
+                        View our work
+                    </x-link>
+                </div>
+            </x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h3>Leveraging digital design that
+                        helps to shape the way we experience culture & history</h3>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
+
+    <x-work.grid class="mb-12" :work="$work" />
 
 </x-app-layout>
