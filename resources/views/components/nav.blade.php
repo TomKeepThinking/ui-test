@@ -25,8 +25,8 @@ $navItems = [
 
 ?>
 
-<div class="sticky z-20 top-0 w-full bg-white dark:bg-black">
-    <div class="flex justify-between items-center container mx-auto  px-8 py-4" x-cloak x-data="{ open: false }">
+<div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20">
+    <div class="flex justify-between items-center container mx-auto px-8 py-4" x-cloak x-data="{ open: false }">
         <x-link route="{{route('pages.home')}}">
             <x-icons.kt-logo class="w-48 text-red dark:text-white"/>
         </x-link>
@@ -34,8 +34,15 @@ $navItems = [
         <div class="hidden md:block over">
             <ul class="flex justify-between items-center space-x-4">
                 @foreach ($navItems as $item)
-                    <li class="dark:text-white ">
-                        <a href="{{route($item['route'])}}" class="text-grey">{{ $item['name'] }}</a>
+                    <li class="dark:text-white">
+                        <a href="{{route($item['route'])}}"
+                            @class([
+                             'text-grey dark:text-white'=> request()->route()->getName() !== $item['route'],
+                             'underline text-black dark:text-white' => request()->route()->getName() == $item['route'],
+                         ])
+                        >
+                            {{ $item['name'] }}
+                        </a>
                     </li>
                 @endforeach
                 <li>
