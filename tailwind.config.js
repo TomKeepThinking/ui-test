@@ -32,7 +32,7 @@ module.exports = {
                 sand: '#D6D4C9'
             },
             fontSize: {
-                'text-xxs': '10px',
+                'xxs': '10px',
                 '2.5xl' : '32px',
                 '7.5xl': '82px'
             },

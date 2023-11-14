@@ -42,12 +42,16 @@
 
                     @foreach($activeSpot['spots'] as $key=>$spot)
                         <div wire:key="{{ $spot['id']}}"
-                             class="w-6 h-6 rounded-full bg-red absolute cursor-pointer flex items-center justify-center"
+                             class="w-6 h-6 rounded-full bg-red absolute transition-all ease cursor-pointer flex items-center justify-center shadow"
+                             :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"
                              style="top:{{$spot['x']}}px; left:  {{$spot['y']}}px"
                              @mouseover="popup = {{$key}}"
                              @mouseleave="popup = ''">
 
-                            <span class=" text-xxs">{{$key+1}}</span>
+                            <span class="text-xxs">{{$key+1}}</span>
+
+                            <span class="transition-all ease w-2 h-2 absolute -bottom-[1px] rotate-45"
+                                  :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"></span>
 
                             <div x-show="popup === {{$key}}"
                                  id="popup-{{$spot['id']}}"
