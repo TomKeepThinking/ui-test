@@ -14,7 +14,35 @@ document.addEventListener('alpine:init', () => {
             { id: 3, label: '03' },
         ],
         timer: null,
+        transformOrigin: {
+            left: 0
+        },
+
+        transformOrigin2: {
+            left: 0
+        },
         init() {
+
+            this.$watch('currentTab', (newValue, oldValue) => {
+               if(oldValue < newValue){
+                    this.transformOrigin = {
+                       left: 0
+                    }
+
+                   this.transformOrigin2 ={
+                       right: 0
+                   }
+               } else {
+                   this.transformOrigin2 ={
+                      left: 0
+                   }
+
+                   this.transformOrigin = {
+                       right: 0
+                   }
+               }
+            })
+
             // Register an event handler that references the component instance
             // this.width = 100;
 
@@ -31,5 +59,6 @@ document.addEventListener('alpine:init', () => {
             // Detach the handler, avoiding memory and side-effect leakage
             clearInterval(this.timer);
         },
+
     }))
 })
