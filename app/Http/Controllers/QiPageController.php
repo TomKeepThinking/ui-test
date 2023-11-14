@@ -23,7 +23,7 @@ class QiPageController extends Controller
                       'name' => 'All content at a glance',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
                       'x' => 170,
-                      'y' => 620
+                      'y' => 920
                   ],
                   [
                       'id' => uniqid(),
@@ -193,7 +193,7 @@ class QiPageController extends Controller
             [
                 'image' => '/images/test.png',
                 'title' => 'Art UK',
-                'content' => 'We helped to democratise the UK’s publicly owned art'
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art'
             ]
         ];
 

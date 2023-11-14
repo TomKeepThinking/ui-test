@@ -12,32 +12,32 @@ class HomePageController extends Controller
         $secondContentHeader = 'Harnessing technology that helps to shape the way we experience culture & history';
         $work = [
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone.png',
                 'title' => 'Asia Art Archive',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone-2.png',
                 'title' => 'Texas General Land Office',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.',
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone-3.png',
                 'title' => 'Art UK',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art'
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone-4.png',
                 'title' => 'British Art Studies',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art'
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone-4.png',
                 'title' => 'Asia Art Archive',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/storage/images/phone-5.png',
                 'title' => 'Texas General Land Office',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
             ]

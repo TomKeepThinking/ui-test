@@ -1,4 +1,7 @@
 <x-app-layout>
+
+    <livewire:hero-slider/>
+
     <x-container>
         <x-page-header class="w-2/3 pb-6 pt-32">
             <h1>{{$pageHeader}}</h1>
