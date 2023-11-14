@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <livewire:hero-slider/>
 
     <x-container>
