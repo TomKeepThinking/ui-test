@@ -1,25 +1,22 @@
 <div x-cloak x-data="slider">
-
-
     <x-content.offset>
         <x-slot:left>
             <ul class="flex items-end h-full">
                 <template x-for="tab in tabs">
-                    <li class="relative w-1/3 mr-4 cursor-pointer hover:opacity-80 transition-opacity ease"
+                    <li class="relative w-1/3 mr-2 cursor-pointer hover:opacity-80 transition-opacity ease"
                         @click="currentTab = tab.id">
                         <button
                             x-ref="tab.id"
                             x-text="tab.label"
                             role="tab"
-                            aria-controls="first-tab-panel"
                             :aria-selected="currentTab === tab.id"
-
+                            class="mb-2"
                             :class="{'text-grey' : currentTab !== tab.id, 'text-red' : currentTab === tab.id}"
                             :tabindex="currentTab === tab.id ? '0' : '-1'"
                         >
                         </button>
 
-                      <x-slider.progress/>
+                        <x-slider.progress/>
                     </li>
                 </template>
             </ul>
