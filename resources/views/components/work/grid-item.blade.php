@@ -1,11 +1,20 @@
-@props(['img' => '', 'title' => '', 'content' =>''])
+@props(['img' => '', 'title' => '', 'content' =>'', 'large' => false])
 
 <div x-data="{active: false}"
     @mouseover="active = true"
     @mouseleave="active = false"
-    class="cursor-pointer col-span-12 sm:col-span-6 lg:col-span-3">
+    @class([
+            'cursor-pointer col-span-12 sm:col-span-6 ',
+            'lg:col-span-3' =>  !$large,
+            'lg:col-span-6' => $large,
+        ])>
 
-    <div class="w-full pt-64 lg:pt-72 bg-gray-300 relative overflow-hidden text-white text-sm">
+    <div
+        @class([
+            'w-full  bg-gray-300 relative overflow-hidden text-white text-sm',
+            'pt-64 lg:pt-72' =>  !$large,
+            'pt-64 lg:pt-work-lg' => $large,
+        ])>
         <div x-show="active"
              x-cloak
              x-transition:enter="transition ease-in-out duration-300 transform"

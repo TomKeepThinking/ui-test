@@ -1,13 +1,12 @@
 @props(['class' => '', 'work' => []])
 
 <x-container>
-    <div class="grid grid-cols-12 gap-4 {{$class}}" >
+    <div class="grid grid-cols-12 gap-x-5 gap-y-12 {{$class}}" >
         @foreach($work as $key => $value)
             @if($key === 2 || $key === 3)
-                <x-work.grid-item-lg img="#" title="Title" content="We helped to democratise the UK’s publicly owned art."/>
-
+                <x-work.grid-item img="#" title="{{ $value['title'] }}" content="{{ $value['excerpt'] }}" :large="true"/>
             @else
-                <x-work.grid-item img="#" title="Title" content="We helped to democratise the UK’s publicly owned art."/>
+                <x-work.grid-item img="#"  title="{{ $value['title'] }}" content="{{ $value['excerpt'] }}"/>
             @endif
         @endforeach
     </div>

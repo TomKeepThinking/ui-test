@@ -179,7 +179,23 @@ class QiPageController extends Controller
             ]
         ];
 
-        $work = [1, 2, 3];
+        $work = [
+            [
+                'image' => '/images/test.png',
+                'title' => 'Asia Art Archive',
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
+            ],
+            [
+                'image' => '/images/test.png',
+                'title' => 'Texas General Land Office',
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art.',
+            ],
+            [
+                'image' => '/images/test.png',
+                'title' => 'Art UK',
+                'content' => 'We helped to democratise the UK’s publicly owned art'
+            ]
+        ];
 
         return view('pages.qi',
             compact(
