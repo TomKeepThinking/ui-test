@@ -5,7 +5,6 @@
         </x-page-header>
     </x-container>
 
-
     <div class="border-t border-concrete pt-6 mb-12">
         <x-content.offset>
             <x-slot:left>

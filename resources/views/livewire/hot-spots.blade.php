@@ -38,7 +38,7 @@
                 <div class="w-full relative ">
                     {{--                <img class="w-full" src="{{$activeSpot['image']}}" alt="">--}}
 
-                    <div class="w-full h-[900px] bg-gray-100 shadow-xl rounded-xl overflow-y-hidden"></div>
+                    <div class="w-full h-[900px] bg-gray-100 shadow-large rounded-xl overflow-y-hidden"></div>
 
                     @foreach($activeSpot['spots'] as $key=>$spot)
                         <div wire:key="{{ $spot['id']}}"
@@ -57,7 +57,7 @@
                                  id="popup-{{$spot['id']}}"
                                  x-transition
                                  :class="calcPopupLocation(@js($spot['id']))"
-                                 class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow">
+                                 class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow-card">
                                 <p> {{ $spot['content']}}</p>
                             </div>
 

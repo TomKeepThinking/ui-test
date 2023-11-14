@@ -12,6 +12,10 @@ module.exports = {
             sans: ['Inter', 'sans-serif']
         },
         extend: {
+            boxShadow: {
+                'card': '-2px 4px 6px 2px rgba(0, 0, 0, 0.15)',
+                'large': '-1.60148px 3.20297px 4.80445px 1.60148px rgba(0, 0, 0, 0.15)'
+},
             spacing: {
               'work-lg': '460px'
             },
