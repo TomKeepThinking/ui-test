@@ -120,7 +120,7 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="grid grid-cols-3 border-t border-l">
+            <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l">
                 @foreach($features as $feature)
                     <x-content.text-grid-item>
                         <h4 class="mb-2">{{$feature['title']}}</h4>
@@ -197,6 +197,8 @@
         </x-content.offset>
     </div>
 
-    <x-work.grid class="mb-12" :work="$work" />
+    <div class="mb-8 border-b border-concrete pb-8">
+        <x-work.grid class="mb-12" :work="$work" />
+    </div>
 
 </x-app-layout>

@@ -11,13 +11,8 @@
                               class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease">{{$spot['name']}}</span>
 
                           <ul x-show="$wire.activeSpot.name === @js($spot['name'])"
-                              x-transition:enter="transition ease-in-out duration-200 transform"
-                              x-transition:enter-start="opacity-0"
-                              x-transition:enter-end="opacity-100"
-                              x-transition:leave="transition ease-in-out duration-200"
-                              x-transition:leave-start="opacity-100"
-                              x-transition:leave-end="opacity-0"
-                              class="border-t text-grey">
+                              x-collapse
+                              class="border-t text-grey ">
                               @foreach($spot['spots'] as $key=>$item)
 
                                 <li wire:key="{{ $key }}"
