@@ -20,23 +20,17 @@ class HotSpots extends Component
 
     public function render()
     {
-        return view('livewire.hot-spots',[
-            'hotSpots' => $this->hotSpots,
-            'activeSpot' => $this->activeSpot
-        ]);
+        return view('livewire.hot-spots');
     }
 
     public function setActiveSpot($index)
     {
         $this->activeSpot = $this->hotSpots[$index];
-        $this->test = true;
     }
 
 
     public function openSubMenu($name)
     {
-        $this->test = true;
-
         if($this->activeSpot['name'] === $name){
             return true;
         } else {

@@ -1,9 +1,8 @@
 import './bootstrap';
 
 document.addEventListener('alpine:init', () => {
-    Alpine.data('dropdown', () => ({
+    Alpine.data('hotspots', () => ({
         popup: '',
-        loaded: false,
     }))
 
     Alpine.data('slider', () => ({
@@ -60,5 +59,15 @@ document.addEventListener('alpine:init', () => {
             clearInterval(this.timer);
         },
 
+    }))
+
+    Alpine.data('tabs', () =>({
+        active: 1,
+        isActive(tab) {
+            return tab == this.active;
+        },
+        setActive(value) {
+            this.active = value;
+        }
     }))
 })
