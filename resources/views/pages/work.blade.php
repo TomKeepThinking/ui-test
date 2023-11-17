@@ -9,7 +9,7 @@
     </div>
 
     <x-container>
-        <livewire:grid-filter :items="$work"/>
+        <livewire:grid-filter :items="$work" :$clients/>
     </x-container>
 
     <div class="mb-6 border-b border-concrete pb-4">

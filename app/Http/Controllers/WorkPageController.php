@@ -82,7 +82,42 @@ class WorkPageController extends Controller
                 'tags' => ['archived']
             ]
         ];
+        $clients = collect([
+            'ArtUK',
+            'Ashmolean Museum',
+            'Asia Art Archive',
+            'Asia Society',
+            'Artists Collecting Society',
+            'Art & the Country House',
+            'British Art Studies',
+            'Charlie Chaplin Archive',
+            'Coca-Cola Company',
+            'Dia Art Foundation',
+            'Diva Museum',
+            'Fleming Collection',
+            'GSK Heritage',
+            'Horniman Museum',
+            'Kemper Art Museum',
+            'Landmark Preservation',
+            'Lloyds Register',
+            'Media Majlis Gallery',
+            'Menier Venues',
+            'Mikmawey Debert Cultural Centre',
+            'Motown Museum',
+            'Mucha Foundation',
+            'National Galleries Singapore',
+            'Obama Foundation',
+            'Paul Mellon Centre',
+            'Sainsbury’s Archive',
+            'SFMoMA',
+            'Shakespeare Birthplace Trust',
+            'The Alamo',
+            'TexasGLO',
+            'Unilever',
+            'Western Carolina University',
+            'White Cube',
+        ])->splitIn(3);
 
-        return view('pages.work', compact('work', 'pageHeader'));
+        return view('pages.work', compact('work', 'pageHeader', 'clients'));
     }
 }
