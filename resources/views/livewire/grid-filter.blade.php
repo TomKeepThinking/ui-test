@@ -1,4 +1,4 @@
-<div class="mb-12">
+<div class="mb-48">
     <div class="flex space-x-4 text-grey capitalize mb-8">
         @foreach($filters as $filter)
            <div wire:click="setActiveItem(@js($filter))" @class(['cursor-pointer', 'underline' => $filter === $activeFilter])>

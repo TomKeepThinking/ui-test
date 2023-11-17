@@ -68,5 +68,4 @@
             </x-page-header>
         </x-slot:right>
     </x-content.offset>
-
 </x-app-layout>

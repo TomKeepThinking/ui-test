@@ -111,10 +111,10 @@
         <x-slot:left>
             <h4>Detailed specifications</h4>
 
-            <p class="text-grey">Read a detailed description of Qi and download the specifications for later.</p>
+            <p class="text-grey mb-8">Read a detailed description of Qi and download the specifications for later.</p>
 
             <x-download-btn>
-                Qi Detailed Specifications <br>
+                <span class="mb-2">Qi Detailed Specifications</span>
                 (1.7 MB)
             </x-download-btn>
         </x-slot:left>
@@ -155,11 +155,6 @@
             <h4>Detailed specifications</h4>
 
             <p class="text-grey">Read a detailed description of Qi and download the specifications for later.</p>
-
-            <x-download-btn>
-                Qi Detailed Specifications <br>
-                (1.7 MB)
-            </x-download-btn>
         </x-slot:left>
 
         <x-slot:right>
