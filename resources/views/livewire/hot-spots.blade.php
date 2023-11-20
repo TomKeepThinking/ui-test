@@ -6,7 +6,8 @@
 
            <ul class="flex flex-col border divide-y ">
                @foreach($hotSpots as $key=>$spot)
-                   <li wire:key="{{ $key }}" class="overflow-hidden">
+                   <li wire:key="{{ $key }}" class="overflow-hidden"
+                   x-cloak>
                        <span  wire:click="setActiveSpot('{{$key}}')"
                               class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease">{{$spot['name']}}</span>
 
@@ -40,6 +41,8 @@
                              class="w-6 h-6 rounded-full bg-red absolute transition-all ease cursor-pointer flex items-center justify-center shadow"
                              :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"
                              style="top:{{$spot['x']}}px; left:  {{$spot['y']}}px"
+                             wire:transition.fade.500ms
+                             x-cloak
                              @mouseover="popup = {{$key}}"
                              @mouseleave="popup = ''">
 

@@ -4,30 +4,20 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class GridFilter extends Component
+class ProjectsFilter extends Component
 {
     public $filters;
     public $activeFilter;
     public $filteredItems = [];
     public $list;
 
-    public $clients;
-    public $showClients = false;
 
-    public function mount($items, $clients)
+    public function mount($items)
     {
         $this->filters = ['featured', 'software', 'website', 'brand', 'archived'];
         $this->activeFilter = $this->filters[0];
 
         $this->list = $items;
-        $this->clients = $clients;
-
-
-        $this->setFilteredItems();
-    }
-
-    public function setActiveItem($filter){
-        $this->activeFilter = $filter;
         $this->setFilteredItems();
     }
 
@@ -40,8 +30,14 @@ class GridFilter extends Component
         $this->filteredItems = $newArray;
     }
 
+
+    public function setActiveItem($filter){
+        $this->activeFilter = $filter;
+        $this->setFilteredItems();
+    }
+
     public function render()
     {
-        return view('livewire.grid-filter');
+        return view('livewire.projects-filter');
     }
 }
