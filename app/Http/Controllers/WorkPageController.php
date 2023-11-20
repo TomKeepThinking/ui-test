@@ -82,41 +82,142 @@ class WorkPageController extends Controller
                 'tags' => ['archived']
             ]
         ];
-        $clients = collect([
-            'ArtUK',
-            'Ashmolean Museum',
-            'Asia Art Archive',
-            'Asia Society',
-            'Artists Collecting Society',
-            'Art & the Country House',
-            'British Art Studies',
-            'Charlie Chaplin Archive',
-            'Coca-Cola Company',
-            'Dia Art Foundation',
-            'Diva Museum',
-            'Fleming Collection',
-            'GSK Heritage',
-            'Horniman Museum',
-            'Kemper Art Museum',
-            'Landmark Preservation',
-            'Lloyds Register',
-            'Media Majlis Gallery',
-            'Menier Venues',
-            'Mikmawey Debert Cultural Centre',
-            'Motown Museum',
-            'Mucha Foundation',
-            'National Galleries Singapore',
-            'Obama Foundation',
-            'Paul Mellon Centre',
-            'Sainsbury’s Archive',
-            'SFMoMA',
-            'Shakespeare Birthplace Trust',
-            'The Alamo',
-            'TexasGLO',
-            'Unilever',
-            'Western Carolina University',
-            'White Cube',
-        ])->splitIn(3);
+        $clients = [
+            [
+                'name' =>'ArtUK',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Ashmolean Museum',
+                'image' => '/image/image2.png'
+            ],
+            [
+                'name' =>'Asia Art Archive',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Asia Society',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Artists Collecting Society',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Art & the Country House',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'British Art Studies',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Charlie Chaplin Archive',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Coca-Cola Company',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Dia Art Foundation',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Diva Museum',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Fleming Collection',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'GSK Heritage',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Horniman Museum',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Kemper Art Museum',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Landmark Preservation',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Lloyds Register',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Media Majlis Gallery',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Menier Venues',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Mikmawey Debert Cultural Centre',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Motown Museum',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Mucha Foundation',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'National Galleries Singapore',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Obama Foundation',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Paul Mellon Centre',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Sainsbury’s Archive',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'SFMoMA',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Shakespeare Birthplace Trust',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'The Alamo',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'TexasGLO',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Unilever',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'Western Carolina University',
+                'image' => '/image/image.png'
+            ],
+            [
+                'name' =>'White Cube',
+                'image' => '/image/image.png'
+            ],
+        ];
+
+        $clients = array_chunk($clients, 14);
 
         return view('pages.work', compact('work', 'pageHeader', 'clients'));
     }

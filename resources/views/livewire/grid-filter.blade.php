@@ -1,5 +1,6 @@
-<div class="mb-48">
+<div class="mb-48" x-data="{'activeImage': ''}">
     <div class="flex justify-between items-center mb-8 text-grey">
+
         <div class="flex space-x-4  capitalize">
             @foreach($filters as $filter)
                 <div wire:click="setActiveItem(@js($filter))" @class(['cursor-pointer', 'underline' => $filter === $activeFilter])>
@@ -18,17 +19,22 @@
                 x-show="$wire.activeFilter === 'clients'"
                 x-transition:enter.opacity.duration.500ms
                 class="bg-white w-full">
-                <div class="grid grid-cols-4">
-                    <div class="col-span-1">
-
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+                    <div class="col-span-1" >
+                        <div class="h-72 w-full bg-cover bg-center bg-gray-300"
+                             :style="{background-image: url('activeImage')}">
+                        </div>
                     </div>
+
                     @foreach($clients as $clientChunk)
                         <ul class="col-span-1 grid grid-cols-1">
                             @foreach($clientChunk as $client)
-                                <li class="cursor-pointer text-grey">
+                                <li @mouseover="activeImage = @js($client['image'])"
+                                    @mouseout="activeImage = ''"
+                                    class="cursor-pointer text-grey">
                                    <span class="hover:border-b-black border-b pb-0 mb-0 leading-6 border-white inline-block
                                             hover:text-black transition-all ease">
-                                        {{$client}}
+                                        {{$client['name']}}
                                    </span>
                                 </li>
                             @endforeach
@@ -67,8 +73,6 @@
                         </div>
                     @endforeach
                 @endif
-
-
             </div>
         @endforeach
     </div>

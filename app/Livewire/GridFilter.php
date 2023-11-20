@@ -18,12 +18,13 @@ class GridFilter extends Component
     public $showClients = false;
     public $loading = false;
 
+    public $clientImage;
+
 
     public function mount($items, $clients)
     {
         $this->filters = ['featured', 'software', 'website', 'brand', 'archived'];
-//        $this->activeFilter = $this->filters[0];
-        $this->activeFilter = 'clients';
+        $this->activeFilter = $this->filters[0];
 
         $this->list = $items;
         $this->clients = $clients;
@@ -56,4 +57,7 @@ class GridFilter extends Component
         $this->filteredItems = $newArray;
     }
 
+    public function setClientImage($image){
+        $this->clientImage = $image;
+    }
 }
