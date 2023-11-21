@@ -17,7 +17,8 @@ class GridFilter extends Component
     public function mount($items, $clients)
     {
         $this->filters = ['featured', 'software', 'website', 'brand', 'archived'];
-        $this->activeFilter = $this->filters[0];
+//        $this->activeFilter = $this->filters[0];
+        $this->activeFilter = 'clients';
 
         $this->list = $items;
         $this->clients = $clients;

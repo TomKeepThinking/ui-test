@@ -8,6 +8,7 @@ class WorkPageController extends Controller
     {
 
         $pageHeader = 'Innovative digital solutions to help preserve and shape  culture and heritage';
+
         $work = [
             [
                 'image' => '/storage/images/phone.png',
@@ -82,18 +83,19 @@ class WorkPageController extends Controller
                 'tags' => ['archived']
             ]
         ];
+
         $clients = [
             [
                 'name' =>'ArtUK',
-                'image' => '/image/image.png'
+                'image' => '/storage/images/phone-2.png'
             ],
             [
                 'name' =>'Ashmolean Museum',
-                'image' => '/image/image2.png'
+                'image' => '/storage/images/phone.png'
             ],
             [
                 'name' =>'Asia Art Archive',
-                'image' => '/image/image.png'
+                'image' => '/storage/images/phone-2.png'
             ],
             [
                 'name' =>'Asia Society',
@@ -101,11 +103,11 @@ class WorkPageController extends Controller
             ],
             [
                 'name' =>'Artists Collecting Society',
-                'image' => '/image/image.png'
+                'image' => '/storage/images/phone-2.png'
             ],
             [
                 'name' =>'Art & the Country House',
-                'image' => '/image/image.png'
+                'image' => '/storage/images/phone-2.png'
             ],
             [
                 'name' =>'British Art Studies',

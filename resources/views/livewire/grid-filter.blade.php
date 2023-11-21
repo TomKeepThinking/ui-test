@@ -20,9 +20,17 @@
                 x-transition:enter.opacity.duration.500ms
                 class="bg-white w-full">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
-                    <div class="col-span-1" >
-                        <div class="h-72 w-full bg-cover bg-center bg-gray-300"
-                             :style="{background-image: url('activeImage')}">
+                    <div class="col-span-1">
+                        <div  x-show="activeImage"
+                              x-cloak
+                              x-transition:enter="transition ease-out duration-300"
+                              x-transition:enter-start="opacity-0 scale-90"
+                              x-transition:enter-end="opacity-100 scale-100"
+                              x-transition:leave="transition ease-in duration-300"
+                              x-transition:leave-start="opacity-100 scale-100"
+                              x-transition:leave-end="opacity-0 scale-90"
+                              class="h-72 w-full bg-cover bg-center bg-gray-2000 transition-all delay-75 ease"
+                             :style="`background-image: url(${activeImage})`">
                         </div>
                     </div>
 

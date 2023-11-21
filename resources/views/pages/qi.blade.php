@@ -21,7 +21,7 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset>
+    <x-content.offset class="mb-12">
         <x-slot:left></x-slot:left>
         <x-slot:right>
             <x-page-header>

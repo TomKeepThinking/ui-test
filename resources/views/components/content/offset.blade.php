@@ -2,13 +2,15 @@
 
 <x-container>
     <div {{ $attributes
-                ->class(['grid grid-cols-12 gap-12'])
+                ->class(['grid grid-cols-1 sm:grid-cols-12 gap-12'])
                 ->merge(['class' => $class]) }}>
+
         <div {{$attributes
-                ->class(['col-span-12 lg:col-span-3 flex flex-col', 'order-last lg:order-none' => $reverse])}}>
+                ->class(['col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col', 'order-last lg:order-none' => $reverse])}}>
             {{ $left }}
         </div>
-        <div class="col-span-12 lg:col-span-9">
+
+        <div class="col-span-1 sm:col-span-12 lg:col-span-9">
             {{ $right}}
         </div>
     </div>

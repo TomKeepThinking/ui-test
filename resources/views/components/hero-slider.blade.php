@@ -25,7 +25,7 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="h-[620px] relative">
+            <div class="h-[620px] relative w-full">
                 <x-slider.tab :tab="1" image="/storage/images/laptop-falling.png"/>
 
                 <x-slider.tab :tab="2" image="/storage/images/phone-2.png"/>

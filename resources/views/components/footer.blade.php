@@ -49,7 +49,7 @@ $socialNavItems = [
 ?>
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
-    <div class="py-8 mx-auto">
+    <div class="py-4 mx-auto">
         <x-content.offset reverse class="space-y-12 lg:space-y-0 space-y-reverse ">
             <x-slot:left>
                <div class="flex h-full">
@@ -61,14 +61,14 @@ $socialNavItems = [
             </x-slot:left>
 
             <x-slot:right>
-                <x-page-header class="text-white">
-                    Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span>
+                <x-page-header class="text-white pb-4">
+                    <h5>Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span></h5>
                 </x-page-header>
             </x-slot:right>
         </x-content.offset>
     </div>
 
-    <div class="border-t border-white md:pb-36">
+    <div class="border-t border-white md:pb-18">
         <div class="container px-8 py-4 mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
                 <div class="w-full md:w-1/2 xl:w-3/12">
@@ -77,7 +77,7 @@ $socialNavItems = [
                     </x-button-secondary>
                 </div>
 
-                <div class="w-full md:w-1/2 xl:w-9/12 grid grid-rows-2 grid-cols-12 gap-4 mb-12 ">
+                <div class="w-full md:w-1/2 xl:w-9/12 grid grid-rows-2 grid-cols-12 gap-4">
                     <div class="col-span-6 lg:col-span-4">
                         <address class="not-italic mb-4">
                             38-40 <br>
