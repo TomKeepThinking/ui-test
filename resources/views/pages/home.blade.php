@@ -15,13 +15,13 @@
         </div>
     </x-container>
 
-    <x-hero-slider class="mb-32">
+    <x-slider.hero-slider class="mb-32">
        <div class="hidden md:block">
            <h2>{{$firstContentHeader}}</h2>
            <p class="font-normal">{{$firstContentText}}</p>
            <x-link route="{{route('pages.about')}}">Learn More</x-link>
        </div>
-    </x-hero-slider>
+    </x-slider.hero-slider>
 
     <div class="mb-8 border-b border-concrete pb-8">
         <x-content.offset>

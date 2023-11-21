@@ -3,14 +3,15 @@
 
         <div class="flex space-x-4  capitalize">
             @foreach($filters as $filter)
-                <div wire:click="setActiveItem(@js($filter))" @class(['cursor-pointer', 'underline' => $filter === $activeFilter])>
+                <div wire:click="setActiveItem(@js($filter))"
+                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline' => $filter === $activeFilter])>
                     {{$filter}}
                 </div>
             @endforeach
         </div>
 
         <div wire:click="setActiveItem('clients')"
-             @class(['cursor-pointer hover:underline', 'underline' => $activeFilter === 'clients'])>Client</div>
+             @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline' => $activeFilter === 'clients'])>Client</div>
     </div>
 
 
@@ -23,12 +24,8 @@
                     <div class="col-span-1">
                         <div  x-show="activeImage"
                               x-cloak
-                              x-transition:enter="transition ease-out duration-300"
-                              x-transition:enter-start="opacity-0 scale-90"
-                              x-transition:enter-end="opacity-100 scale-100"
-                              x-transition:leave="transition ease-in duration-300"
-                              x-transition:leave-start="opacity-100 scale-100"
-                              x-transition:leave-end="opacity-0 scale-90"
+                              x-transition:enter.duration.500ms
+                              x-transition:leave.duration.400ms
                               class="h-72 w-full bg-cover bg-center bg-gray-2000 transition-all delay-75 ease"
                              :style="`background-image: url(${activeImage})`">
                         </div>
@@ -67,18 +64,7 @@
 
                 @else
                     @foreach($filteredItems as $key=>$item)
-                        <div :key="{{$key}}"  class="col-span-12 md:col-span-6 xl:col-span-3">
-                            <div
-                                style="background-image: url('{{ asset($item['image'])}}');"
-                                :key="{{$item['title']}}"
-                                @class([
-                                    'bg-gray-100 w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm pt-64 lg:pt-72',
-                                ])>
-
-                            </div>
-                            <h4>{{$item['title']}}</h4>
-                            <p class="text-grey">{{$item['excerpt']}}</p>
-                        </div>
+                        <x-filter.grid-item :$key title="{{ $item['title'] }}" content="{{ $item['excerpt'] }}" image="{{ $item['image'] }}"></x-filter.grid-item>
                     @endforeach
                 @endif
             </div>

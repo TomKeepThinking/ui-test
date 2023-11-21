@@ -34,7 +34,7 @@ $navItems = [
         <div class="hidden md:block over">
             <ul class="flex justify-between items-center space-x-4">
                 @foreach ($navItems as $item)
-                    <li class="dark:text-white">
+                    <li class="dark:text-white hover:opacity-60 transition-opacity ease">
                         <a href="{{route($item['route'])}}"
                             @class([
                              'text-grey dark:text-white'=> request()->route()->getName() !== $item['route'],

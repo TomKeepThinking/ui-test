@@ -14,6 +14,7 @@ module.exports = {
         extend: {
             transitionDuration: {
                 '2000': '2000ms',
+                '10s' : '10000ms'
             },
             boxShadow: {
                 'card': '-2px 4px 6px 2px rgba(0, 0, 0, 0.15)',
