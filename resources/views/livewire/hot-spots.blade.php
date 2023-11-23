@@ -44,28 +44,6 @@
                                   :key="$key"
                                   :id="$spot['id']"
                                   :content="$spot['content']" />
-
-{{--                        <div wire:key="{{ $spot['id']}}"--}}
-{{--                             class="w-6 h-6 rounded-full bg-red absolute transition-all ease cursor-pointer flex items-center justify-center shadow"--}}
-{{--                             :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"--}}
-{{--                             style="top:{{$spot['x']}}px; left:  {{$spot['y']}}px"--}}
-{{--                             wire:transition.fade.500ms--}}
-{{--                             x-cloak--}}
-{{--                             @mouseover="popup = {{$key}}"--}}
-{{--                             @mouseleave="popup = ''">--}}
-
-{{--                            <span class="text-xxs">{{$key+1}}</span>--}}
-
-{{--                            <span class="transition-all ease w-2 h-2 absolute -bottom-[1px] rotate-45"--}}
-{{--                                  :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"></span>--}}
-
-{{--                            <div x-show="popup === {{$key}}"--}}
-{{--                                 id="popup-{{$spot['id']}}"--}}
-{{--                                 x-transition--}}
-{{--                                 class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow-card">--}}
-{{--                                <p> {{ $spot['content']}}</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
                     @endforeach
                 </div>
             </div>
