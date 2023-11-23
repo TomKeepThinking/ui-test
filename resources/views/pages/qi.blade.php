@@ -1,3 +1,4 @@
+<div x-data="{darkMode: true}" :class="{'dark': darkMode === true }">
 <x-app-layout>
     <x-container>
         <x-page-header class="w-2/3 pb-6 pt-32">
@@ -151,5 +152,6 @@
     <div class="mb-8 border-b border-concrete pb-8">
         <x-work.grid class="mb-12" :work="$work" />
     </div>
-
 </x-app-layout>
+</div>
+
