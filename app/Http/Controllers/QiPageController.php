@@ -124,6 +124,93 @@ class QiPageController extends Controller
                     'Customisable support for LIDO/Dublin Core',
                     'Support for OAI-PMH'
                 ]
+            ],
+            [
+                'title' => 'User Interface',
+                'features' => [
+                    'Dashboard with quick search and links',
+                    'Universal full-text indexing and search, with results sorted by relevance',
+                    'Quick access to frequently used content',
+                    'Browse hierarchical tree of records',
+                    'Flexible and customisable input screens and tabs',
+                    'Flexible, customisable field types and validation rules',
+                    'Support for drag-and-drop features',
+                    'Support for friendly URLs',
+                    'Support for comments, task assignment and notes between editors',
+                    'WYSIWYG Editor, based on web standards',
+                    'Drag-and-drop to upload',
+                ]
+            ],
+            [
+                'title' => 'Security',
+                'features' => [
+                    'SSL Support',
+                    'Audit trail and versioning',
+                    'Content Approval and Workflow',
+                    'Granular, role-based Permissions',
+                    'Statistics of login history and activity',
+                    'Support for SSO and multi-factor authentication',
+                ]
+            ],
+            [
+                'title' => 'Content Management',
+                'features' => [
+                    'Create multilingual content & translation workflow',
+                    'Shop dashboard with analytics',
+                    'Shop management (Products, memberships, donations & tickets)',
+                    'Content scheduling',
+                    'Cascading metadata',
+                    'Configuration editor',
+                    'Relationship management',
+                    'Content packages',
+                    'Multiple repositories and support for multiple languages within the same repository',
+                    'Reporting in Word, Excel and PDF',
+                    'Web-based administration',
+                    'User and Group permission manager',
+                    'per cluster',
+                    'User and Group permission manager per content type',
+                    'User and Group permission manager per individual field',
+                ]
+            ],
+            [
+                'title' => 'User Interface',
+                'features' => [
+                    'Advanced features',
+                    'Spectrum 5 compliant',
+                    'Fully de-normalised content available for export',
+                    'Boolean searches',
+                    'Configurable high-priority search fields and criteria and scoring for search by relevance',
+                    'Integrated LOD authorities, including AAT, Geonames, VIAF, Wikidata, Library of Congress and anyone else with an API',
+                    'Create library records from ISBN',
+                    'Configurable approval workflows',
+                    'Mobile movements control with companion iOS App',
+                ]
+            ],
+            [
+                'title' => 'Asset Management',
+                'features' => [
+                    'Create media catalogues',
+                    'Team permissions for reading and writing catalogues',
+                    'Upload multiple files',
+                    'Associate images with files',
+                    'Associate images and documents with audio and video',
+                    'Display meta-file information',
+                    'Zoom images',
+                    'Preview audio and video',
+                    'Complete document and asset management (Images, Documents, Video and Audio)',
+                    'Automatic resizing of images and thumbnail generator',
+                    'Upload Word, Excel, PDF and more than 400 file types',
+                ]
+            ],
+            [
+                'title' => 'Content Management',
+                'features' => [
+                    'Web publishing',
+                    'Integrated web publishing module',
+                    'Availability of REST API and Elasticsearch for integration with other CMSes',
+                    'Direct publishing from the CMS, without exporting to other systems',
+                    'Keepthinking (creators of Qi) can design an award-winning website for you',
+                ]
             ]
 
         ];

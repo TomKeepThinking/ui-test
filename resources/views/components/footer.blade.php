@@ -50,7 +50,7 @@ $socialNavItems = [
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
     <div class="py-4 mx-auto">
-        <x-content.offset reverse class="space-y-12 lg:space-y-0 space-y-reverse ">
+        <x-content.offset reverseSm class="space-y-12 lg:space-y-0 space-y-reverse ">
             <x-slot:left>
                <div class="flex h-full">
                    <div class="mt-auto flex">
@@ -85,6 +85,9 @@ $socialNavItems = [
                             London SE1 1UN<br>
                             UK
                         </address>
+
+                        <p>Monday to Friday </p>
+                        <p>9:30am to 6:00pm</p>
                     </div>
                     <div class="flex flex-col lg:row-start-2 lg:row-end-2 col-span-6 lg:col-span-4">
                         <x-link>

@@ -48,51 +48,7 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset class="mb-12">
-        <x-slot:left>
-            <p>Over two hundred museums, collections, libraries, archives, councils, magazines and commercial organisations have chosen Qi to manage and present their content.</p>
-        </x-slot:left>
-        <x-slot:right>
-           <div class="grid grid-cols-2 md:grid-cols-3 border-t border-l">
-               <x-content.logo-grid-item>
-                <x-icons.uni class="w-24"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item>
-                <x-icons.coca-cola class="w-48"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item>
-                <x-icons.sfmoma class="w-48"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item>
-                <x-icons.obama class="text-white w-48"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item>
-                <x-icons.gsk class="text-white w-28"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item>
-                <x-icons.artuk class="text-white w-44"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item class="hidden sm:flex">
-                <x-icons.artuk class="text-white w-44"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item class="hidden sm:flex">
-                <x-icons.asia-art class="text-white w-24"/>
-               </x-content.logo-grid-item>
-
-               <x-content.logo-grid-item class="hidden sm:flex">
-                <x-icons.asia-art class="text-white w-24"/>
-               </x-content.logo-grid-item>
-           </div>
-        </x-slot:right>
-    </x-content.offset>
-
+   <x-logo-grid/>
 
     <div class="mb-8 border-b border-concrete pb-8">
         <x-content.offset>

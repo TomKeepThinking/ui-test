@@ -1,4 +1,4 @@
-@props(['class' => '', 'reverse' => ''])
+@props(['class' => '', 'reverseSm' => '', 'reverse' => ''])
 
 <x-container>
     <div {{ $attributes
@@ -6,7 +6,11 @@
                 ->merge(['class' => $class]) }}>
 
         <div {{$attributes
-                ->class(['col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col', 'order-last lg:order-none' => $reverse])}}>
+                ->class([
+                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col',
+                    'order-last lg:order-none' => $reverseSm,
+                    'lg:order-last' => $reverse
+                    ])}}>
             {{ $left }}
         </div>
 
