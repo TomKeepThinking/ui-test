@@ -7,7 +7,7 @@
         </x-container>
     </div>
 
-    <x-content.offset class="mb-28" reverse>
+    <x-content.offset class="mb-28" reverse="true">
         <x-slot:left>
             <div class="text-grey">
                 <p>Our diverse team of managers, engineers and designers work from our headquarters in London.</p>

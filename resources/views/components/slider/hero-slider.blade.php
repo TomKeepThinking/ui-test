@@ -1,5 +1,5 @@
 <div x-cloak x-data="slider" {{$attributes}}>
-    <x-content.offset reverse>
+    <x-content.offset reverseSm>
         <x-slot:left>
             {{$slot}}
 
