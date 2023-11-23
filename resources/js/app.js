@@ -31,23 +31,23 @@ document.addEventListener('alpine:init', () => {
 
                     return;
                 }
-               if(oldValue < newValue){
+                if(oldValue < newValue){
                     this.transformOrigin = {
-                       left: 0
+                        left: 0
                     }
 
-                   this.transformOrigin2 ={
-                       right: 0
-                   }
-               } else {
-                   this.transformOrigin2 ={
-                      left: 0
-                   }
+                    this.transformOrigin2 ={
+                        right: 0
+                    }
+                } else {
+                    this.transformOrigin2 ={
+                        left: 0
+                    }
 
-                   this.transformOrigin = {
-                       right: 0
-                   }
-               }
+                    this.transformOrigin = {
+                        right: 0
+                    }
+                }
             })
 
 
@@ -58,7 +58,7 @@ document.addEventListener('alpine:init', () => {
                 } else {
                     this.currentTab++
                 }
-            }, 10000);
+            }, 2000);
         },
         destroy() {
             // Detach the handler, avoiding memory and side-effect leakage

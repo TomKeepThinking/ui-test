@@ -46,9 +46,11 @@ $navItems = [
                     </li>
                 @endforeach
                 <li>
-                    <x-button>
-                        Get a Demo
-                    </x-button>
+                    <x-link route="{{route('pages.contact')}}">
+                        <x-button>
+                            Get a Demo
+                        </x-button>
+                    </x-link>
                 </li>
             </ul>
         </div>
