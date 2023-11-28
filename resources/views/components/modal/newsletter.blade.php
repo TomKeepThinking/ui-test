@@ -1,5 +1,6 @@
 <div class="w-full sm:w-newsletter h-newsletter bg-red fixed bottom-0 left-0 text-white p-8 ">
     <x-icon-button @click="open = false" class="absolute top-4 right-4">
+        <div class="sr-only">Close button</div>
         <x-icons.close-icon class="w-5 "/>
     </x-icon-button>
 
@@ -7,6 +8,7 @@
 
     <form action="POST" class="flex flex-col space-y-4">
         <label class="border-b border-white p-0 m-0 flex h-10">
+            <span class="sr-only">Name</span>
             <input id="name"
                    class="py-2 px-0 w-full  text-white bg-red placeholder:text-white focus:outline-none focus:border-transparent h-9 border-none mb-4 focus:ring-0"
                    type="text"
@@ -15,6 +17,7 @@
         </label>
 
         <label class="border-b border-white p-0 m-0 flex h-10">
+            <span class="sr-only">Email</span>
             <input id="email"
                    class="py-2 px-0 w-full  text-white bg-red placeholder:text-white focus:outline-none focus:border-transparent h-9 border-none mb-4 focus:ring-0"
                    type="text"

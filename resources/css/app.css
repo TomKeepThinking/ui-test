@@ -9,7 +9,7 @@
 
 @layer components {
     p {
-        @apply tracking-body-d leading-6 font-medium;
+        @apply tracking-body-d leading-6 font-medium text-steel;
     }
 }
 

@@ -39,7 +39,6 @@ class NavBar extends Component
         $key = array_search($currentRouteName, array_column($this->navItems, 'route'));
 
         $this->activeNavItem = $this->navItems[$key];
-
     }
 
     public function setActiveNavItem($item){

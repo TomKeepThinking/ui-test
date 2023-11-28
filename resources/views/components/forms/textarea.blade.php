@@ -1,6 +1,7 @@
 @props(['name', 'placeholder' => '', 'required' => false])
 
 <label class="border-b border-concrete">
+    <span class="sr-only">{{$name}} textarea</span>
     <textarea
         rows="10"
         id="{{$name}}"

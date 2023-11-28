@@ -13,7 +13,6 @@
                <x-forms.input name="name" placeholder="*Name..." :required="true"/>
                <x-forms.input name="email" placeholder="*Email..." :required="true"/>
 
-
                 <x-forms.textarea name="msg" placeholder="*Message..." />
 
 

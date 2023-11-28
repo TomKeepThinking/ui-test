@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomePageController::class)->name('pages.home');
 Route::get('/qi', QiPageController::class)->name('pages.qi');
 Route::get('/work', WorkPageController::class)->name('pages.work');
+Route::get('/work/{id}', [WorkPageController::class, 'show'])->name('pages.work.single');
 Route::get('/about', AboutPageController::class)->name('pages.about');
 Route::get('/contact', ContactPageController::class)->name('pages.contact');
 Route::get('/ideas', IdeasPageController::class)->name('pages.ideas');

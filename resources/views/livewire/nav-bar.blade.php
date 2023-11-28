@@ -1,10 +1,10 @@
 <div class="flex justify-between items-center container mx-auto px-8 py-4"
-     x-cloak x-data="{ open: false,
-         activeNavItem: '/' }">
+     x-cloak x-data="{open: false}">
 
     <x-link route="{{route('pages.home')}}"
             wire:click="clearActiveNavItem()">
         <x-icons.kt-logo class="w-48 text-red dark:text-white"/>
+        <span class="sr-only">KT Logo</span>
     </x-link>
 
 
@@ -14,7 +14,7 @@
                 <li class="dark:text-white hover:opacity-60 transition-opacity ease">
                     <a href="{{route($item['route'])}}"
                         wire:navigate.hover
-                        wire:click="setActiveNavItem(@js($item))"
+                        @click="$wire.setActiveNavItem(@js($item))"
                         @class([
                          'text-grey dark:text-white'=> $activeNavItem['route'] !== $item['route'],
                          'underline text-black dark:text-white' => $activeNavItem['route'] == $item['route'],
@@ -37,6 +37,7 @@
 
     <x-icon-button class="w-7 text-red dark:text-white md:hidden" @click="open = ! open;document.body.classList.add('overflow-y-hidden');">
         <x-icons.menu-icon/>
+        <div class="sr-only">Menu Button</div>
     </x-icon-button>
 
     <div class="fixed inset-0 h-full  bg-red text-white flex flex-col "
@@ -49,6 +50,7 @@
 
             <x-icon-button class="w-7 text-white md:hidden" @click="open = false; document.body.classList.remove('overflow-y-hidden');">
                 <x-icons.close-icon />
+                <div class="sr-only">Close Icon</div>
             </x-icon-button>
         </div>
 

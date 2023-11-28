@@ -223,4 +223,30 @@ class WorkPageController extends Controller
 
         return view('pages.work.index', compact('work', 'pageHeader', 'clients'));
     }
+
+    public function show($work){
+//        TODO: Implement work model, update argument to be 'Work $work'
+
+        $work = [
+            [
+                'image' => '/images/test.png',
+                'title' => 'Asia Art Archive',
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
+            ],
+            [
+                'image' => '/images/test.png',
+                'title' => 'Texas General Land Office',
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art.',
+            ],
+            [
+                'image' => '/images/test.png',
+                'title' => 'Art UK',
+                'excerpt' => 'We helped to democratise the UK’s publicly owned art'
+            ]
+        ];
+
+       return view('pages.work.single', compact('work'));
+
+
+    }
 }
