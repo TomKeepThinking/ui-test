@@ -10,7 +10,7 @@
      @mouseover="active = true"
      @mouseleave="active = false"
     @class([
-            'cursor-pointer col-span-12
+            'cursor-pointer col-span-12 mb-4
             sm:col-span-6 lg:col-span-3 even:h-96 odd:h-60',
             $class
     ])>

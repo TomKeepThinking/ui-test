@@ -14,7 +14,11 @@
 </head>
 <body class="font-sans text-lg font-medium antialiased">
     <div class="min-h-screen bg-white dark:bg-black">
-        <x-nav/>
+        <div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20 ">
+            @persist('nav')
+                <livewire:nav-bar/>
+            @endpersist
+        </div>
 
         <main class="animate-container">
             {{ $slot }}

@@ -221,6 +221,6 @@ class WorkPageController extends Controller
 
         $clients = array_chunk($clients, 14);
 
-        return view('pages.work', compact('work', 'pageHeader', 'clients'));
+        return view('pages.work.index', compact('work', 'pageHeader', 'clients'));
     }
 }
