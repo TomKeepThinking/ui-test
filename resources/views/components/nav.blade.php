@@ -25,7 +25,7 @@ $navItems = [
 
 ?>
 
-<div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20">
+<div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20 ">
     <div class="flex justify-between items-center container mx-auto px-8 py-4" x-cloak x-data="{ open: false }">
         <x-link route="{{route('pages.home')}}">
             <x-icons.kt-logo class="w-48 text-red dark:text-white"/>
@@ -36,6 +36,7 @@ $navItems = [
                 @foreach ($navItems as $item)
                     <li class="dark:text-white hover:opacity-60 transition-opacity ease">
                         <a href="{{route($item['route'])}}"
+                           wire:navigate.hover
                             @class([
                              'text-grey dark:text-white'=> request()->route()->getName() !== $item['route'],
                              'underline text-black dark:text-white' => request()->route()->getName() == $item['route'],

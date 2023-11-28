@@ -56,7 +56,7 @@ document.addEventListener('alpine:init', () => {
                 } else {
                     this.currentTab++
                 }
-            }, 2000);
+            }, 10000);
         },
         destroy() {
             // Detach the handler, avoiding memory and side-effect leakage
