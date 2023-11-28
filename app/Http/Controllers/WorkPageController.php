@@ -246,7 +246,5 @@ class WorkPageController extends Controller
         ];
 
        return view('pages.work.single', compact('work'));
-
-
     }
 }
