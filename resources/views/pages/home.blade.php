@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div class="border-b border-concrete mb-8 pb-8">
+    <div class="border-b border-concrete mb-8 pb-8 animation-fade-in">
         <x-container>
             <x-page-header class="w-2/3 pb-6 pt-32">
                 <h1>{{$pageHeader}}</h1>
@@ -38,7 +38,7 @@
         </x-content.offset>
     </div>
 
-    <x-work.grid class="mb-12" :work="$work" />
+    <x-work.grid class="mb-12 box" :work="$work" />
 
     <div class="mb-6 border-b border-concrete pb-4">
         <x-content.offset>

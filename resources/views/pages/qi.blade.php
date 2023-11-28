@@ -1,4 +1,4 @@
-<div x-data="{darkMode: true}" :class="{'dark': darkMode === true }">
+<div x-data="{darkMode: true}" :class="{'dark': darkMode === true }" >
 <x-app-layout>
     <x-container>
         <x-page-header class="w-2/3 pb-6 pt-32">

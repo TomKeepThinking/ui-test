@@ -9,15 +9,20 @@
 
     <x-container>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-32">
-            <div class="col-span-1 flex flex-col">
-                <input id="name" class="py-2 focus:outline-none placeholder:text-grey border-b border-concrete mb-4" type="text" required placeholder="*Name...">
+            <div class="col-span-1 flex flex-col space-y-4">
+               <x-forms.input name="name" placeholder="*Name..." :required="true"/>
+               <x-forms.input name="email" placeholder="*Email..." :required="true"/>
 
-                <input id="email" class="py-2 focus:outline-none placeholder:text-grey border-b border-concrete" type="text" required placeholder="*Email...">
+                <x-forms.textarea name="msg" placeholder="*Message..." />
 
-                <textarea rows="10" id="msg" class="resize-none py-2 mb-4 focus:outline-none placeholder:text-grey border-b border-concrete"  placeholder="*Message..."></textarea>
 
-                <div class="flex justify-between">
-                    <div></div>
+                <div class="flex justify-between items-center">
+                    <div class="pl-6">
+                        <label class="flex items-center text-sm cursor-pointer">
+                            <input type="checkbox" class="mr-2 h-4 rounded-none w-4 border-charcoal text-indigo-600 focus:outline-none focus:ring-0">
+                            Subscribe to Newsletter
+                        </label>
+                    </div>
                     <x-button class="ml-auto">
                         Subscribe
                     </x-button>

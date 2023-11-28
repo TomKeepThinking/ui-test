@@ -14,15 +14,18 @@
 </head>
 <body class="font-sans text-lg font-medium antialiased">
     <div class="min-h-screen bg-white dark:bg-black">
-        <x-nav/>
+        <div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20 ">
+            @persist('nav')
+                <livewire:nav-bar/>
+            @endpersist
+        </div>
 
-        <main>
+        <main class="animate-container">
             {{ $slot }}
         </main>
 
         <x-footer/>
     </div>
     @livewireScripts
-    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbo-eval="false"></script>
 </body>
 </html>

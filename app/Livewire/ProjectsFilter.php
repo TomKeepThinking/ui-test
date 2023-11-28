@@ -11,7 +11,6 @@ class ProjectsFilter extends Component
     public $filteredItems = [];
     public $list;
 
-
     public function mount($items)
     {
         $this->filters = ['featured', 'software', 'website', 'brand', 'archived'];

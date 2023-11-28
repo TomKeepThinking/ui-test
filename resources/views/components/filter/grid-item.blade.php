@@ -21,7 +21,7 @@
 
 
             <div>
-                <h5>Title</h5>
+                <h3>Title</h3>
                 <p class="text-sand">CMS, Information</p>
             </div>
 

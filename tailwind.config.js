@@ -21,7 +21,8 @@ module.exports = {
                 'large': '-1.60148px 3.20297px 4.80445px 1.60148px rgba(0, 0, 0, 0.15)'
 },
             spacing: {
-              'work-lg': '460px'
+                'work-lg': '460px',
+                'work-single' : '679px'
             },
             height: {
                 'newsletter': '550px'
@@ -37,7 +38,8 @@ module.exports = {
                 steel: '#7A7A7A',
                 grey: '#8A8A8A',
                 concrete: '#9B9B9B',
-                sand: '#D6D4C9'
+                sand: '#D6D4C9',
+                teal: '#028982'
             },
             fontSize: {
                 'xxs': '10px',
@@ -58,5 +60,7 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms')
+    ],
 }

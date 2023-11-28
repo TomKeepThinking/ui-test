@@ -4,7 +4,7 @@ document.addEventListener('alpine:init', () => {
     }))
 
     Alpine.data('slider', () => ({
-        currentTab: 1,
+        currentTab: 0,
         tabs: [
             { id: 1, label: '01' },
             { id: 2, label: '02' },
@@ -48,6 +48,9 @@ document.addEventListener('alpine:init', () => {
                 }
             })
 
+            Alpine.nextTick(() => {
+                this.currentTab = 1;
+            });
 
             this.timer = setInterval(() => {
                 if (this.currentTab === 3) {
@@ -56,7 +59,7 @@ document.addEventListener('alpine:init', () => {
                 } else {
                     this.currentTab++
                 }
-            }, 2000);
+            }, 10000);
         },
         destroy() {
             // Detach the handler, avoiding memory and side-effect leakage
