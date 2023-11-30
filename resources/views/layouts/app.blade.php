@@ -12,7 +12,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans text-lg font-medium antialiased">
+<body class="font-sans text-lg font-medium antialiased masthead">
     <div class="min-h-screen bg-white dark:bg-black">
         <div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-20 ">
             @persist('nav')

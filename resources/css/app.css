@@ -13,9 +13,14 @@
     }
 }
 
+.split-words {
+    visibility: hidden;
+}
+
 
 .animation-fade-in,
 .animation-fade-in-right,
-.animation-fade-in-up {
-    opacity: 0;
+.animation-fade-in-up,
+.split-words {
+    /*opacity: 0;*/
 }

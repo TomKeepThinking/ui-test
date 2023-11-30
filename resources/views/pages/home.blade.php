@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-top-header>
-        <h1>{{$pageHeader}}</h1>
+        <h1 class="split-words">{{$pageHeader}}</h1>
     </x-top-header>
 
     <x-container>

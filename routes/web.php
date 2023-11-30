@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ContactPageController;
+use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\IdeasPageController;
 use App\Http\Controllers\QiPageController;
@@ -29,6 +30,7 @@ Route::get('/about', AboutPageController::class)->name('pages.about');
 Route::get('/contact', ContactPageController::class)->name('pages.contact');
 Route::get('/ideas', IdeasPageController::class)->name('pages.ideas');
 Route::get('/ideas/{id}', [IdeasPageController::class, 'show'])->name('pages.idea.single');
+Route::get('/demo', DemoController::class)->name('pages.demo');
 
 
 Route::get('/news', function () {

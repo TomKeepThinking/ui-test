@@ -7,7 +7,6 @@
         <span class="sr-only">KT Logo</span>
     </x-link>
 
-
     <div class="hidden md:block over">
         <ul class="flex justify-between items-center space-x-4">
             @foreach ($navItems as $item)
@@ -26,7 +25,7 @@
             @endforeach
 
             <li>
-                <x-link route="{{route('pages.contact')}}">
+                <x-link route="{{route('pages.demo')}}">
                     <x-button>
                         Get a Demo
                     </x-button>
@@ -63,9 +62,11 @@
         </div>
 
         <div class="px-8 py-4">
-            <x-button-secondary>
-                Get a demo
-            </x-button-secondary>
+            <x-link href="{{route('pages.demo')}}">
+                <x-button-secondary>
+                    Get a demo
+                </x-button-secondary>
+            </x-link>
         </div>
     </div>
 </div>

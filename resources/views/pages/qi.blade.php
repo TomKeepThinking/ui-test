@@ -1,12 +1,10 @@
 <div x-data="{darkMode: true}" :class="{'dark': darkMode === true }" >
 <x-app-layout>
-    <x-container>
-        <x-page-header class="w-2/3 pb-6 pt-32">
-            <h1>Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
-        </x-page-header>
-    </x-container>
+    <x-top-header>
+        <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
+    </x-top-header>
 
-    <div class="border-t border-concrete pt-6 mb-12">
+    <div class="pt-6 mb-12">
         <x-content.offset>
             <x-slot:left>
                 <h2 class="mb-2">Versatile, customisable, modern</h2>
