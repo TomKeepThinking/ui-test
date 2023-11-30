@@ -2,7 +2,7 @@
 
 <x-container>
     <div {{ $attributes
-                ->class(['grid grid-cols-1 sm:grid-cols-12 gap-12'])
+                ->class(['grid grid-cols-1 sm:grid-cols-12 gap-8'])
                 ->merge(['class' => $class]) }}>
 
         <div {{$attributes

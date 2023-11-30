@@ -28,6 +28,7 @@ Route::get('/work/{id}', [WorkPageController::class, 'show'])->name('pages.work.
 Route::get('/about', AboutPageController::class)->name('pages.about');
 Route::get('/contact', ContactPageController::class)->name('pages.contact');
 Route::get('/ideas', IdeasPageController::class)->name('pages.ideas');
+Route::get('/ideas/{id}', [IdeasPageController::class, 'show'])->name('pages.idea.single');
 
 
 Route::get('/news', function () {

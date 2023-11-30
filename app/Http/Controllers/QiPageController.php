@@ -136,7 +136,7 @@ class QiPageController extends Controller
                     'Flexible, customisable field types and validation rules',
                     'Support for drag-and-drop features',
                     'Support for friendly URLs',
-                    'Support for comments, task assignment and notes between editors',
+                    'Support for comments, task assignment and ideas between editors',
                     'WYSIWYG Editor, based on web standards',
                     'Drag-and-drop to upload',
                 ]

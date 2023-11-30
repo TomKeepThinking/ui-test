@@ -1,12 +1,7 @@
 <x-app-layout>
-
-    <div class="border-b border-concrete mb-8 pb-8 animation-fade-in">
-        <x-container>
-            <x-page-header class="w-2/3 pb-6 pt-32">
-                <h1>{{$pageHeader}}</h1>
-            </x-page-header>
-        </x-container>
-    </div>
+    <x-top-header>
+        <h1>{{$pageHeader}}</h1>
+    </x-top-header>
 
     <x-container>
         <div class="flex md:hidden space-x-4 mb-4">

@@ -245,6 +245,27 @@ class WorkPageController extends Controller
             ]
         ];
 
-       return view('pages.work.single', compact('work'));
+        $content = [
+            [
+                'header' => 'test',
+                'content' => 'The Texas General Land Office, established in 1837, holds an archive of over 40,000 historical records consisting of land grant records and maps dating to the 16th century that detail the passage of Texas public lands to private ownership.',
+                'image'=>  '/storage/images/phone-2.png'
+
+            ],
+            [
+                'header' => 'test',
+                'content' => 'The Texas General Land Office, established in 1837, holds an archive of over 40,000 historical records consisting of land grant records and maps dating to the 16th century that detail the passage of Texas public lands to private ownership.',
+                'image'=>  '/storage/images/phone-2.png'
+
+            ],
+            [
+                'header' => 'test',
+                'content' => 'The Texas General Land Office, established in 1837, holds an archive of over 40,000 historical records consisting of land grant records and maps dating to the 16th century that detail the passage of Texas public lands to private ownership.',
+                'image'=>  '/storage/images/phone-2.png'
+
+            ]
+        ];
+
+       return view('pages.work.single', compact('work', 'content'));
     }
 }
