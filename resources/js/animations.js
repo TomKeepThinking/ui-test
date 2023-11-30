@@ -21,7 +21,7 @@ document.addEventListener('livewire:navigated', () => {
     let splitTextTimeline = gsap.timeline();
 
     mySplitText.split({type:"lines"});
-    splitTextTimeline.from(mySplitText.lines, {duration: 0.5, autoAlpha:0, y:120, force3D: true, transformOrigin:"top center -150", stagger: 0.1});
+    splitTextTimeline.from(mySplitText.lines, {duration: 0.5, autoAlpha:0, y:120, force3D: true, transformOrigin:"top center -150", stagger: 0.1, delay: 0.2});
     // splitTextTimeline.fromTo('.animate-width',{ width: "0%" },{width:'100%'});
     splitTextTimeline.to('.animate-width', {duration: 0.95, width:'100%'});
 
