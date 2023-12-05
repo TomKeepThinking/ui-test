@@ -32,7 +32,6 @@
         <x-slot:right>
             <div class="p-20 bg-sand">
                 <div class="w-full relative ">
-                    {{--                <img class="w-full" src="{{$activeSpot['image']}}" alt="">--}}
 
                     <div class="w-full h-[900px] bg-gray-100 shadow-large rounded-xl overflow-y-hidden"></div>
 

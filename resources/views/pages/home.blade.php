@@ -1,6 +1,28 @@
 <x-app-layout>
     <x-top-header>
-        <h1 class="split-words">{{$pageHeader}}</h1>
+        <h1>
+            @php
+
+                $array = explode(' ', $pageHeader);
+
+      $final = array(
+          array_splice($array, 0, 2),
+          array_splice($array, 0, 5),
+          array_splice($array, 0, 4),
+      );
+
+            @endphp
+
+            @foreach($final as $string)
+                <span class="split-words pb-2 block">
+                     @foreach($string as $word)
+                         {{$word}}
+                    @endforeach
+                </span>
+            @endforeach
+
+{{--            {{$pageHeader}}--}}
+        </h1>
     </x-top-header>
 
     <x-container>
@@ -51,7 +73,6 @@
     <x-content.offset class="mb-28">
         <x-slot:left>
                <h4>{{$thirdContentSubHeader}}</h4>
-
                <div class="text-grey">
                    <p>{{ $thirdContentText }}</p>
                    <x-link>Learn More</x-link>

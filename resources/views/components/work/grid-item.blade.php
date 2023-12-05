@@ -1,4 +1,4 @@
-@props(['img' => '', 'title' => '', 'content' =>'', 'image' => '', 'large' => false])
+@props(['img' => '', 'title' => '', 'content' =>'', 'image' => '', 'large' => false, 'class' => ''])
 
 <div x-data="{active: false}"
     @mouseover="active = true"
@@ -12,7 +12,7 @@
     <div
         style="background-image: url('{{ asset($image)}}');"
         @class([
-            'w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm bg-gray-100 opacity-animation',
+            'w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm bg-gray-100 ' .$class,
             'pt-64 lg:pt-72' =>  !$large,
             'pt-64 lg:pt-work-lg' => $large,
         ])>

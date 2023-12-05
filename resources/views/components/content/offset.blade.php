@@ -7,14 +7,14 @@
 
         <div {{$attributes
                 ->class([
-                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4 animation-fade-in-up',
+                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4 fade-in-up',
                     'order-last lg:order-none' => $reverseSm,
                     'lg:order-last' => $reverse
                 ])}}>
             {{ $left }}
         </div>
 
-        <div class="col-span-1 sm:col-span-12 lg:col-span-9 animation-fade-in-right">
+        <div class="col-span-1 sm:col-span-12 lg:col-span-9 fade-in">
             {{ $right}}
         </div>
     </div>

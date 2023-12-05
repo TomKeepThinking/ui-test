@@ -27,5 +27,20 @@
         <x-footer/>
     </div>
     @livewireScripts
+
+    <script>
+        document.addEventListener('livewire:init', () => {
+            console.log('test')
+            // Runs after Livewire is loaded but before it's initialized
+            // on the page...
+        })
+
+        document.addEventListener('livewire:initialized', () => {
+            // Runs immediately after Livewire has finished initializing
+            // on the page...
+
+            console.log('test2')
+        })
+    </script>
 </body>
 </html>

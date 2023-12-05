@@ -1,6 +1,6 @@
 @props(['x', 'y', 'key', 'id', 'content'])
 
-@php($ref = 'pop-' . $id);
+@php($ref = 'pop-' . $id)
 
 <div class="absolute" style="top:{{$x}}px; left:{{$y}}px" >
     <div

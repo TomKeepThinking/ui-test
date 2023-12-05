@@ -15,12 +15,33 @@
 
 .split-words {
     visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 
-.animation-fade-in,
-.animation-fade-in-right,
-.animation-fade-in-up,
-.split-words {
+body {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box {
     /*opacity: 0;*/
+}
+
+
+
+.fade-in,
+.fade-in-grid,
+.fade-in-up {
+    opacity: 0;
 }

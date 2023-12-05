@@ -31,9 +31,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     enabledTransports: ['ws', 'wss'],
 // });
 
-// Load animations
-import  './animations.js';
 
 // Load Alpine js components
 import './components.js';
 
+// Load animations
+import  './animations.js';

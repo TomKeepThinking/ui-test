@@ -82,7 +82,7 @@
 
                         <ul class="text-grey list-disc pl-4 space-y-2 ">
                             @foreach($feature['features'] as $item)
-                                <li class="leading-6 tracking-body-d">{{$item}}</li>
+                                <li class="leading-6 tracking-body-d ">{{$item}}</li>
                             @endforeach
                         </ul>
                     </x-content.text-grid-item>
