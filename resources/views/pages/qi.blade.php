@@ -147,7 +147,7 @@
         </x-content.offset>
     </div>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="border-b border-concrete pb-8">
         <x-work.grid class="mb-12" :work="$work" />
     </div>
 </x-app-layout>

@@ -38,9 +38,7 @@
     <div class="mb-6 border-b border-concrete pb-4">
         <x-content.offset>
             <x-slot:left>
-                <div class="mt-auto">
-                   <h4>{{$thirdContentSubHeader}}</h4>
-                </div>
+
             </x-slot:left>
             <x-slot:right>
                 <x-page-header>
@@ -52,6 +50,8 @@
 
     <x-content.offset class="mb-28">
         <x-slot:left>
+               <h4>{{$thirdContentSubHeader}}</h4>
+
                <div class="text-grey">
                    <p>{{ $thirdContentText }}</p>
                    <x-link>Learn More</x-link>
