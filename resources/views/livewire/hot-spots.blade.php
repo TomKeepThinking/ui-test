@@ -1,5 +1,5 @@
 <div class="dark:text-white min-h-[900px]" x-data="hotspots">
-    <x-content.offset>
+    <x-content.offset :animate="false">
         <x-slot:left>
             <h3>Key Features</h3>
             <p class="text-grey mb-12">Qi is designed for universal flexibility, collaboration, simplicity and speed for any type of information management.</p>

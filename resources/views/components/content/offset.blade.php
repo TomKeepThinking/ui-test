@@ -1,4 +1,4 @@
-@props(['class' => '', 'reverseSm' => '', 'reverse' => ''])
+@props(['class' => '', 'reverseSm' => '', 'reverse' => '', 'animate' => true])
 
 <x-container>
     <div {{ $attributes
@@ -7,16 +7,21 @@
 
         <div {{$attributes
                 ->class([
-                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4 fade-in-up',
+                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4',
                     'order-last lg:order-none' => $reverseSm,
-                    'lg:order-last' => $reverse
+                    'lg:order-last' => $reverse,
+                    'fade-in-up' => $animate
                 ])}}>
             {{ $left }}
         </div>
 
 
         @isset($right)
-            <div class="col-span-1 sm:col-span-12 lg:col-span-9 fade-in">
+            <div {{$attributes
+                    ->class([
+                        'col-span-1 sm:col-span-12 lg:col-span-9 ',
+                        'fade-in' => $animate
+                    ])}}>
                 {{ $right}}
             </div>
         @endisset
