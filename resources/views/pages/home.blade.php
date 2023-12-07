@@ -40,12 +40,10 @@
        </div>
     </x-slider.hero-slider>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-3.5 border-b border-concrete pb-8">
         <x-content.offset>
           <x-slot:left>
-              <div class="mt-auto">
-                  <x-link>View work</x-link>
-              </div>
+
           </x-slot:left>
           <x-slot:right>
               <x-page-header>
@@ -54,6 +52,14 @@
           </x-slot:right>
         </x-content.offset>
     </div>
+
+    <x-content.offset class="mb-3.5">
+        <x-slot:left>
+            <div class="mt-auto">
+                <x-link>View work</x-link>
+            </div>
+        </x-slot:left>
+    </x-content.offset>
 
     <x-work.grid class="mb-12 box" :work="$work" />
 

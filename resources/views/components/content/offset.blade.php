@@ -14,8 +14,11 @@
             {{ $left }}
         </div>
 
-        <div class="col-span-1 sm:col-span-12 lg:col-span-9 fade-in">
-            {{ $right}}
-        </div>
+
+        @isset($right)
+            <div class="col-span-1 sm:col-span-12 lg:col-span-9 fade-in">
+                {{ $right}}
+            </div>
+        @endisset
     </div>
 </x-container>

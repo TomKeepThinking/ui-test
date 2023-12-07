@@ -18,6 +18,9 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+iframe:focus {
+    outline:none;
+}
 
 body {
     animation: fadeInAnimation ease 0.2s;
