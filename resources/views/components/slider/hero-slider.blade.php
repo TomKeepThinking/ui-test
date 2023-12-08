@@ -26,11 +26,11 @@
 
         <x-slot:right>
             <div class="h-[620px] relative w-full">
-                <x-slider.tab :tab="1" image="/storage/images/laptop-falling.png"/>
+                <x-slider.tab :tab="1" image="/images/laptop-1.png"/>
 
-                <x-slider.tab :tab="2" image="/storage/images/phone-2.png"/>
+                <x-slider.tab :tab="2" image="/images/phones-1.png"/>
 
-                <x-slider.tab :tab="3" image="/storage/images/phone-3.png"/>
+                <x-slider.tab :tab="3" image="/images/phones-1.png"/>
             </div>
         </x-slot:right>
 
