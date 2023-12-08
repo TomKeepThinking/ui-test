@@ -13,7 +13,7 @@
                             role="tab"
                             :aria-selected="currentTab === tab.id"
                             class="lg:mb-2 text-xxs lg:text-sm transition-all ease"
-                            :class="{'text-grey' : currentTab !== tab.id, 'text-red' : currentTab === tab.id}"
+                            :class="{'text-charcoal' : currentTab !== tab.id, 'text-red' : currentTab === tab.id}"
                             :tabindex="currentTab === tab.id ? '0' : '-1'"
                         >
                         </button>

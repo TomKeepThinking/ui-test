@@ -31,6 +31,8 @@ class NavBar extends Component
         ],
     ];
 
+    public $open = false;
+
     public $activeNavItem;
 
     public function mount(){
@@ -38,11 +40,19 @@ class NavBar extends Component
 
         $key = array_search($currentRouteName, array_column($this->navItems, 'route'));
 
-        $this->activeNavItem = $this->navItems[$key];
+        if($key){
+            $this->activeNavItem = $this->navItems[$key];
+        } else {
+            $this->clearActiveNavItem();
+        }
     }
 
     public function setActiveNavItem($item){
         $this->activeNavItem = $item;
+    }
+
+    public function toggleMobile(){
+        $this->open = !$this->open;
     }
 
     public function clearActiveNavItem(){

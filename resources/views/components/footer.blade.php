@@ -49,19 +49,14 @@ $socialNavItems = [
 ?>
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
-    <div class="py-4 mx-auto">
-        <x-content.offset reverseSm class="space-y-12 lg:space-y-0 space-y-reverse ">
+    <div class="py-10 mx-auto">
+        <x-content.offset >
             <x-slot:left>
-               <div class="flex h-full">
-                   <div class="mt-auto flex">
-                       <span class="mr-2">Get in touch</span>
-                       <x-link>Contact Us </x-link>
-                   </div>
-               </div>
+
             </x-slot:left>
 
             <x-slot:right>
-                <x-page-header class="text-white pb-4">
+                <x-page-header class="text-white ">
                     <h5>Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span></h5>
                 </x-page-header>
             </x-slot:right>
@@ -72,6 +67,11 @@ $socialNavItems = [
         <div class="container px-8 py-4 mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
                 <div class="w-full md:w-1/2 xl:w-3/12">
+                        <div class="flex mb-4">
+                            <span class="mr-2">Get in touch</span>
+                            <x-link>Contact Us </x-link>
+                        </div>
+
                     <x-button-secondary @click="open = true" class="!text-black hover:!text-white">
                         Subscribe to Newsletter
                     </x-button-secondary>
@@ -86,8 +86,8 @@ $socialNavItems = [
                             UK
                         </address>
 
-                        <p>Monday to Friday </p>
-                        <p>9:30am to 6:00pm</p>
+                        <p class="text-white">Monday to Friday </p>
+                        <p class="text-white">9:30am to 6:00pm</p>
                     </div>
                     <div class="flex flex-col lg:row-start-2 lg:row-end-2 col-span-6 lg:col-span-4">
                         <x-link>
@@ -131,8 +131,7 @@ $socialNavItems = [
     </div>
 
     <div  x-show="open"
-          x-transition:enter.opacity.0
-          x-transition:leave.opacity.0>
+          x-transition.opacity>
 
         <x-modal.newsletter/>
     </div>

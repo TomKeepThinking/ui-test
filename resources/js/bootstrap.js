@@ -34,3 +34,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 // Load Alpine js components
 import './components.js';
+
+// Load animations
+import  './animations.js';
+

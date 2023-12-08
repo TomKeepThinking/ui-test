@@ -29,6 +29,8 @@
                 </div>
             </div>
 
+
+            <x-map-widget></x-map-widget>
             <div class="col-span-1 bg-cover bg-no-repeat bg-center" style="background-image: url('{{ asset('storage/images/google-maps.png')}}');">
 
             </div>

@@ -2,6 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 [x-cloak] {
     display: none;
@@ -13,9 +19,38 @@
     }
 }
 
+.split-words {
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
 
-.animation-fade-in,
-.animation-fade-in-right,
-.animation-fade-in-up {
+iframe:focus {
+    outline:none;
+}
+
+body {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box {
     /*opacity: 0;*/
+}
+
+
+
+.fade-in,
+.fade-in-grid,
+.fade-in-up {
+    opacity: 0;
 }

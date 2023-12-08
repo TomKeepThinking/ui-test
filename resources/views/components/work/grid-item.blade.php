@@ -1,10 +1,10 @@
-@props(['img' => '', 'title' => '', 'content' =>'', 'image' => '', 'large' => false])
+@props(['img' => '', 'title' => '', 'content' =>'', 'image' => '', 'large' => false, 'class' => ''])
 
 <div x-data="{active: false}"
     @mouseover="active = true"
     @mouseleave="active = false"
     @class([
-            'cursor-pointer col-span-12 sm:col-span-6 ',
+            'cursor-pointer col-span-12 sm:col-span-6 grid-item',
             'lg:col-span-3' =>  !$large,
             'lg:col-span-6' => $large,
         ])>
@@ -12,7 +12,7 @@
     <div
         style="background-image: url('{{ asset($image)}}');"
         @class([
-            'w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm bg-gray-100',
+            'w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm bg-gray-100 ' .$class,
             'pt-64 lg:pt-72' =>  !$large,
             'pt-64 lg:pt-work-lg' => $large,
         ])>

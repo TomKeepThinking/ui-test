@@ -1,12 +1,10 @@
 <div x-data="{darkMode: true}" :class="{'dark': darkMode === true }" >
 <x-app-layout>
-    <x-container>
-        <x-page-header class="w-2/3 pb-6 pt-32">
-            <h1>Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
-        </x-page-header>
-    </x-container>
+    <x-top-header>
+        <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
+    </x-top-header>
 
-    <div class="border-t border-concrete pt-6 mb-12">
+    <div class="pt-6 mb-12">
         <x-content.offset>
             <x-slot:left>
                 <h2 class="mb-2">Versatile, customisable, modern</h2>
@@ -84,7 +82,7 @@
 
                         <ul class="text-grey list-disc pl-4 space-y-2 ">
                             @foreach($feature['features'] as $item)
-                                <li class="leading-6 tracking-body-d">{{$item}}</li>
+                                <li class="leading-6 tracking-body-d ">{{$item}}</li>
                             @endforeach
                         </ul>
                     </x-content.text-grid-item>
@@ -149,7 +147,7 @@
         </x-content.offset>
     </div>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="border-b border-concrete pb-8">
         <x-work.grid class="mb-12" :work="$work" />
     </div>
 </x-app-layout>

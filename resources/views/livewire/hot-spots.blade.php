@@ -1,5 +1,5 @@
 <div class="dark:text-white min-h-[900px]" x-data="hotspots">
-    <x-content.offset>
+    <x-content.offset :animate="false">
         <x-slot:left>
             <h3>Key Features</h3>
             <p class="text-grey mb-12">Qi is designed for universal flexibility, collaboration, simplicity and speed for any type of information management.</p>
@@ -32,7 +32,6 @@
         <x-slot:right>
             <div class="p-20 bg-sand">
                 <div class="w-full relative ">
-                    {{--                <img class="w-full" src="{{$activeSpot['image']}}" alt="">--}}
 
                     <div class="w-full h-[900px] bg-gray-100 shadow-large rounded-xl overflow-y-hidden"></div>
 

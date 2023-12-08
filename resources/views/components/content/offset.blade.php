@@ -1,21 +1,29 @@
-@props(['class' => '', 'reverseSm' => '', 'reverse' => ''])
+@props(['class' => '', 'reverseSm' => '', 'reverse' => '', 'animate' => true])
 
 <x-container>
     <div {{ $attributes
-                ->class(['grid grid-cols-1 sm:grid-cols-12 gap-12'])
+                ->class(['grid grid-cols-1 sm:grid-cols-12 gap-8'])
                 ->merge(['class' => $class]) }}>
 
         <div {{$attributes
                 ->class([
-                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4 animation-fade-in-up',
+                    'col-span-1 sm:col-span-12 lg:col-span-3 flex flex-col space-y-4',
                     'order-last lg:order-none' => $reverseSm,
-                    'lg:order-last' => $reverse
+                    'lg:order-last' => $reverse,
+                    'fade-in-up' => $animate
                 ])}}>
             {{ $left }}
         </div>
 
-        <div class="col-span-1 sm:col-span-12 lg:col-span-9 animation-fade-in-right">
-            {{ $right}}
-        </div>
+
+        @isset($right)
+            <div {{$attributes
+                    ->class([
+                        'col-span-1 sm:col-span-12 lg:col-span-9 ',
+                        'fade-in' => $animate
+                    ])}}>
+                {{ $right}}
+            </div>
+        @endisset
     </div>
 </x-container>
