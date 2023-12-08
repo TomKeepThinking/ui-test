@@ -39,32 +39,44 @@ document.addEventListener('livewire:navigated', () => {
     //  Trigger animations on page load
     let mySplitText = new SplitText('.split-words', {type:"lines"});
 
-    let splitTextTimeline = gsap.timeline();
-    splitTextTimeline.from(mySplitText.lines, {duration: 0.8, ease: "expo.out", autoAlpha:0, y:120, force3D: true, transformOrigin:"top center -150", stagger: 0.1, delay: 0.2});
-    splitTextTimeline.to('.animate-width', {duration: 0.95, width:'100%'});
+    let splitText = document.querySelectorAll('.split-words');
+
+    if(splitText.length  > 0){
+        gsap.set(".split-words", {visibility:"visible"});
+        let splitTextTimeline = gsap.timeline();
+        splitTextTimeline.from(mySplitText.lines, {duration: 0.8, ease: "expo.out", autoAlpha:0, y:120, force3D: true, transformOrigin:"top center -150", stagger: 0.1, delay: 0.2});
+        splitTextTimeline.to('.animate-width', {duration: 0.95, width:'100%'});
+    }
+
+    let fadeIn = document.querySelectorAll('.fade-in');
 
 
-    const items = gsap.utils.toArray('.fade-in');
+    if(fadeIn.length > 0){
+        gsap.set(".fade-in-up", {visibility:"visible"});
+        const items = gsap.utils.toArray('.fade-in');
+        items.forEach(item => {
+            gsap.to(item, {
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: item,
+                    start: '300px 75%',
+                    markers: false,
+                    end: 'center center',
+                }
+            })
+        });
+    }
 
-    items.forEach(item => {
-        gsap.to(item, {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: item,
-                start: '300px 75%',
-                markers: false,
-                end: 'center center',
-            }
-        })
-    });
 
-
-
-    // Hide elements before transition
-    gsap.set(".split-words", {visibility:"visible"});
-    // gsap.set(".fade-in", {visibility:"visible"});
-    // gsap.set(".fade-in-grid", {visibility:"visible"});
-    gsap.set(".fade-in-up", {visibility:"visible"});
+    let fadeInUp = document.querySelectorAll('.fade-in-up');
+        if(fadeInUp.length > 0){
+        gsap.to(".fade-in-up", {
+            scrollTrigger: ".fade-in-up", // start the animation when ".box" enters the viewport (once)
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.5
+         });
+     }
 
 
 
@@ -79,10 +91,5 @@ document.addEventListener('livewire:navigated', () => {
         },
     });
 
-    gsap.to(".fade-in-up", {
-        scrollTrigger: ".fade-in-up", // start the animation when ".box" enters the viewport (once)
-        autoAlpha: 1,
-        y: 0,
-        duration: 0.5
-    });
+
 })

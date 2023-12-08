@@ -31,6 +31,8 @@ class NavBar extends Component
         ],
     ];
 
+    public $open = false;
+
     public $activeNavItem;
 
     public function mount(){
@@ -47,6 +49,10 @@ class NavBar extends Component
 
     public function setActiveNavItem($item){
         $this->activeNavItem = $item;
+    }
+
+    public function toggleMobile(){
+        $this->open = !$this->open;
     }
 
     public function clearActiveNavItem(){

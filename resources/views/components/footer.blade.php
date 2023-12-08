@@ -131,8 +131,7 @@ $socialNavItems = [
     </div>
 
     <div  x-show="open"
-          x-transition:enter.opacity.0
-          x-transition:leave.opacity.0>
+          x-transition.opacity>
 
         <x-modal.newsletter/>
     </div>
