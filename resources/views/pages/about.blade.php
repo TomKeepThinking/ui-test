@@ -15,7 +15,7 @@
         </x-slot:left>
         <x-slot:right>
             <x-page-header>
-                <img class="w-full" src="{{asset('/storage/images/white-board.png')}}" alt="">
+                <img class="w-full" src="{{asset('images/bald-team.png')}}" alt="">
             </x-page-header>
         </x-slot:right>
     </x-content.offset>
@@ -40,24 +40,24 @@
                     <p class="text-grey">Since 2002, our award winning work has helped a breadth of international clients in cultural sectors such as museums, galleries, archives, libraries, artists, magazines, and collectors.</p>
                 </div>
                 <div class="h-80 col-span-6 lg:col-span-4 bg-cover bg-center bg-no-repeat"
-                     style="background-image: url('{{ asset('storage/images/about-plants.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/table-plants.png')}}');"></div>
             </div>
 
             <div class="col-span-1 lg:col-span-3">
                 <div class="h-80 w-full bg-cover bg-center bg-no-repeat"
-                     style="background-image: url('{{ asset('storage/images/about-table.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/office-table.png')}}');"></div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
             <div class="col-span-1 lg:col-span-6">
                 <div class="h-80 w-full bg-center bg-cover bg-no-repeat"
-                     style="background-image: url('{{ asset('storage/images/about-beard.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/about-bg.png')}}');"></div>
             </div>
 
             <div class="col-span-1 lg:col-span-6  grid grid-cols-6 gap-4">
                 <div class="h-80 col-span-6 lg:col-span-3 bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('{{ asset('storage/images/about-computer.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/laptop.png')}}');"></div>
                 <div class="col-span-6 lg:col-span-3">
                     <h4>Our present</h4>
                     <p class="text-grey">With growing global recognition, we understand the importance of keeping a highly skilled team, where every member is pivotal to our success. Our diverse team of managers, engineers and designers work from our headquarters in London.</p>
@@ -72,12 +72,12 @@
                     <p class="text-grey">Our ambitions are directed towards an accessible, inclusive future. Where our collective histories and culture are preserved and discoverable for all. We aim to break barriers and build culture.</p>
                 </div>
                 <div class="h-80 col-span-6 lg:col-span-4 bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('{{ asset('storage/images/about-tables.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/table-chairs.png')}}');"></div>
             </div>
 
             <div class="col-span-1 lg:col-span-3">
                 <div class="h-80 w-full bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('{{ asset('storage/images/phone-2.png')}}');"></div>
+                     style="background-image: url('{{ asset('images/related-2.png')}}');"></div>
             </div>
         </div>
     </x-container>
@@ -99,10 +99,10 @@
         </x-slot:left>
         <x-slot:right>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 @foreach($team as $member)
                    <div class="col-span-1 ">
-                       <div class="h-80 w-full bg-no-repeat bg-cover bg-center"
+                       <div class="h-80 w-full bg-sand bg-no-repeat bg-cover bg-center mb-4"
                             style="background-image: url('{{$member['image']}}')">
                        </div>
 

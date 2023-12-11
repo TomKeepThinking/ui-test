@@ -15,7 +15,7 @@
             </x-slot:left>
 
             <x-slot:right>
-                <img class="w-full" src="{{asset('/storage/images/qi-screen.png')}}" alt="">
+                <img class="w-full" src="{{asset('/images/qi-screen.png')}}" alt="">
             </x-slot:right>
         </x-content.offset>
     </div>

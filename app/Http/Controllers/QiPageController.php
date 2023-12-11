@@ -268,17 +268,17 @@ class QiPageController extends Controller
 
         $work = [
             [
-                'image' => '/images/test.png',
+                'image' => '/images/related-1.png',
                 'title' => 'Asia Art Archive',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.'
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/images/related-2.png',
                 'title' => 'Texas General Land Office',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art.',
             ],
             [
-                'image' => '/images/test.png',
+                'image' => '/images/related-3.png',
                 'title' => 'Art UK',
                 'excerpt' => 'We helped to democratise the UK’s publicly owned art'
             ]
