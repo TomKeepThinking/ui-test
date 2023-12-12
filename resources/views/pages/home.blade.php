@@ -86,7 +86,7 @@
         </x-slot:left>
         <x-slot:right>
             <x-page-header>
-                <img class="w-full" src="{{asset('/storage/images/white-board.png')}}" alt="">
+                <img class="w-full" src="{{asset('/images/bald-team.png')}}" alt="">
             </x-page-header>
         </x-slot:right>
     </x-content.offset>
