@@ -4,7 +4,7 @@
         <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
     </x-top-header>
 
-    <div class="pt-6 mb-12">
+    <div class="pt-6 mb-32">
         <x-content.offset>
             <x-slot:left>
                 <h2 class="mb-2">Versatile, customisable, modern</h2>
@@ -20,17 +20,19 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset class="mb-12">
-        <x-slot:left></x-slot:left>
-        <x-slot:right>
-            <x-page-header>
-                <h2>Offering unique abilities to create, manage and support the needs of any scale</h2>
-            </x-page-header>
-        </x-slot:right>
-    </x-content.offset>
+    <div class="border-b border-concrete mb-12 ">
+        <x-content.offset class="mb-12 ">
+            <x-slot:left></x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h2>Offering unique abilities to create, manage and support the needs of any scale</h2>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
 
 
-    <div class="mb-12">
+    <div class="mb-32">
         <livewire:hot-spots :$hotSpots></livewire:hot-spots>
     </div>
 
@@ -62,9 +64,9 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset class="mb-8">
+    <x-content.offset class="mb-36">
         <x-slot:left>
-            <h4>Detailed specifications</h4>
+            <h4 >Detailed specifications</h4>
 
             <p class="text-grey mb-8">Read a detailed description of Qi and download the specifications for later.</p>
 
@@ -75,7 +77,7 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l">
+            <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l border-concrete">
                 @foreach($features as $feature)
                     <x-content.text-grid-item>
                         <h4 class="mb-2">{{$feature['title']}}</h4>
@@ -93,19 +95,14 @@
 
 
     <div class="mb-8 border-b border-concrete pb-8">
-        <x-content.offset>
-            <x-slot:left>
-
-            </x-slot:left>
-            <x-slot:right>
-                <x-page-header>
-                    <h3>Technology</h3>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+        <x-container>
+            <x-page-header class="md:w-9/12 ml-auto">
+                <h3 class="pb-2">Technology</h3>
+            </x-page-header>
+        </x-container>
     </div>
 
-    <x-content.offset class="mb-12">
+    <x-content.offset class="mb-36">
         <x-slot:left>
             <h4>Detailed specifications</h4>
 
@@ -130,23 +127,24 @@
     </x-content.offset>
 
     <div class="mb-8 border-b border-concrete pb-8">
-        <x-content.offset>
-            <x-slot:left>
-                <div class="flex h-full">
-                    <x-link class="mt-auto">
-                        View our work
-                    </x-link>
-                </div>
-            </x-slot:left>
-            <x-slot:right>
-                <x-page-header>
-                    <h3>Leveraging digital design that
-                        helps to shape the way we experience culture & history</h3>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+        <x-container>
+            <x-page-header class="md:w-9/12 ml-auto">
+                <h3>Leveraging digital design that
+                    helps to shape the way we experience culture & history</h3>
+            </x-page-header>
+        </x-container>
     </div>
 
+    <x-content.offset>
+        <x-slot:left>
+            <div class="flex h-full mb-8">
+                <x-link class="mt-auto">
+                    View our work
+                </x-link>
+            </div>
+        </x-slot:left>
+
+    </x-content.offset>
     <div class="border-b border-concrete pb-8">
         <x-work.grid class="mb-12" :work="$work" />
     </div>

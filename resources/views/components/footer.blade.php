@@ -58,7 +58,7 @@ $socialNavItems = [
        </x-container>
     </div>
 
-    <div class="border-t border-white md:pb-10">
+    <div class="border-t border-concrete md:pb-10">
         <div class="container px-8 py-4 mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
                 <div class="w-full md:w-1/2 xl:w-3/12">
@@ -115,7 +115,7 @@ $socialNavItems = [
         </div>
     </div>
 
-    <div class="border-t border-white text-grey">
+    <div class="border-t border-concrete text-grey">
         <div class="container px-8 py-4 mx-auto">
             <div class="grid grid-cols-12 text-xs md:text-sm">
                 <div class="col-span-3 md:col-span-3">&copy; 2022-2023</div>

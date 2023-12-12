@@ -1,9 +1,9 @@
-<x-content.offset class="mb-12">
+<x-content.offset class="mb-32">
     <x-slot:left>
         <p>Over two hundred museums, collections, libraries, archives, councils, magazines and commercial organisations have chosen Qi to manage and present their content.</p>
     </x-slot:left>
     <x-slot:right>
-        <div class="grid grid-cols-2 md:grid-cols-3 border-t border-l">
+        <div class="grid grid-cols-2 md:grid-cols-3 border-t border-concrete border-l">
             <x-content.logo-grid-item>
                 <x-icons.uni class="w-24"/>
             </x-content.logo-grid-item>
