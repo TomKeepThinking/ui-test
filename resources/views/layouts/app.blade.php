@@ -11,6 +11,9 @@
     @livewireStyles
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
+
 </head>
 <body class="font-sans text-lg font-medium antialiased masthead">
     <div class="min-h-screen bg-white dark:bg-black">

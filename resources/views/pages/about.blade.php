@@ -133,22 +133,22 @@
     <x-logo-grid />
 
     <div class="mb-8 border-b border-concrete pb-8">
-        <x-content.offset>
-            <x-slot:left>
-                <div class="flex h-full">
-                    <x-link class="mt-auto">
-                        View our work
-                    </x-link>
-                </div>
-            </x-slot:left>
-            <x-slot:right>
-                <x-page-header>
-                    <h3>Leveraging digital design that
-                        helps to shape the way we experience culture & history</h3>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+        <x-container>
+            <x-page-header class="md:w-9/12 ml-auto">
+                <h3>Leveraging digital design that helps to shape the way we experience culture & history</h3>
+            </x-page-header>
+        </x-container>
     </div>
+
+    <x-content.offset>
+        <x-slot:left>
+            <div class="flex h-full mb-8">
+                <x-link class="mt-auto">
+                    View our work
+                </x-link>
+            </div>
+        </x-slot:left>
+    </x-content.offset>
 
     <x-work.grid class="mb-32" :work="$work" />
 

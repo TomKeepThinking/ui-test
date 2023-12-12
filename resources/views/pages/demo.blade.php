@@ -4,7 +4,7 @@
             <h1 class="split-words">Get a Demo</h1>
         </x-top-header>
 
-        <div class="fade-in border-b">
+        <div class="fade-in border-b border-concrete">
             <!-- Calendly inline widget begin -->
             <div class="calendly-inline-widget focus:outline-none mx-auto"
                 data-url="https://calendly.com/t-scully-king/30min?background_color=272727&text_color=ffffff&primary_color=ea283f"

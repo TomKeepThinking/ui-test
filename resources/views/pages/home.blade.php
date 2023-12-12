@@ -56,7 +56,7 @@
                <h4>{{$thirdContentSubHeader}}</h4>
                <div class="text-grey">
                    <p class="hidden md:block">{{ $thirdContentText }}</p>
-                   <x-link>Learn More</x-link>
+                   <x-link >Learn More</x-link>
                </div>
         </x-slot:left>
         <x-slot:right>
