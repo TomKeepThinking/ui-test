@@ -72,7 +72,7 @@ $socialNavItems = [
                     </x-button-secondary>
                 </div>
 
-                <div class="w-full md:w-1/2 xl:w-9/12 grid grid-rows-2 grid-cols-12 gap-4">
+                <div class="w-full md:w-1/2 xl:w-9/12 auto-rows-fr grid grid-rows-2 grid-cols-12 gap-4">
                     <div class="col-span-6 lg:col-span-4">
                         <address class="not-italic mb-4">
                             38-40 <br>
