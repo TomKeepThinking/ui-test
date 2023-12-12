@@ -51,17 +51,11 @@ $socialNavItems = [
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
     <div class="py-10 mx-auto">
-        <x-content.offset>
-            <x-slot:left>
-
-            </x-slot:left>
-
-            <x-slot:right>
-                <x-page-header class="text-white ">
-                    <h5>Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span></h5>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+       <x-container>
+           <x-page-header class="text-white md:w-9/12 ml-auto">
+               <h5>Want to learn more about our approach, software and projects? <span class="text-grey">Get in touch</span></h5>
+           </x-page-header>
+       </x-container>
     </div>
 
     <div class="border-t border-white md:pb-10">
