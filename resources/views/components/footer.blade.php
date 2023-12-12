@@ -46,11 +46,12 @@ $socialNavItems = [
     ],
 
 ];
+
 ?>
 
 <div class="bg-black text-white" x-cloak x-data="{ open: false }">
     <div class="py-10 mx-auto">
-        <x-content.offset >
+        <x-content.offset>
             <x-slot:left>
 
             </x-slot:left>
@@ -63,12 +64,12 @@ $socialNavItems = [
         </x-content.offset>
     </div>
 
-    <div class="border-t border-white md:pb-18">
+    <div class="border-t border-white md:pb-10">
         <div class="container px-8 py-4 mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
                 <div class="w-full md:w-1/2 xl:w-3/12">
                         <div class="flex mb-4">
-                            <span class="mr-2">Get in touch</span>
+                            <span class="mr-2 text-sm md:text-lg">Get in touch</span>
                             <x-link>Contact Us </x-link>
                         </div>
 
@@ -122,10 +123,9 @@ $socialNavItems = [
 
     <div class="border-t border-white text-grey">
         <div class="container px-8 py-4 mx-auto">
-            <div class="grid grid-cols-12">
+            <div class="grid grid-cols-12 text-xs md:text-sm">
                 <div class="col-span-3 md:col-span-3">&copy; 2022-2023</div>
                 <div class="col-span-9 md:col-span-6">Registered in England and Wales 04905582</div>
-                <div class="col-span-3 hidden md:block">VAT Registration 831132962</div>
             </div>
         </div>
     </div>

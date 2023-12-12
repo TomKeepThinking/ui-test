@@ -3,7 +3,7 @@
     wire:navigate
     href="{{$route}}"
     {{ $attributes->merge([
-       'class' => 'underline cursor-pointer hover:opacity-60 transition-opacity ease text-grey ' . $class
+       'class' => 'underline cursor-pointer hover:opacity-60 transition-opacity ease text-grey text-sm md:text-lg ' . $class
    ]) }}>
     {{$slot}}
 </a>

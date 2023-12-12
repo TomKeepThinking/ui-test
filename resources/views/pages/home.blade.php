@@ -1,38 +1,18 @@
 <x-app-layout>
     <x-top-header>
-        <h1>
-            @php
-
-                $array = explode(' ', $pageHeader);
-
-      $final = array(
-          array_splice($array, 0, 2),
-          array_splice($array, 0, 5),
-          array_splice($array, 0, 4),
-      );
-
-            @endphp
-
-            @foreach($final as $string)
-                <span class="split-words pb-2 block">
-                     @foreach($string as $word)
-                         {{$word}}
-                    @endforeach
-                </span>
-            @endforeach
-
-{{--            {{$pageHeader}}--}}
+        <h1 class="split-words">
+            {{$pageHeader}}
         </h1>
     </x-top-header>
 
     <x-container>
-        <div class="flex md:hidden space-x-4 mb-4">
+        <div class="flex md:hidden space-x-4 mb-4 text-sm md:text-lg">
             <h2>{{$firstContentHeader}}</h2>
             <x-link route="{{route('pages.about')}}">Learn More</x-link>
         </div>
     </x-container>
 
-    <x-slider.hero-slider class="mb-32">
+    <x-slider.hero-slider class="mb-12 md:mb-32">
        <div class="hidden md:block">
            <h2>{{$firstContentHeader}}</h2>
            <p class="font-normal">{{$firstContentText}}</p>
@@ -80,7 +60,7 @@
         <x-slot:left>
                <h4>{{$thirdContentSubHeader}}</h4>
                <div class="text-grey">
-                   <p>{{ $thirdContentText }}</p>
+                   <p class="hidden md:block">{{ $thirdContentText }}</p>
                    <x-link>Learn More</x-link>
                </div>
         </x-slot:left>
