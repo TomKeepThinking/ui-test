@@ -59,9 +59,9 @@ $socialNavItems = [
     </div>
 
     <div class="border-t border-concrete">
-        <div class="container px-8 py-4 mx-auto">
+        <div class="container mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row">
-                <div class="w-full md:w-1/2 xl:w-3/12">
+                <div class="w-full md:w-1/2 xl:w-3/12 px-8 py-4">
                         <div class="flex mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
                             <x-link>Contact Us </x-link>
@@ -72,29 +72,32 @@ $socialNavItems = [
                     </x-button-secondary>
                 </div>
 
-                <div class="w-full md:w-1/2 xl:w-9/12 auto-rows-fr grid grid-rows-2 grid-cols-12 gap-4">
-                    <div class="col-span-6 lg:col-span-4">
-                        <address class="not-italic mb-4">
-                            38-40 <br>
-                            Southwark Street<br>
-                            London SE1 1UN<br>
-                            UK
-                        </address>
+                <div class="w-full grid gap-4 grid-cols-4 md:grid-cols-3">
+                    <div class="col-span-4 md:col-span-1 grid gap-4 grid-cols-2 md:grid-cols-1 px-8 py-4 border-b md:border-none border-concrete">
+                        <div class="col-span-1">
+                            <address class="not-italic mb-4">
+                                38-40 Southwark Street<br>
+                                London SE1 1UN<br>
+                                UK
+                            </address>
 
-                        <p class="text-white">Monday to Friday </p>
-                        <p class="text-white">9:30am to 6:00pm</p>
+                            <p class="text-white">Monday to Friday </p>
+                            <p class="text-white">9:30am to 6:00pm</p>
+                        </div>
+
+                        <div class="flex flex-col col-span-1">
+                            <x-link>
+                                +44 20 7490 5337
+                            </x-link>
+
+                            <x-link>
+                                info@keepthinking.it
+                            </x-link>
+                        </div>
                     </div>
-                    <div class="flex flex-col lg:row-start-2 lg:row-end-2 col-span-6 lg:col-span-4">
-                        <x-link>
-                            +44 20 7490 5337
-                        </x-link>
 
-                        <x-link>
-                            info@keepthinking.it
-                        </x-link>
-                    </div>
 
-                    <div class="lg:row-start-1 lg:row-end-3 col-span-6 lg:col-span-4">
+                    <div class="col-span-2 md:col-span-1 px-8 py-4">
                         <ul>
                             @foreach ($navItems as $item)
                                 <li><x-link>{{ $item['name']}}</x-link></li>
@@ -102,7 +105,7 @@ $socialNavItems = [
                             <li><x-link>Get A Demo</x-link></li>
                         </ul>
                     </div>
-                    <div class="lg:row-start-1 lg:row-end-3 col-span-6 lg:col-span-4">
+                    <div class="col-span-2 md:col-span-1 px-8 py-4">
                         <ul>
                             @foreach ($socialNavItems as $item)
                                 <li><x-link>{{ $item['name']}}</x-link></li>
