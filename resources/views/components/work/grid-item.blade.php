@@ -35,7 +35,7 @@
                 <p class="text-sand">CMS, Information</p>
             </div>
 
-            <p class="text-sand">Powered by <x-link route="{{route('pages.qi')}}" class="text-white">Qi</x-link></p>
+            <p class="text-sand text-sm">Powered by <x-link route="{{route('pages.qi')}}" class="text-white text-sm">Qi</x-link></p>
         </div>
     </div>
 
