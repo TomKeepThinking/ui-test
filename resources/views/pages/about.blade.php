@@ -1,10 +1,9 @@
 <x-app-layout>
-    <div class="border-b border-concrete mb-8 pb-8">
-
-        <x-top-header>
-            <h1>We’re a software & design agency providing technology for over twenty years</h1>
-        </x-top-header>
-    </div>
+    <x-top-header>
+        <h1 class="split-words">
+          We’re a software & design agency providing technology for over twenty years
+        </h1>
+    </x-top-header>
 
     <x-content.offset class="mb-28" reverse="true">
         <x-slot:left>
