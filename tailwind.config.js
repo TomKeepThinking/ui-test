@@ -8,6 +8,17 @@ module.exports = {
     ],
 
     theme: {
+        screens: {
+            'sm': '640px',
+
+            'md': '768px',
+
+            'lg': '1024px',
+
+            'xl': '1440px',
+
+            '2xl': '1536px',
+        },
         fontFamily: {
             sans: ['Inter', 'sans-serif']
         },
@@ -34,10 +45,10 @@ module.exports = {
             colors: {
                 orange: '#E44D28',
                 black: '#272727',
-                red: '#EA283F',
+                red: '#E91932',
                 charcoal: '#404040',
                 steel: '#7A7A7A',
-                grey: '#8A8A8A',
+                grey: '#595959',
                 concrete: '#9B9B9B',
                 sand: '#D6D4C9',
                 teal: '#028982'
