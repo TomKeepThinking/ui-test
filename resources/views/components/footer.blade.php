@@ -44,7 +44,6 @@ $socialNavItems = [
         'name' => 'The Dots',
         'route' => 'contact'
     ],
-
 ];
 
 ?>
