@@ -58,10 +58,10 @@ $socialNavItems = [
        </x-container>
     </div>
 
-    <div class="border-t border-concrete ">
+    <div class="border-t border-concrete">
         <div class="md:container mx-auto md:px-8 md:py-4">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row md:mb-12">
-                <div class="w-full md:w-1/2 xl:w-3/12 px-8 md:px-0 pb-4 md:pb-0">
+                <div class="w-full md:w-1/2 xl:w-1/3 px-8 md:px-0 pb-4 md:pb-0">
                         <div class="flex flex-wrap mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
                             <x-link>Contact Us </x-link>

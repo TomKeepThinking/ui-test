@@ -1,4 +1,4 @@
-<div x-data="{darkMode: true}" :class="{'dark': darkMode === true }" >
+<div class="dark page-container">
 <x-app-layout>
     <x-top-header>
         <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>

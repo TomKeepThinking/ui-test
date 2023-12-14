@@ -46,3 +46,7 @@ body {
 .fade-in-up {
     opacity: 0;
 }
+
+html:has(.dark)  {
+    @apply bg-black;
+}
