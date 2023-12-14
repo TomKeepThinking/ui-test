@@ -15,8 +15,8 @@
                         wire:navigate.hover
                         @click="$wire.setActiveNavItem(@js($item))"
                         @class([
-                         'transition-all ease text-grey hover:text-black dark:text-white'=> $activeNavItem['route'] !== $item['route'],
-                         'underline text-black dark:text-white' => $activeNavItem['route'] == $item['route'],
+                         'transition-all ease text-grey hover:text-black dark:text-white under'=> $activeNavItem['route'] !== $item['route'],
+                         'underline text-black dark:text-white underline-offset-4' => $activeNavItem['route'] == $item['route'],
                      ])
                     >
                         {{ $item['name'] }}

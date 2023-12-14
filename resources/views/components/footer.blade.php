@@ -49,7 +49,7 @@ $socialNavItems = [
 
 ?>
 
-<div class="bg-black text-white" x-cloak x-data="{ open: false }">
+<div class="bg-black text-white tracking-body-d" x-cloak x-data="{ open: false }">
     <div class="pt-10 mx-auto">
        <x-container>
            <x-page-header class="md:w-9/12 pb-8 ml-auto">

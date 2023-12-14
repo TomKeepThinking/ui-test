@@ -4,7 +4,7 @@
     @mouseover="active = true"
     @mouseleave="active = false"
     @class([
-            'cursor-pointer grid-item',
+            'cursor-pointer grid-item tracking-body-d',
             'col-span-6 sm:col-span-6 lg:col-span-3' =>  !$large,
             'col-span-12 sm:col-span-6 lg:col-span-6' => $large,
         ])>
