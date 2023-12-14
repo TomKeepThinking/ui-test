@@ -58,10 +58,10 @@ $socialNavItems = [
        </x-container>
     </div>
 
-    <div class="border-t border-concrete">
-        <div class="container mx-auto">
+    <div class="border-t border-concrete ">
+        <div class="md:container mx-auto md:px-8 md:py-4">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row md:mb-12">
-                <div class="w-full md:w-1/2 xl:w-3/12 px-8 py-4">
+                <div class="w-full md:w-1/2 xl:w-3/12 px-8 md:px-0 pb-4 md:pb-0">
                         <div class="flex flex-wrap mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
                             <x-link>Contact Us </x-link>
@@ -73,7 +73,7 @@ $socialNavItems = [
                 </div>
 
                 <div class="w-full grid gap-4 grid-cols-4 md:grid-cols-3">
-                    <div class="col-span-4 md:col-span-1 grid gap-4 grid-cols-2 md:grid-cols-1 px-8 py-4 border-b md:border-none border-concrete">
+                    <div class="col-span-4 md:col-span-1 grid gap-4 grid-cols-2 md:grid-cols-1 border-b md:border-none border-concrete px-8 py-4 md:px-0 md:py-0">
                         <div class="col-span-1">
                             <address class="not-italic mb-4">
                                 38-40 Southwark Street<br>
@@ -96,8 +96,7 @@ $socialNavItems = [
                         </div>
                     </div>
 
-
-                    <div class="col-span-2 md:col-span-1 px-8 py-4">
+                    <div class="col-span-2 md:col-span-1 px-8 md:px-0">
                         <ul>
                             @foreach ($navItems as $item)
                                 <li><x-link>{{ $item['name']}}</x-link></li>
@@ -105,7 +104,7 @@ $socialNavItems = [
                             <li><x-link>Get A Demo</x-link></li>
                         </ul>
                     </div>
-                    <div class="col-span-2 md:col-span-1 px-8 py-4">
+                    <div class="col-span-2 md:col-span-1 ">
                         <ul>
                             @foreach ($socialNavItems as $item)
                                 <li><x-link>{{ $item['name']}}</x-link></li>
