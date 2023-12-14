@@ -62,7 +62,7 @@ $socialNavItems = [
         <div class="container mx-auto">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row md:mb-12">
                 <div class="w-full md:w-1/2 xl:w-3/12 px-8 py-4">
-                        <div class="flex mb-4">
+                        <div class="flex flex-wrap mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
                             <x-link>Contact Us </x-link>
                         </div>

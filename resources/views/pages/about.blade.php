@@ -1,10 +1,9 @@
 <x-app-layout>
     <div class="border-b border-concrete mb-8 pb-8">
-        <x-container>
-            <x-page-header class="w-2/3 pb-6 pt-32">
-                <h1>We’re a software & design agency providing technology for over twenty years</h1>
-            </x-page-header>
-        </x-container>
+
+        <x-top-header>
+            <h1>We’re a software & design agency providing technology for over twenty years</h1>
+        </x-top-header>
     </div>
 
     <x-content.offset class="mb-28" reverse="true">
@@ -20,16 +19,16 @@
         </x-slot:right>
     </x-content.offset>
 
-    <x-content.offset class="mb-28">
-        <x-slot:left>
-
-        </x-slot:left>
-        <x-slot:right>
-            <x-page-header>
-                We’re passionate about culture, always striving to make heritage accessible
-            </x-page-header>
-        </x-slot:right>
-    </x-content.offset>
+    <div class="border-b border-concrete mb-5">
+        <x-content.offset >
+            <x-slot:left></x-slot:left>
+            <x-slot:right>
+                <x-page-header>
+                    <h2 class="pb-6">We’re passionate about culture, always striving to make heritage accessible</h2>
+                </x-page-header>
+            </x-slot:right>
+        </x-content.offset>
+    </div>
 
 
     <x-container>
