@@ -20,7 +20,7 @@
                 x-show="$wire.activeFilter === 'clients'"
                 x-transition:enter.opacity.duration.500ms
                 class="bg-white w-full">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-start">
                     <div class="col-span-1">
                         <div  x-show="activeImage"
                               x-cloak
@@ -50,7 +50,7 @@
         @foreach($filters as $filter)
             <div x-cloak
                  x-show="$wire.activeFilter === @js($filter)"
-                 class="grid grid-cols-12 gap-4 gap-y-24"
+                 class="grid grid-cols-12 gap-5 gap-y-24"
                  x-transition:enter.opacity.duration.500ms>
 
                 @if($filter === 'featured')

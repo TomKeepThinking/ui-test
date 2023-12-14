@@ -33,7 +33,7 @@
 
     <x-container>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
-            <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-4 ">
+            <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-5">
                 <div class="col-span-6 lg:col-span-2 order-last lg:order-none">
                     <h4>Our past</h4>
                     <p class="text-grey">Since 2002, our award winning work has helped a breadth of international clients in cultural sectors such as museums, galleries, archives, libraries, artists, magazines, and collectors.</p>
@@ -54,7 +54,7 @@
                      style="background-image: url('{{ asset('images/about-bg.png')}}');"></div>
             </div>
 
-            <div class="col-span-1 lg:col-span-6  grid grid-cols-6 gap-4">
+            <div class="col-span-1 lg:col-span-6  grid grid-cols-6 gap-5">
                 <div class="h-80 col-span-6 lg:col-span-3 bg-no-repeat bg-cover bg-center"
                      style="background-image: url('{{ asset('images/laptop.png')}}');"></div>
                 <div class="col-span-6 lg:col-span-3">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
-            <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-4">
+            <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-5">
                 <div class=" col-span-6 lg:col-span-2 order-last lg:order-none">
                     <h4>Our future</h4>
                     <p class="text-grey">Our ambitions are directed towards an accessible, inclusive future. Where our collective histories and culture are preserved and discoverable for all. We aim to break barriers and build culture.</p>

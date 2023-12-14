@@ -72,8 +72,8 @@ $socialNavItems = [
                     </x-button-secondary>
                 </div>
 
-                <div class="w-full grid gap-4 grid-cols-4 md:grid-cols-3">
-                    <div class="col-span-4 md:col-span-1 grid gap-4 grid-cols-2 md:grid-cols-1 border-b md:border-none border-concrete px-8 py-4 md:px-0 md:py-0">
+                <div class="w-full grid gap-5 grid-cols-4 md:grid-cols-3">
+                    <div class="col-span-4 md:col-span-1 grid gap-5 grid-cols-2 md:grid-cols-1 border-b md:border-none border-concrete px-8 py-4 md:px-0 md:py-0">
                         <div class="col-span-1">
                             <address class="not-italic mb-4">
                                 38-40 Southwark Street<br>

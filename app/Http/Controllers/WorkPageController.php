@@ -87,11 +87,11 @@ class WorkPageController extends Controller
         $clients = [
             [
                 'name' =>'ArtUK',
-                'image' => '/storage/images/phone-2.png'
+                'image' => '/images/laptop-1.png'
             ],
             [
                 'name' =>'Ashmolean Museum',
-                'image' => '/storage/images/phone.png'
+                'image' => '/images/phones-1.png'
             ],
             [
                 'name' =>'Asia Art Archive',

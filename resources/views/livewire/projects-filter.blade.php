@@ -15,7 +15,7 @@
         @foreach($filters as $filter)
             <div x-cloak
                  x-show="$wire.activeFilter === @js($filter)"
-                 class="grid grid-cols-12 gap-4 gap-y-24"
+                 class="grid grid-cols-12 gap-5 gap-y-24"
                  x-transition:enter.opacity.duration.500ms>
 
                 @foreach($filteredItems as $key=>$item)
