@@ -66,7 +66,7 @@ $socialNavItems = [
                             <x-link class="!text-concrete">Contact Us </x-link>
                         </div>
 
-                    <x-button-secondary @click="open = true" class="!text-black hover:!text-white">
+                    <x-button-secondary @click="open = true" class="!text-black hover:!bg-red hover:!text-white">
                         Subscribe to Newsletter
                     </x-button-secondary>
                 </div>
