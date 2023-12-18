@@ -52,7 +52,7 @@ $socialNavItems = [
     <div class="pt-10 mx-auto">
        <x-container>
            <x-page-header class="md:w-9/12 pb-8 ml-auto">
-               <h5 class="!text-white ">Want to learn more about our approach, software and projects? <span class="!text-grey">Get in touch</span></h5>
+               <h5 class="!text-white ">Want to learn more about our approach, software and projects? <span class="!text-concrete">Get in touch</span></h5>
            </x-page-header>
        </x-container>
     </div>
@@ -63,7 +63,7 @@ $socialNavItems = [
                 <div class="w-full md:w-1/2 xl:w-1/3 px-8 md:px-0 pb-4 md:pb-0">
                         <div class="flex flex-wrap mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
-                            <x-link>Contact Us </x-link>
+                            <x-link class="!text-concrete">Contact Us </x-link>
                         </div>
 
                     <x-button-secondary @click="open = true" class="!text-black hover:!text-white">
@@ -85,11 +85,11 @@ $socialNavItems = [
                         </div>
 
                         <div class="flex flex-col col-span-1">
-                            <x-link>
+                            <x-link class="!text-concrete">
                                 +44 20 7490 5337
                             </x-link>
 
-                            <x-link>
+                            <x-link class="!text-concrete">
                                 info@keepthinking.it
                             </x-link>
                         </div>
@@ -98,17 +98,16 @@ $socialNavItems = [
                     <div class="col-span-2 md:col-span-1 px-8 md:px-0">
                         <ul>
                             @foreach ($navItems as $item)
-                                <li><x-link>{{ $item['name']}}</x-link></li>
+                                <li><x-link class="!text-concrete">{{ $item['name']}}</x-link></li>
                             @endforeach
-                            <li><x-link>Get A Demo</x-link></li>
+                            <li><x-link class="!text-concrete">Get A Demo</x-link></li>
                         </ul>
                     </div>
                     <div class="col-span-2 md:col-span-1 ">
                         <ul>
                             @foreach ($socialNavItems as $item)
-                                <li><x-link>{{ $item['name']}}</x-link></li>
+                                <li><x-link class="!text-concrete">{{ $item['name']}}</x-link></li>
                             @endforeach
-                            <li><x-link>Get A Demo</x-link></li>
                         </ul>
                     </div>
                 </div>
@@ -116,11 +115,11 @@ $socialNavItems = [
         </div>
     </div>
 
-    <div class="border-t border-concrete text-grey">
+    <div class="border-t border-concrete text-concrete">
         <div class="container px-8 py-4 mx-auto">
             <div class="grid grid-cols-12 text-xs md:text-sm">
-                <div class="col-span-3 md:col-span-3">&copy; 2022-2023</div>
-                <div class="col-span-9 md:col-span-6">Registered in England and Wales 04905582</div>
+                <div class="col-span-3 md:col-span-3 text-concrete">&copy; 2022-2023</div>
+                <div class="col-span-9 md:col-span-6 text-concrete">Registered in England and Wales 04905582</div>
             </div>
         </div>
     </div>

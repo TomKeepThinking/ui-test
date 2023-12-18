@@ -7,8 +7,10 @@
     <div class="pt-6 mb-32">
         <x-content.offset>
             <x-slot:left>
-                <h2 class="mb-2">Versatile, customisable, modern</h2>
-                <p class="mb-6 font-medium text-grey">Providing technology for over 20 years to organisations in the arts, culture and heritage sectors, Qi is an innovative content and collection management system for museums and archives.</p>
+               <div class="mb-2">
+                   <h2 class="mb-2">Versatile, customisable, modern</h2>
+                   <p>Providing technology for over 20 years to organisations in the arts, culture and heritage sectors, Qi is an innovative content and collection management system for museums and archives.</p>
+               </div>
                 <div class="w-40">
                     <x-icons.spectrum/>
                 </div>
@@ -66,9 +68,11 @@
 
     <x-content.offset class="mb-36">
         <x-slot:left>
-            <h4 >Detailed specifications</h4>
+            <div>
+                <h4>Detailed specifications</h4>
 
-            <p class="text-grey mb-8">Read a detailed description of Qi and download the specifications for later.</p>
+                <p>Read a detailed description of Qi and download the specifications for later.</p>
+            </div>
 
             <x-download-btn>
                 <span class="mb-2">Qi Detailed Specifications</span>
@@ -82,7 +86,7 @@
                     <x-content.text-grid-item>
                         <h4 class="mb-2">{{$feature['title']}}</h4>
 
-                        <ul class="text-grey list-disc pl-4 space-y-2 ">
+                        <ul class="dark:text-concrete list-disc pl-4 space-y-2 ">
                             @foreach($feature['features'] as $item)
                                 <li class="leading-6 tracking-body-d ">{{$item}}</li>
                             @endforeach
@@ -94,19 +98,17 @@
     </x-content.offset>
 
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-8 border-b border-concrete">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
-                <h3 class="pb-2">Technology</h3>
+                <h3>Technology</h3>
             </x-page-header>
         </x-container>
     </div>
 
     <x-content.offset class="mb-36">
         <x-slot:left>
-            <h4>Detailed specifications</h4>
-
-            <p class="text-grey">Read a detailed description of Qi and download the specifications for later.</p>
+            <p>We offer: training programmes, comprehensive documentation, in-application help, modular front-end framework and pluggable, RESTful API among other things.</p>
         </x-slot:left>
 
         <x-slot:right>
@@ -126,7 +128,7 @@
         </x-slot:right>
     </x-content.offset>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-6 border-b border-concrete">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
                 <h3>Leveraging digital design that

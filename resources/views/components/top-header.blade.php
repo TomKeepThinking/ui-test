@@ -1,6 +1,6 @@
 <div class="animation-fade-in">
     <x-container>
-        <x-page-header class="md:w-4/5 pb-4 md:pb-8 pt-32">
+        <x-page-header class="md:w-2/3 pb-4 md:pb-8 pt-32">
             {{$slot}}
         </x-page-header>
     </x-container>

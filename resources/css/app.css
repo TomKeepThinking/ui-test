@@ -22,7 +22,7 @@ h4 {
 
 @layer components {
     p {
-        @apply tracking-body-d leading-6 font-medium text-steel;
+        @apply tracking-body-d leading-6 font-medium text-steel dark:text-concrete;
     }
 }
 

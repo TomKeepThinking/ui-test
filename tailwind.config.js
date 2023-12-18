@@ -34,7 +34,10 @@ module.exports = {
             spacing: {
                 'work-sm': '360px',
                 'work-lg': '460px',
-                'work-single' : '679px'
+                'work-single' : '679px',
+                4: '15px',
+                8: '30px',
+                36: '140px'
             },
             height: {
                 'newsletter': '550px'

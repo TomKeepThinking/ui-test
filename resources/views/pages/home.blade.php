@@ -15,7 +15,7 @@
     <x-slider.hero-slider class="mb-12 md:mb-32">
        <div class="hidden md:block tracking-body-d">
            <h3 class="body-d">{{$firstContentHeader}}</h3>
-           <p class="font-normal">{{$firstContentText}}</p>
+           <p>{{$firstContentText}}</p>
            <x-link route="{{route('pages.about')}}">Learn More</x-link>
        </div>
     </x-slider.hero-slider>
