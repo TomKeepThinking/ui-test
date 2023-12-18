@@ -90,6 +90,4 @@ document.addEventListener('livewire:navigated', () => {
             gsap.to(elements, {  opacity: 1, stagger: 0.15});
         },
     });
-
-
 })

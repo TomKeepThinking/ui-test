@@ -31,7 +31,7 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="p-20 bg-sand">
+            <div class="p-20 bg-sand overflow-hidden">
                 <div class="w-full relative ">
 
                     <div class="w-full h-[900px] bg-gray-100 shadow-large rounded-xl overflow-y-hidden"></div>
