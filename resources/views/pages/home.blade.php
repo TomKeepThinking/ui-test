@@ -41,12 +41,12 @@
         </x-slot:left>
     </x-content.offset>
 
-    <x-work.grid class="mb-12 box" :work="$work" />
+    <x-work.grid class="mb-[100px] box" :work="$work" />
 
-    <div class="mb-6 border-b border-concrete pb-4">
+    <div class="mb-6 border-b border-concrete ">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
-                <h4 class="pb-4">{{$thirdContentHeader}}</h4>
+                <h4>{{$thirdContentHeader}}</h4>
             </x-page-header>
         </x-container>
     </div>

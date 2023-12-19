@@ -15,10 +15,14 @@
                         wire:navigate.hover
                         @click="$wire.setActiveNavItem(@js($item))"
                         @class([
-                         'transition-all ease text-grey hover:text-black dark:text-white under'=> $activeNavItem['route'] !== $item['route'],
-                         'underline text-black dark:text-white underline-offset-4' => $activeNavItem['route'] == $item['route'],
+                        'tracking-body-d',
+                         'text-black' => $activeNavItem['route'] === 'pages.home',
+                         'text-grey' => $activeNavItem['route'] !== 'pages.home',
+                         'transition-all ease hover:text-black dark:text-white '=> $activeNavItem['route'] !== $item['route'],
+                         'underline !text-black dark:text-white dark:decoration-white underline-offset-4' => $activeNavItem['route'] == $item['route'],
                      ])
                     >
+
                         {{ $item['name'] }}
                     </a>
                 </li>

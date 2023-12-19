@@ -28,6 +28,6 @@
         <x-shared.grid-overlay/>
     </div>
     <h4 class="text-grey">Tag</h4>
-    <p >{{$content}}</p>
+    <p class="text-charcoal">{{$content}}</p>
     <p class="text-grey">12.0.5.2022</p>
 </div>

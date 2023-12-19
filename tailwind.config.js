@@ -36,6 +36,7 @@ module.exports = {
                 'work-lg': '460px',
                 'work-single' : '679px',
                 4: '15px',
+                6: '22px',
                 8: '30px',
                 36: '140px'
             },
@@ -63,6 +64,7 @@ module.exports = {
             },
             lineHeight: {
                 '4.5': '18px',
+                '6': '24px',
                 '20': '80px'
             },
             letterSpacing: {
