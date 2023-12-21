@@ -16,7 +16,7 @@
 
 
                 <div class="flex justify-between items-center">
-                    <div class="pl-6">
+                    <div>
                         <label class="flex items-center text-sm cursor-pointer">
                             <input type="checkbox" class="mr-2 h-4 rounded-none w-4 border-charcoal text-indigo-600 focus:outline-none focus:ring-0">
                             Subscribe to Newsletter
