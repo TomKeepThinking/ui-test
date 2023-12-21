@@ -43,7 +43,7 @@
         <div class="sr-only">Menu Button</div>
     </x-icon-button>
 
-    <div class="fixed inset-0 h-full  bg-red text-white flex flex-col "
+    <div class="fixed inset-0 h-full z-100 bg-red text-white flex flex-col "
          x-show="$wire.open"
          x-transition.opacity
     >
