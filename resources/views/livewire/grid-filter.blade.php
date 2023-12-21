@@ -3,7 +3,11 @@
         <div class="flex flex-wrap capitalize">
             @foreach($filters as $filter)
                 <div wire:click="setActiveItem(@js($filter))"
-                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease mr-4', 'underline text-charcoal' => $filter === $activeFilter && !$showClients ])>
+                    @class([
+                    'cursor-pointer hover:opacity-60 transition-opacity ease mr-4',
+                    'underline text-black' => $filter === $activeFilter && !$showClients,
+                    'text-grey' => $filter !== $activeFilter
+                    ])>
                     {{$filter}}
                 </div>
             @endforeach

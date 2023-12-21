@@ -1,11 +1,10 @@
-@props(['class' => '', 'route' => '#', 'opacity' => true])
+@props(['class' => '', 'route' => '#'])
 <a
     wire:navigate
     href="{{$route}}"
 
     @class([
-      'tracking-body-d underline underline-offset-4 cursor-pointer transition-opacity ease text-grey text-sm md:text-lg',
-      'hover:opacity-60' => $opacity,
+      'tracking-body-d underline underline-offset-4 hover:text-black cursor-pointer transition-all ease text-grey text-sm md:text-lg',
       $class
    ])>
     {{$slot}}
