@@ -6,6 +6,8 @@ class IdeasPageController extends Controller
 {
     public function __invoke()
     {
+        $pageHeader = 'Latest at the studio';
+
         $projects = [
             [
                 'image' => '/storage/images/phone.png',
@@ -80,7 +82,7 @@ class IdeasPageController extends Controller
                 'tags' => ['archived']
             ]
         ];
-        return view('pages.ideas.index', compact('projects'));
+        return view('pages.ideas.index', compact('projects', 'pageHeader'));
     }
 
     public function show($idea){

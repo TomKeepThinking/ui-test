@@ -1,11 +1,9 @@
 <x-app-layout>
-    <div class="border-b border-concrete mb-6 ">
-        <x-container>
-            <x-page-header class="md:w-2/3 pt-32">
-                <h1>{{$pageHeader}}</h1>
-            </x-page-header>
-        </x-container>
-    </div>
+    <x-top-header>
+        <h1 class="split-words">
+            {{$pageHeader}}
+        </h1>
+    </x-top-header>
 
     <x-container>
         <livewire:grid-filter :items="$work" :$clients/>
