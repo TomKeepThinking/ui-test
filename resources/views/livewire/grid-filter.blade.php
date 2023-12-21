@@ -37,7 +37,12 @@
                                 <li @mouseover="activeImage = @js($client['image'])"
                                     @mouseout="activeImage = ''"
                                     class="cursor-pointer text-grey">
-                                   <span class="hover:border-b-black border-b pb-0 mb-0 leading-6 border-concrete inline-block
+                                   <span
+                                       class="
+                                             pb-0 mb-0
+                                            leading-6
+                                            hover:underline inline-block
+                                            underline-offset-4
                                             hover:text-black transition-all ease">
                                         {{$client['name']}}
                                    </span>
