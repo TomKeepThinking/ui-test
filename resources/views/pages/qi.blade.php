@@ -1,5 +1,3 @@
-
-
 <div class="dark page-container">
 <x-app-layout>
     <x-top-header>

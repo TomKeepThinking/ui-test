@@ -4,7 +4,7 @@
         <x-icons.close-icon class="w-5 "/>
     </x-icon-button>
 
-    <p class="mb-8 tracking-body-d leading-6 text-white">Bring innovation to your inbox and stay up to date with the latest news on our software and design projects. We will not use your email for any other purpose and we won’t pass it to anyone else.</p>
+    <p class="mb-8 tracking-body-d leading-6 text-white dark:text-white">Bring innovation to your inbox and stay up to date with the latest news on our software and design projects. We will not use your email for any other purpose and we won’t pass it to anyone else.</p>
 
     <form action="POST" class="flex flex-col space-y-4">
         <label class="border-b border-white p-0 m-0 flex h-10">
@@ -26,7 +26,7 @@
         </label>
 
 
-        <x-button-secondary class="ml-auto">
+        <x-button-secondary class="ml-auto hover:!bg-white">
             Subscribe
         </x-button-secondary>
     </form>
