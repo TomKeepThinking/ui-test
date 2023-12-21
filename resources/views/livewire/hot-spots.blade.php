@@ -8,8 +8,9 @@
            <ul class="flex flex-col border divide-y ">
 
                @foreach($hotSpots as $key=>$spot)
-                   <li wire:key="{{ $key }}" class="overflow-hidden"
-                   x-cloak>
+                   <li wire:key="{{ $key }}"
+                        class="overflow-hidden"
+                        x-cloak>
                        <span  wire:click="setActiveSpot('{{$key}}')"
                               class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease"
                               :class="{ 'underline underline-offset-4': {{$spot['name'] == $activeSpot['name']}}}">{{$spot['name']}}</span>
@@ -33,13 +34,9 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="p-20 bg-sand overflow-hidden">
+            <div class="p-20 bg-sand">
                 <div class="w-full relative ">
-
-                    <div class="w-full h-[900px] bg-gray-100 overflow-y-hidden">
-
-                    </div>
-
+                    <div class="w-full h-[900px] bg-gray-100 overflow-y-hidden"></div>
                     @foreach($activeSpot['spots'] as $key=>$spot)
 
                         <x-pop-up wire:key="{{ $spot['id']}}"
@@ -47,6 +44,7 @@
                                   :y="$spot['y']"
                                   :key="$key"
                                   :id="$spot['id']"
+                                  :name="$spot['name']"
                                   :content="$spot['content']" />
                     @endforeach
                 </div>

@@ -1,4 +1,4 @@
-@props(['x', 'y', 'key', 'id', 'content'])
+@props(['x', 'y', 'key', 'id', 'content', 'name'])
 
 @php($ref = 'pop-' . $id)
 
@@ -24,7 +24,8 @@
              id="popup-{{$id}}"
              x-transition
              class="z-10 absolute p-4 rounded-sm top-8 w-[300px] text-white bg-black shadow-card">
-            <p> {{ $content}}</p>
+            <h4>{{$key . ' ' . $name}}</h4>
+            <p class="text-concrete"> {{ $content}}</p>
         </div>
     </div>
 </div>
