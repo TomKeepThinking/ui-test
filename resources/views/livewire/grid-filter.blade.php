@@ -1,10 +1,9 @@
 <div class="mb-48" x-data="{'activeImage': ''}">
-    <div class="flex justify-between items-center mb-6 text-grey">
-
-        <div class="flex space-x-4  capitalize">
+    <div class="flex flex-wrap justify-between items-center mb-6 text-grey">
+        <div class="flex flex-wrap capitalize">
             @foreach($filters as $filter)
                 <div wire:click="setActiveItem(@js($filter))"
-                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline text-charcoal' => $filter === $activeFilter && !$showClients ])>
+                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease mr-4', 'underline text-charcoal' => $filter === $activeFilter && !$showClients ])>
                     {{$filter}}
                 </div>
             @endforeach

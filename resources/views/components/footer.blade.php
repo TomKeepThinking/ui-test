@@ -58,7 +58,7 @@ $socialNavItems = [
     </div>
 
     <div class="border-t border-concrete">
-        <div class="md:container mx-auto md:px-8 md:py-4">
+        <div class="container mx-auto md:px-8 md:py-4">
             <div class="flex flex-col-reverse space-y-12 space-y-reverse md:flex-row md:mb-12">
                 <div class="w-full md:w-1/2 xl:w-1/3 px-8 md:px-0 pb-4 md:pb-0">
                         <div class="flex flex-wrap mb-4">
@@ -72,7 +72,7 @@ $socialNavItems = [
                 </div>
 
                 <div class="w-full grid gap-5 grid-cols-4 md:grid-cols-3">
-                    <div class="col-span-4 md:col-span-1 grid gap-5 grid-cols-2 md:grid-cols-1 border-b md:border-none border-concrete px-8 py-4 md:px-0 md:py-0">
+                    <div class="col-span-4 md:col-span-1 grid gap-5 grid-cols-2 md:grid-cols-1 px-8 pt-4 md:px-0 md:py-0">
                         <div class="col-span-1">
                             <address class="not-italic mb-4">
                                 38-40 Southwark Street<br>
@@ -84,6 +84,7 @@ $socialNavItems = [
                             <p class="text-white">9:30am to 6:00pm</p>
                         </div>
 
+
                         <div class="flex flex-col col-span-1">
                             <x-link class="!text-concrete">
                                 +44 20 7490 5337
@@ -93,6 +94,9 @@ $socialNavItems = [
                                 info@keepthinking.it
                             </x-link>
                         </div>
+                    </div>
+                    <div class="col-span-4 relative md:hidden">
+                        <div class=" bg-concrete h-px w-[1500px] absolute -ml-[500px]"></div>
                     </div>
 
                     <div class="col-span-2 md:col-span-1 px-8 md:px-0">
