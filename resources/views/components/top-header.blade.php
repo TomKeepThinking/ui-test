@@ -6,4 +6,4 @@
     </x-container>
 </div>
 
-<div class="w-0 h-px bg-concrete dark:bg-concrete mb-4 md:mb-8 animate-width"></div>
+<div class="w-0 h-px bg-concrete dark:bg-concrete mb-4 md:mb-8 animate-width sticky top-nav z-50"></div>

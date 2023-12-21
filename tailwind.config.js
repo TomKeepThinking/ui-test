@@ -40,8 +40,12 @@ module.exports = {
                 8: '30px',
                 36: '140px'
             },
+            inset: {
+               'nav': '65px'
+            },
             height: {
-                'newsletter': '550px'
+                'newsletter': '550px',
+                'nav': '65px'
             },
             width: {
               'newsletter': '525px'

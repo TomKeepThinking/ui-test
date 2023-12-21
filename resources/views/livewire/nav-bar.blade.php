@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center container mx-auto px-8 py-4"
+<div class="flex justify-between items-center container mx-auto px-8 py-4 h-nav"
      x-cloak x-data="{open: false}">
 
     <x-link route="{{route('pages.home')}}"
