@@ -4,20 +4,20 @@
         <div class="flex space-x-4  capitalize">
             @foreach($filters as $filter)
                 <div wire:click="setActiveItem(@js($filter))"
-                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline text-charcoal' => $filter === $activeFilter])>
+                    @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline text-charcoal' => $filter === $activeFilter && !$showClients ])>
                     {{$filter}}
                 </div>
             @endforeach
         </div>
 
-        <div wire:click="setActiveItem('clients')"
-             @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline' => $activeFilter === 'clients'])>Client</div>
+        <div wire:click="toggleClients"
+             @class(['cursor-pointer hover:opacity-60 transition-opacity ease', 'underline' => $showClients])>Client</div>
     </div>
 
 
     <div class="relative">
             <div
-                x-show="$wire.activeFilter === 'clients'"
+                x-show="$wire.showClients"
                 x-transition:enter.opacity.duration.500ms
                 class="bg-white w-full">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-start">
@@ -54,7 +54,7 @@
             </div>
         @foreach($filters as $filter)
             <div x-cloak
-                 x-show="$wire.activeFilter === @js($filter)"
+                 x-show="$wire.activeFilter === @js($filter) && !$wire.showClients"
                  class="grid grid-cols-12 gap-5 gap-y-24"
                  x-transition:enter.opacity.duration.500ms>
 

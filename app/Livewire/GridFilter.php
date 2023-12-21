@@ -30,6 +30,11 @@ class GridFilter extends Component
         $this->setFilteredItems();
     }
 
+    public function toggleClients()
+    {
+        $this->showClients = !$this->showClients;
+    }
+
     public function setFilteredItems()
     {
         $newArray = array_filter($this->list, function($item) {
