@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer components {
     p {
-        @apply tracking-body-d leading-6 font-medium text-steel dark:text-concrete;
+        @apply tracking-body-d text-sm md:text-lg leading-5 md:leading-6 font-medium text-steel dark:text-concrete;
     }
 }
 
