@@ -4,7 +4,7 @@
         <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
     </x-top-header>
 
-    <div class="pt-6 mb-32">
+    <div class="mb-32">
         <x-content.offset>
             <x-slot:left>
                <div class="mb-2">
