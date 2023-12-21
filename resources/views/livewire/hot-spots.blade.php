@@ -6,11 +6,13 @@
                 <p>Qi is designed for universal flexibility, collaboration, simplicity and speed for any type of information management.</p>
             </div>
            <ul class="flex flex-col border divide-y ">
+
                @foreach($hotSpots as $key=>$spot)
                    <li wire:key="{{ $key }}" class="overflow-hidden"
                    x-cloak>
                        <span  wire:click="setActiveSpot('{{$key}}')"
-                              class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease">{{$spot['name']}}</span>
+                              class="py-2 px-4 block cursor-pointer hover:opacity-70 transition-opacity ease"
+                              :class="{ 'underline underline-offset-4': {{$spot['name'] == $activeSpot['name']}}}">{{$spot['name']}}</span>
 
                           <ul x-show="$wire.activeSpot.name === @js($spot['name'])"
                               x-collapse
@@ -20,7 +22,7 @@
                                 <li wire:key="{{ $key }}"
                                     @mouseover="popup = {{$key}}"
                                     @mouseleave="popup = ''"
-                                    class="px-4 py-2 transition-all ease cursor-pointer hover:bg-red hover:text-white">
+                                    class="px-4 py-2 transition-all text-concrete ease cursor-pointer hover:bg-red hover:text-white">
                                     {{$key+1 . ' ' .  $item['name']}}
                                 </li>
                               @endforeach
@@ -34,7 +36,9 @@
             <div class="p-20 bg-sand overflow-hidden">
                 <div class="w-full relative ">
 
-                    <div class="w-full h-[900px] bg-gray-100 shadow-large rounded-xl overflow-y-hidden"></div>
+                    <div class="w-full h-[900px] bg-gray-100 overflow-y-hidden">
+
+                    </div>
 
                     @foreach($activeSpot['spots'] as $key=>$spot)
 
