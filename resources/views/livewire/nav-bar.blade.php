@@ -29,7 +29,7 @@
             @endforeach
 
             <li>
-                <x-link :opactiy="false" route="{{route('pages.demo')}}">
+                <x-link :opacity="false" route="{{route('pages.demo')}}">
                     <x-button class="hover:bg-black">
                         Get a Demo
                     </x-button>

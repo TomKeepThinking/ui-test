@@ -63,7 +63,7 @@ $socialNavItems = [
                 <div class="w-full md:w-1/2 xl:w-1/3 px-8 md:px-0 pb-4 md:pb-0">
                         <div class="flex flex-wrap mb-4">
                             <span class="mr-2 text-sm md:text-lg">Get in touch</span>
-                            <x-link class="!text-concrete">Contact Us </x-link>
+                            <x-link-dark >Contact Us </x-link-dark>
                         </div>
 
                     <x-button-secondary @click="open = true" class="!text-black hover:!bg-red hover:!text-white">
@@ -86,13 +86,13 @@ $socialNavItems = [
 
 
                         <div class="flex flex-col col-span-1">
-                            <x-link class="!text-concrete">
+                            <x-link-dark >
                                 +44 20 7490 5337
-                            </x-link>
+                            </x-link-dark>
 
-                            <x-link class="!text-concrete">
+                            <x-link-dark >
                                 info@keepthinking.it
-                            </x-link>
+                            </x-link-dark>
                         </div>
                     </div>
                     <div class="col-span-4 relative md:hidden">
@@ -102,15 +102,15 @@ $socialNavItems = [
                     <div class="col-span-2 md:col-span-1 px-8 md:px-0">
                         <ul>
                             @foreach ($navItems as $item)
-                                <li><x-link class="!text-concrete">{{ $item['name']}}</x-link></li>
+                                <li><x-link-dark>{{ $item['name']}}</x-link-dark></li>
                             @endforeach
-                            <li><x-link class="!text-concrete">Get A Demo</x-link></li>
+                            <li><x-link-dark>Get A Demo</x-link-dark></li>
                         </ul>
                     </div>
                     <div class="col-span-2 md:col-span-1 ">
                         <ul>
                             @foreach ($socialNavItems as $item)
-                                <li><x-link class="!text-concrete">{{ $item['name']}}</x-link></li>
+                                <li><x-link-dark>{{ $item['name']}}</x-link-dark></li>
                             @endforeach
                         </ul>
                     </div>
