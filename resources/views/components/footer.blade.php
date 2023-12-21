@@ -74,7 +74,7 @@ $socialNavItems = [
                 <div class="w-full grid gap-5 grid-cols-4 md:grid-cols-3">
                     <div class="col-span-4 md:col-span-1 grid gap-5 grid-cols-2 md:grid-cols-1 px-8 pt-4 md:px-0 md:py-0">
                         <div class="col-span-1">
-                            <address class="not-italic mb-4 tracking-body-d">
+                            <address class="not-italic mb-4 tracking-body-d text-sm md:text-lg">
                                 38-40 Southwark Street<br>
                                 London SE1 1UN<br>
                                 United Kingdom
