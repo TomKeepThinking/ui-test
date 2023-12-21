@@ -23,7 +23,7 @@
                         </label>
                     </div>
                     <x-button class="ml-auto">
-                        Submit
+                        Send
                     </x-button>
                 </div>
             </div>
