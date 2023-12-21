@@ -7,10 +7,6 @@ h1, h2, h3, h4, h5, h6 {
     @apply text-black dark:text-white;
 }
 
-h4 {
-    @apply tracking-body-d;
-}
-
 [x-cloak] {
     display: none;
 }

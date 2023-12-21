@@ -14,7 +14,7 @@
 
     <x-slider.hero-slider class="mb-12 md:mb-32">
        <div class="hidden md:block tracking-body-d">
-           <h3 class="body-d">{{$firstContentHeader}}</h3>
+           <h3 class="tracking-body-d">{{$firstContentHeader}}</h3>
            <p class="mb-4">{{$firstContentText}}</p>
            <x-link route="{{route('pages.about')}}">Learn More</x-link>
        </div>
@@ -46,7 +46,7 @@
     <div class="mb-6 border-b border-concrete ">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
-                <h4>{{$thirdContentHeader}}</h4>
+                <h4 >{{$thirdContentHeader}}</h4>
             </x-page-header>
         </x-container>
     </div>
