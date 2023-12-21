@@ -18,15 +18,12 @@
         </x-slot:right>
     </x-content.offset>
 
-    <div class="border-b border-concrete mb-5">
-        <x-content.offset >
-            <x-slot:left></x-slot:left>
-            <x-slot:right>
-                <x-page-header>
-                    <h2 class="pb-6">We’re passionate about culture, always striving to make heritage accessible</h2>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+    <div class="mb-5 border-b border-concrete">
+        <x-container>
+            <x-page-header class="md:w-9/12 ml-auto">
+                <h2>We’re passionate about culture, always striving to make heritage accessible</h2>
+            </x-page-header>
+        </x-container>
     </div>
 
 
@@ -80,15 +77,12 @@
         </div>
     </x-container>
 
-    <div class="border-b border-concrete mb-5">
-        <x-content.offset >
-            <x-slot:left></x-slot:left>
-            <x-slot:right>
-                <x-page-header class="w-2/3 pb-6 pt-32">
-                    <h2>Meet the team</h2>
-                </x-page-header>
-            </x-slot:right>
-        </x-content.offset>
+    <div class="mb-5 mt-32 border-b border-concrete">
+        <x-container>
+            <x-page-header class="md:w-9/12 ml-auto">
+                <h2>Meet the team</h2>
+            </x-page-header>
+        </x-container>
     </div>
 
     <x-content.offset class="mb-28">
@@ -114,7 +108,7 @@
         </x-slot:right>
     </x-content.offset>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-8 border-b border-concrete">
         <x-content.offset>
             <x-slot:left>
 
@@ -129,7 +123,7 @@
 
     <x-logo-grid />
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-5 border-b border-concrete">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
                 <h3>Leveraging digital design that helps to shape the way we experience culture & history</h3>
@@ -139,7 +133,7 @@
 
     <x-content.offset>
         <x-slot:left>
-            <div class="flex h-full mb-8">
+            <div class="flex h-full pb-5">
                 <x-link class="mt-auto">
                     View our work
                 </x-link>

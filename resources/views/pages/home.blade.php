@@ -33,7 +33,7 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset class="mb-3.5">
+    <x-content.offset class="mb-5">
         <x-slot:left>
             <div class="mt-auto">
                 <x-link>View work</x-link>
