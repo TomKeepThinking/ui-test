@@ -119,7 +119,7 @@ $socialNavItems = [
         </div>
     </div>
 
-    <div class="absolute right-8 bottom-20">
+    <div class="hidden md:flex absolute right-8 bottom-20">
         <button type="button" @click="window.scrollTo({top: 0, behavior: 'smooth'})">
             <x-icons.up-arrow></x-icons.up-arrow>
         </button>
