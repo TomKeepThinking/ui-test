@@ -77,7 +77,7 @@ $socialNavItems = [
                             <address class="not-italic mb-4">
                                 38-40 Southwark Street<br>
                                 London SE1 1UN<br>
-                                UK
+                                United Kingdom
                             </address>
 
                             <p class="text-white">Monday to Friday </p>
