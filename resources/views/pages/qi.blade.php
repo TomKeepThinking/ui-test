@@ -8,7 +8,7 @@
         <x-content.offset>
             <x-slot:left>
                <div class="mb-2">
-                   <h2 class="mb-2">Versatile, customisable, modern</h2>
+                   <h2 class="tracking-body-d">Versatile, customisable, modern</h2>
                    <p>Providing technology for over 20 years to organisations in the arts, culture and heritage sectors, Qi is an innovative content and collection management system for museums and archives.</p>
                </div>
                 <div class="w-40">
