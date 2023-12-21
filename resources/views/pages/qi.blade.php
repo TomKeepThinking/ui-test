@@ -114,12 +114,12 @@
         </x-slot:left>
 
         <x-slot:right>
-            <div class="grid grid-cols-3 border-t border-l">
+            <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l">
                 @foreach($technology as $tech)
                     <x-content.text-grid-item>
                         <h4 class="mb-2">{{$tech['title']}}</h4>
 
-                        <ul class="text-grey list-disc pl-4 space-y-2 ">
+                        <ul class="text-concrete list-disc pl-4 space-y-2 ">
                             @foreach($tech['features'] as $item)
                                 <li class="leading-6 tracking-body-d">{{$item}}</li>
                             @endforeach
@@ -141,10 +141,10 @@
 
     <x-content.offset>
         <x-slot:left>
-            <div class="flex h-full mb-8">
-                <x-link class="mt-auto">
+            <div class="flex h-full pb-8">
+                <x-link-dark class="mt-auto">
                     View our work
-                </x-link>
+                </x-link-dark>
             </div>
         </x-slot:left>
 
