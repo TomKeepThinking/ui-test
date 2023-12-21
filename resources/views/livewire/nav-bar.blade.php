@@ -48,7 +48,9 @@
          x-transition.opacity
     >
         <div class="flex justify-between items-center px-8 py-4 absolute top-0 w-full">
-            <x-icons.kt-logo  class="w-48 text-white"/>
+            <x-link route="{{route('pages.home')}}">
+                <x-icons.kt-logo  class="w-48 text-white"/>
+            </x-link>
 
             <x-icon-button class="w-7 text-white md:hidden" wire:click="toggleMobile">
                 <x-icons.close-icon />
@@ -59,7 +61,11 @@
         <div class="text-2.5xl flex flex-col h-full justify-center">
             <ul>
                 @foreach ($navItems as $item)
-                    <li class="border-b border-white py-4 px-8">{{ $item['name'] }}</li>
+                    <li class="border-b border-white py-4 px-8">
+                        <a href="{{route($item['route'])}}">
+                            {{ $item['name'] }}
+                        </a>
+                    </li>
                 @endforeach
             </ul>
         </div>
