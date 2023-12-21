@@ -48,7 +48,7 @@ $socialNavItems = [
 
 ?>
 
-<div class="bg-black text-white tracking-body-d overflow-hidden" x-cloak x-data="{ open: false }">
+<div class="bg-black text-white tracking-body-d overflow-hidden relative" x-cloak x-data="{ open: false }">
     <div class="pt-10 mx-auto">
        <x-container>
            <x-page-header class="md:w-9/12 pb-8 ml-auto">
@@ -117,6 +117,12 @@ $socialNavItems = [
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="absolute right-8 bottom-20">
+        <button type="button" @click="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <x-icons.up-arrow></x-icons.up-arrow>
+        </button>
     </div>
 
     <div class="border-t border-concrete text-concrete">
