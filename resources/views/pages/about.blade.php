@@ -108,7 +108,7 @@
         </x-slot:right>
     </x-content.offset>
 
-    <div class="mb-8 border-b border-concrete">
+    <div class="mb-4 md:mb-8 border-b border-concrete">
         <x-content.offset>
             <x-slot:left>
 
