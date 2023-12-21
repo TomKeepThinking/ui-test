@@ -97,21 +97,20 @@
         </x-slot:left>
         <x-slot:right>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
                 @foreach($team as $member)
-                   <div class="col-span-1 ">
-                       <div class="h-80 w-full bg-sand bg-no-repeat bg-cover bg-center mb-4"
+                   <div class="col-span-1">
+                       <div class="h-[160px] sm:h-80 w-full bg-sand bg-no-repeat bg-cover bg-center mb-2 sm:mb-4"
                             style="background-image: url('{{$member['image']}}')">
                        </div>
 
-                       <div>
+                       <div class="text-xs md:text-lg">
                            <h5>{{$member['name']}}</h5>
                            <h6 class="text-grey">{{$member['role']}}</h6>
                        </div>
                    </div>
                 @endforeach
             </div>
-
         </x-slot:right>
     </x-content.offset>
 
