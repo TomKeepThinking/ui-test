@@ -15,36 +15,36 @@ class QiPageController extends Controller
                       'id' => uniqid(),
                       'name' => 'Global search',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                      'x' => 10,
-                      'y' => 20
+                      'x' => '10%',
+                      'y' => '20%'
                   ],
                   [
                       'id' => uniqid(),
                       'name' => 'All content at a glance',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                      'x' => 170,
-                      'y' => 920
+                      'x' => '90%',
+                      'y' => '20%'
                   ],
                   [
                       'id' => uniqid(),
                       'name' => 'Easy access',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                      'x' => 10,
-                      'y' => 20
+                      'x' => '10%',
+                      'y' => '80%'
                   ],
                   [
                       'id' => uniqid(),
                       'name' => 'Quick links',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                      'x' => 120,
-                      'y' => 210
+                      'x' => '90%',
+                      'y' => '80%'
                   ],
                   [
                       'id' => uniqid(),
                       'name' => 'Resources and help',
                       'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                      'x' => 140,
-                      'y' => 240
+                      'x' => '50%',
+                      'y' => '50%'
                   ]
               ]
           ],
@@ -56,36 +56,36 @@ class QiPageController extends Controller
                         'id' => uniqid(),
                         'name' => 'Global search',
                         'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                        'x' => 20,
-                        'y' => 30
+                        'x' => '50%',
+                        'y' => '50%'
                     ],
                     [
                         'id' => uniqid(),
                         'name' => 'All content at a glance',
                         'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                        'x' => 40,
-                        'y' => 50
+                        'x' => '23%',
+                        'y' => '30%'
                     ],
                     [
                         'id' => uniqid(),
                         'name' => 'Easy access',
                         'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                        'x' => 110,
-                        'y' => 30
+                        'x' => '90%',
+                        'y' => '80%'
                     ],
                     [
                         'id' => uniqid(),
                         'name' => 'Quick links',
                         'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                        'x' => 30,
-                        'y' => 330
+                        'x' => '56%',
+                        'y' => '23%'
                     ],
                     [
                         'id' => uniqid(),
                         'name' => 'Resources and help',
                         'content' => 'View at a glance any upcoming actions needed to help prioritise your staffs workflow.',
-                        'x' => 120,
-                        'y' => 310
+                        'x' => '22%',
+                        'y' => '50%'
                     ]
                 ]
             ]

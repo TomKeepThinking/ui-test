@@ -20,7 +20,7 @@
        </div>
     </x-slider.hero-slider>
 
-    <div class="mb-3.5 border-b border-concrete pb-8">
+    <div class="mb-3.5 border-b border-concrete">
         <x-content.offset>
           <x-slot:left>
 

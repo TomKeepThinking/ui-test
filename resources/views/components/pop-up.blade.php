@@ -2,7 +2,7 @@
 
 @php($ref = 'pop-' . $id)
 
-<div class="absolute" style="top:{{$x}}px; left:{{$y}}px" >
+<div class="absolute" style="top:{{$x}}; left:{{$y}}" >
     <div
         x-transition
         class="w-6 h-6 rounded-full bg-red transition-all ease cursor-pointer flex items-center justify-center shadow"
