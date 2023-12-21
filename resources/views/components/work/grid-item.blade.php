@@ -12,7 +12,8 @@
     <div
         style="background-image: url('{{ asset($image)}}');"
         @class([
-            'w-full bg-cover bg-no-repeat bg-center relative overflow-hidden text-white text-sm bg-gray-100 mb-4 ' .$class,
+            'w-full bg-cover bg-no-repeat bg-center relative
+            overflow-hidden text-white text-sm bg-gray-100 mb-4 ' .$class,
             'pt-40 lg:pt-72' =>  !$large,
             'pt-work-sm lg:pt-work-lg' => $large,
         ])>
