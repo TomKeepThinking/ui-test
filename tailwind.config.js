@@ -25,6 +25,7 @@ module.exports = {
         extend: {
             zIndex: {
                 '100': '100',
+                '200': '200',
             },
             transitionDuration: {
                 '2000': '2000ms',
