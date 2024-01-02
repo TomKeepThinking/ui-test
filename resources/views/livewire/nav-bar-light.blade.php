@@ -3,7 +3,9 @@
 
     <x-link route="{{route('pages.home')}}"
             wire:click="clearActiveNavItem()">
-            <x-icons.kt-logo class="w-48 text-red dark:text-white" />
+
+            <x-icons.kt-logo class="w-48 text-white" />
+
         <span class="sr-only">KT Logo</span>
     </x-link>
 
@@ -12,23 +14,21 @@
             @foreach ($navItems as $item)
                     <li class="dark:text-white ">
                         <a href="{{route($item['route'])}}"
-                            wire:navigate.hover
+                           wire:navigate.hover
                             @class([
-                            'tracking-body-d',
-                             'text-black' => $activeNavItem['route'] === 'pages.home',
-                             'text-grey' => $activeNavItem['route'] !== 'pages.home',
-                             'transition-all ease hover:text-black dark:text-white '=> Route::currentRouteName() !== $item['route'],
-                             'underline text-black dark:text-white dark:decoration-white underline-offset-4' => Route::currentRouteName() == $item['route'],
+                            'tracking-body-d text-white',
+                            'underline underline-offset-4' => str_contains($item['route'], 'work'),
                          ])
                         >
                             {{ $item['name'] }}
                         </a>
                     </li>
+
             @endforeach
 
             <li>
                 <x-link :opacity="false" route="{{route('pages.demo')}}">
-                    <x-button class="hover:bg-black">
+                    <x-button class="hover:bg-black hover:!text-white bg-white !text-black">
                         Get a Demo
                     </x-button>
                 </x-link>
@@ -37,7 +37,7 @@
     </div>
 
     <x-icon-button class="w-7 text-black dark:text-white md:hidden z-200" wire:click="toggleMobile">
-        <x-icons.menu-icon :open="$open"/>
+        <x-icons.menu-icon color="bg-white" :open="$open"/>
         <div class="sr-only">Menu Button</div>
     </x-icon-button>
 

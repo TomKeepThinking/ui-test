@@ -1,9 +1,14 @@
 <x-work-layout>
-    <div class="sticky z-20 top-0 w-full dark:bg-black h-nav {{$navBg}}">
+    <div class="sticky z-20 top-0 w-full dark:bg-black h-nav transition-opacity ease {{$navBg}}" id="navbar-light">
+        <livewire:nav-bar :light="true" :routes="$navRoutes"/>
+    </div>
+
+    <div class="sticky z-20 top-0 w-full dark:bg-black h-nav transition-opacity ease opacity-0 bg-white" id="navbar">
         <livewire:nav-bar :routes="$navRoutes"/>
     </div>
 
-    <div class="absolute inset-0 h-2/3 w-full {{$navBg}} z-0"></div>
+
+    <div class="absolute inset-0 h-screen w-full {{$navBg}} z-0"></div>
 
     <div class="border-b border-white mb-8 pb-8 z-10 relative">
         <x-container>

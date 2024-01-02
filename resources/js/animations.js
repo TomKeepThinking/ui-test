@@ -69,15 +69,16 @@ document.addEventListener('livewire:navigated', () => {
 
 
     let fadeInUp = document.querySelectorAll('.fade-in-up');
-        if(fadeInUp.length > 0){
+
+    if(fadeInUp.length > 0){
         gsap.to(".fade-in-up", {
             scrollTrigger: ".fade-in-up", // start the animation when ".box" enters the viewport (once)
             autoAlpha: 1,
+            start: '-500px',
             y: 0,
             duration: 0.5
          });
-     }
-
+    }
 
 
     //  Trigger animations on scroll
@@ -90,4 +91,25 @@ document.addEventListener('livewire:navigated', () => {
             gsap.to(elements, {  opacity: 1, stagger: 0.15});
         },
     });
+
+
+    const navbar = document.getElementById('navbar-light')
+    const navbar2 = document.getElementById('navbar')
+    const onScroll = () => {
+
+        // Get scroll value
+        const scroll = document.documentElement.scrollTop
+
+        // If scroll value is more than 0 - means the page is scrolled, add or remove class based on that
+        if (scroll > 900) {
+            navbar.classList.add('opacity-0');
+            navbar2.classList.remove('opacity-0');
+        } else {
+            navbar.classList.remove('opacity-0')
+            navbar2.classList.add('opacity-0')
+        }
+    }
+
+// Use the function
+    window.addEventListener('scroll', onScroll)
 })

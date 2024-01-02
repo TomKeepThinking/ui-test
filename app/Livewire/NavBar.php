@@ -14,7 +14,13 @@ class NavBar extends Component
 
     public $activeNavItem;
 
-    public function mount($routes){
+    public $light = false;
+
+    public function mount($routes, $light = false){
+
+        if($light){
+            $this->light = true;
+        }
         $this->navItems = $routes;
         $currentRouteName = Url::currentRoute();
 
@@ -44,6 +50,9 @@ class NavBar extends Component
 
     public function render()
     {
+        if($this->light){
+            return view('livewire.nav-bar-light');
+        }
         return view('livewire.nav-bar');
     }
 }
