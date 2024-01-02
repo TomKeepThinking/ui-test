@@ -3,35 +3,63 @@
 
     <x-link route="{{route('pages.home')}}"
             wire:click="clearActiveNavItem()">
-        <x-icons.kt-logo class="w-48 text-red dark:text-white"/>
+
+        @if(Route::is('pages.work.*'))
+            <x-icons.kt-logo class="w-48 text-white" />
+        @else
+            <x-icons.kt-logo class="w-48 text-red dark:text-white" />
+        @endif
         <span class="sr-only">KT Logo</span>
     </x-link>
 
     <div class="hidden md:block over">
         <ul class="flex justify-between items-center space-x-4">
             @foreach ($navItems as $item)
-                <li class="dark:text-white ">
-                    <a href="{{route($item['route'])}}"
-                        wire:navigate.hover
-                        @class([
-                        'tracking-body-d',
-                         'text-black' => $activeNavItem['route'] === 'pages.home',
-                         'text-grey' => $activeNavItem['route'] !== 'pages.home',
-                         'transition-all ease hover:text-black dark:text-white '=> Route::currentRouteName() !== $item['route'],
-                         'underline text-black dark:text-white dark:decoration-white underline-offset-4' => Route::currentRouteName() == $item['route'],
-                     ])
-                    >
-                        {{ $item['name'] }}
-                    </a>
-                </li>
+                @if(Route::is('pages.work.*'))
+                    <li class="dark:text-white ">
+                        <a href="{{route($item['route'])}}"
+                           wire:navigate.hover
+                            @class([
+                            'tracking-body-d text-white',
+                            'underline underline-offset-4' => str_contains($item['route'], 'work'),
+                         ])
+                        >
+                            {{ $item['name'] }}
+                        </a>
+                    </li>
+                @else
+                    <li class="dark:text-white ">
+                        <a href="{{route($item['route'])}}"
+                            wire:navigate.hover
+                            @class([
+                            'tracking-body-d',
+                             'text-black' => $activeNavItem['route'] === 'pages.home',
+                             'text-grey' => $activeNavItem['route'] !== 'pages.home',
+                             'transition-all ease hover:text-black dark:text-white '=> Route::currentRouteName() !== $item['route'],
+                             'underline text-black dark:text-white dark:decoration-white underline-offset-4' => Route::currentRouteName() == $item['route'],
+                         ])
+                        >
+                            {{ $item['name'] }}
+                        </a>
+                    </li>
+                @endif
             @endforeach
 
             <li>
-                <x-link :opacity="false" route="{{route('pages.demo')}}">
-                    <x-button class="hover:bg-black">
-                        Get a Demo
-                    </x-button>
-                </x-link>
+
+                @if(Route::is('pages.work.*'))
+                    <x-link :opacity="false" route="{{route('pages.demo')}}">
+                        <x-button class="hover:bg-black hover:!text-white bg-white !text-black">
+                            Get a Demo
+                        </x-button>
+                    </x-link>
+                @else
+                    <x-link :opacity="false" route="{{route('pages.demo')}}">
+                        <x-button class="hover:bg-black">
+                            Get a Demo
+                        </x-button>
+                    </x-link>
+                @endif
             </li>
         </ul>
     </div>

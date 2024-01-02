@@ -3,7 +3,7 @@
         <livewire:nav-bar :routes="$navRoutes"/>
     </div>
 
-    <div class="absolute inset-0 h-2/3 w-full bg-teal z-0"></div>
+    <div class="absolute inset-0 h-2/3 w-full {{$navBg}} z-0"></div>
 
     <div class="border-b border-white mb-8 pb-8 z-10 relative">
         <x-container>
