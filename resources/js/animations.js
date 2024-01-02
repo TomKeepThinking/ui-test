@@ -101,7 +101,7 @@ document.addEventListener('livewire:navigated', () => {
         const scroll = document.documentElement.scrollTop
 
         // If scroll value is more than 0 - means the page is scrolled, add or remove class based on that
-        if (scroll > 900) {
+        if (scroll > screen.height - 60) {
             navbar.classList.add('opacity-0');
             navbar2.classList.remove('opacity-0');
         } else {
