@@ -1,4 +1,8 @@
-<x-app-layout>
+<x-work-layout>
+    <div class="sticky z-20 top-0 w-full dark:bg-black h-nav {{$navBg}}">
+        <livewire:nav-bar :routes="$navRoutes"/>
+    </div>
+
     <div class="absolute inset-0 h-2/3 w-full bg-teal z-0"></div>
 
     <div class="border-b border-white mb-8 pb-8 z-10 relative">
@@ -95,4 +99,4 @@
 
     <x-work.grid class="mb-32" :work="$work" />
 
-</x-app-layout>
+</x-work-layout>

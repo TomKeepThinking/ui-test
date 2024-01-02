@@ -8,34 +8,14 @@ use Livewire\Component;
 
 class NavBar extends Component
 {
-    public $navItems = [
-        [
-            'name' => 'Qi',
-            'route' => 'pages.qi'
-        ],
-        [
-            'name' => 'Work',
-            'route' => 'pages.work'
-        ],
-        [
-            'name' => 'Ideas',
-            'route' => 'pages.ideas'
-        ],
-        [
-            'name' => 'About',
-            'route' => 'pages.about'
-        ],
-        [
-            'name' => 'Contact',
-            'route' => 'pages.contact'
-        ],
-    ];
+    public $navItems = [];
 
     public $open = false;
 
     public $activeNavItem;
 
-    public function mount(){
+    public function mount($routes){
+        $this->navItems = $routes;
         $currentRouteName = Url::currentRoute();
 
         $key = array_search($currentRouteName, array_column($this->navItems, 'route'));

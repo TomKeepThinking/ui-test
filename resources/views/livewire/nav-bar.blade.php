@@ -49,11 +49,6 @@
             <x-link route="{{route('pages.home')}}">
                 <x-icons.kt-logo  class="w-48 text-white"/>
             </x-link>
-
-{{--            <x-icon-button class="w-7 text-white md:hidden" wire:click="toggleMobile">--}}
-{{--                <x-icons.close-icon />--}}
-{{--                <div class="sr-only">Close Icon</div>--}}
-{{--            </x-icon-button>--}}
         </div>
 
         <div class="text-2.5xl flex flex-col h-full justify-center">

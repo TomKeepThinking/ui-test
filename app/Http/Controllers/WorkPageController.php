@@ -9,6 +9,7 @@ class WorkPageController extends Controller
 
         $pageHeader = 'Innovative digital solutions to help preserve and shape  culture and heritage';
 
+
         $work = [
             [
                 'image' => '/storage/images/phone.png',
@@ -225,6 +226,10 @@ class WorkPageController extends Controller
     }
 
     public function show($work){
+
+        $navBg = 'bg-teal';
+
+
 //        TODO: Implement work model, update argument to be 'Work $work'
 
         $work = [
@@ -266,6 +271,6 @@ class WorkPageController extends Controller
             ]
         ];
 
-       return view('pages.work.single', compact('work', 'content'));
+       return view('pages.work.single', compact('work', 'content', 'navBg'));
     }
 }
