@@ -4,7 +4,7 @@
         <div class="flex flex-wrap capitalize">
             @foreach($filters as $filter)
                 <div wire:click="setActiveItem(@js($filter))"
-                    @class(['cursor-pointer mr-4', 'underline !text-charcoal' => $filter === $activeFilter])>
+                    @class(['tracking-body-d cursor-pointer mr-4', 'underline !text-charcoal' => $filter === $activeFilter])>
                     {{$filter}}
                 </div>
             @endforeach

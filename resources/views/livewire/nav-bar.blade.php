@@ -28,7 +28,7 @@
 
             <li>
                 <x-link :opacity="false" route="{{route('pages.demo')}}">
-                    <x-button class="hover:bg-black">
+                    <x-button class="hover:bg-black dark:hover:bg-white dark:hover:text-black">
                         Get a Demo
                     </x-button>
                 </x-link>

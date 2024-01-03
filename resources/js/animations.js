@@ -59,7 +59,7 @@ document.addEventListener('livewire:navigated', () => {
                 opacity: 1,
                 scrollTrigger: {
                     trigger: item,
-                    start: '300px 75%',
+                    start: '100px 75%',
                     markers: false,
                     end: 'center center',
                 }

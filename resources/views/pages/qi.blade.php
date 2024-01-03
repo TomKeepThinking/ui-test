@@ -22,8 +22,8 @@
         </x-content.offset>
     </div>
 
-    <div class="border-b border-concrete mb-12 ">
-        <x-content.offset class="mb-12 ">
+    <div class="border-b border-concrete mb-12">
+        <x-content.offset>
             <x-slot:left></x-slot:left>
             <x-slot:right>
                 <x-page-header>
@@ -38,7 +38,7 @@
         <livewire:hot-spots :$hotSpots></livewire:hot-spots>
     </div>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-8 border-b border-concrete">
         <x-content.offset>
             <x-slot:left>
 
@@ -53,7 +53,7 @@
 
    <x-logo-grid/>
 
-    <div class="mb-8 border-b border-concrete pb-8">
+    <div class="mb-8 border-b border-concrete">
         <x-content.offset>
             <x-slot:left>
 
@@ -69,12 +69,12 @@
     <x-content.offset class="mb-36">
         <x-slot:left>
             <div>
-                <h4>Detailed specifications</h4>
+                <h4 class="tracking-body-d">Detailed specifications</h4>
 
                 <p>Read a detailed description of Qi and download the specifications for later.</p>
             </div>
 
-            <x-download-btn>
+            <x-download-btn >
                 <span class="mb-2">Qi Detailed Specifications</span>
                 (1.7 MB)
             </x-download-btn>
@@ -84,7 +84,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l border-concrete">
                 @foreach($features as $feature)
                     <x-content.text-grid-item>
-                        <h4 class="mb-2">{{$feature['title']}}</h4>
+                        <h4 class="mb-2 tracking-body-d">{{$feature['title']}}</h4>
 
                         <ul class="dark:text-concrete list-disc pl-4 space-y-2 ">
                             @foreach($feature['features'] as $item)
@@ -115,7 +115,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 border-t border-l">
                 @foreach($technology as $tech)
                     <x-content.text-grid-item>
-                        <h4 class="mb-2">{{$tech['title']}}</h4>
+                        <h4 class="mb-2 tracking-body-d">{{$tech['title']}}</h4>
 
                         <ul class="text-concrete list-disc pl-4 space-y-2 ">
                             @foreach($tech['features'] as $item)

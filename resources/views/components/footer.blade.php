@@ -52,7 +52,9 @@ $socialNavItems = [
     <div class="pt-10 mx-auto">
        <x-container>
            <x-page-header class="md:w-9/12 pb-8 ml-auto">
-               <h5 class="!text-white ">Want to learn more about our approach, software and projects? <span class="!text-concrete">Get in touch</span></h5>
+               <h5 class="!text-white ">Want to learn more about our approach, software and projects?
+                   <a wire:navigate href="{{route('pages.contact')}}"><span class="!text-concrete hover:!text-white transition-all ease">Get in touch</span></a>
+               </h5>
            </x-page-header>
        </x-container>
     </div>
