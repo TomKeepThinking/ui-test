@@ -8,17 +8,14 @@
         class="w-6 h-6 rounded-full bg-red transition-all ease cursor-pointer flex items-center justify-center shadow"
         :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"
         x-cloak
-
         @mouseover="popup = {{$key}}"
         @mouseleave="popup = ''"
-
         x-ref="{{$ref}}"
     >
-
         <span class="text-xxs">{{$key+1}}</span>
 
-        <span class="transition-all ease w-2 h-2 absolute -bottom-[1px] rotate-45"
-              :class="{ 'bg-red': popup === {{$key}}, 'bg-black': popup!== {{$key}} }"></span>
+        <span class="transition-all ease w-2 h-2 border-r-4 border-b-4 absolute -bottom-[1px] rotate-45"
+              :class="{ 'border-red': popup === {{$key}}, 'border-black': popup!== {{$key}} }"></span>
 
         <div x-show="popup === {{$key}}"
              id="popup-{{$id}}"
