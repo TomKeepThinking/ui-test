@@ -53,11 +53,11 @@
 
     <x-content.offset class="mb-28">
         <x-slot:left>
-               <h4>{{$thirdContentSubHeader}}</h4>
-               <div class="text-grey">
-                   <p class="hidden md:block">{{ $thirdContentText }}</p>
-                   <x-link >Learn More</x-link>
-               </div>
+                <div>
+                    <h4>{{$thirdContentSubHeader}}</h4>
+                    <p class="hidden md:block mb-4">{{ $thirdContentText }}</p>
+                </div>
+                <x-link >Learn More</x-link>
         </x-slot:left>
         <x-slot:right>
             <x-page-header>

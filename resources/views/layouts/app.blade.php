@@ -14,7 +14,7 @@
 </head>
 <body class="font-sans text-lg font-medium antialiased masthead">
     <div class="min-h-screen bg-white dark:bg-black">
-        <div class="sticky z-20 top-0 w-full dark:bg-black h-nav">
+        <div class="sticky z-20 top-0 w-full bg-white dark:bg-black h-nav">
             <livewire:nav-bar :routes="$navRoutes"/>
         </div>
 
