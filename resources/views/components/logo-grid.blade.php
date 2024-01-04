@@ -1,4 +1,4 @@
-<x-content.offset class="mb-32">
+<x-content.offset class="mb-26 md:mb-36">
     <x-slot:left>
         <p>Over two hundred museums, collections, libraries, archives, councils, magazines and commercial organisations have chosen Qi to manage and present their content.</p>
     </x-slot:left>

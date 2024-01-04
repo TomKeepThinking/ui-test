@@ -4,7 +4,7 @@
         <h1 class="split-words">Meet Qi – the universal software that’s shaping the future of arts & culture</h1>
     </x-top-header>
 
-    <div class="mb-32">
+    <div class="mb-40">
         <x-content.offset>
             <x-slot:left>
                <div class="mb-2">
@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="mb-32">
+    <div class="mb-26 md:mb-36">
         <livewire:hot-spots :$hotSpots></livewire:hot-spots>
     </div>
 
@@ -66,7 +66,7 @@
         </x-content.offset>
     </div>
 
-    <x-content.offset class="mb-36">
+    <x-content.offset class="mb-26 md:mb-36">
         <x-slot:left>
             <div>
                 <h4 class="tracking-body-d">Detailed specifications</h4>
@@ -97,7 +97,6 @@
         </x-slot:right>
     </x-content.offset>
 
-
     <div class="mb-8 border-b border-concrete">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
@@ -106,7 +105,7 @@
         </x-container>
     </div>
 
-    <x-content.offset class="mb-36">
+    <x-content.offset class="mb-26 md:mb-36">
         <x-slot:left>
             <p>We offer: training programmes, comprehensive documentation, in-application help, modular front-end framework and pluggable, RESTful API among other things.</p>
         </x-slot:left>
