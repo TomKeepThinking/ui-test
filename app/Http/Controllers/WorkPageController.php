@@ -227,7 +227,7 @@ class WorkPageController extends Controller
 
     public function show($work){
 
-        $navBg = 'bg-teal';
+        $navBg = '#028982';
 
 
 //        TODO: Implement work model, update argument to be 'Work $work'

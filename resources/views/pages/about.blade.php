@@ -27,7 +27,7 @@
     </div>
 
 
-    <x-container>
+    <x-container class="mb-32 md:mb-40">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
             <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-5">
                 <div class="mb-10 sm:mb-0 col-span-6 lg:col-span-2 order-last lg:order-none">
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
             <div class="col-span-1 lg:col-span-9 grid grid-cols-6 gap-5">
                 <div class="col-span-6 lg:col-span-2 order-last lg:order-none">
                     <h4 class="text-sm md:text-lg">Our future</h4>
@@ -77,7 +77,7 @@
         </div>
     </x-container>
 
-    <div class="mb-5 mt-32 border-b border-concrete">
+    <div class="mb-5 border-b border-concrete">
         <x-container>
             <x-page-header class="md:w-9/12 ml-auto">
                 <h2>Meet the team</h2>
@@ -85,7 +85,7 @@
         </x-container>
     </div>
 
-    <x-content.offset class="mb-28">
+    <x-content.offset class="mb-32 md:mb-40">
         <x-slot:left>
             <p class="text-grey">We create beautiful interfaces combined with solid technology and strong usability and accessibility principles, helping our customers present their information and engage with their audiences.</p>
         </x-slot:left>
