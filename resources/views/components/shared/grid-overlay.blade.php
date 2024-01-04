@@ -11,7 +11,7 @@
 
 
     <div class="">
-        <h5>Title</h5>
+        <h5 class="text-white">Title</h5>
         <p class="text-sand">CMS, Information</p>
     </div>
 
